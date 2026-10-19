@@ -1,0 +1,4 @@
+#!/bin/bash
+# tools/lua <state|states> '<lua code>'  — run Lua in Civ VI over FireTuner
+D="$(cd "$(dirname "$0")/.." && pwd)"
+exec uv run --quiet --project "$D/civ6-mcp" python "$D/tools/tuner.py" "$@"

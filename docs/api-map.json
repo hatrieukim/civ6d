@@ -1,0 +1,7063 @@
+{
+ "InGame": {
+  "globals": {
+   "ActionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_ENDTURN",
+     "ACTION_RETIRE",
+     "ACTION_UNREADYTURN",
+     "NO_ACTION"
+    ]
+   },
+   "ActivityTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTIVITY_AWAKE",
+     "ACTIVITY_HEAL",
+     "ACTIVITY_HOLD",
+     "ACTIVITY_INTERCEPT",
+     "ACTIVITY_OPERATION",
+     "ACTIVITY_SENTRY",
+     "ACTIVITY_SLEEP",
+     "NO_ACTIVITY"
+    ]
+   },
+   "AdjacencyBonusTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ADJACENCY_DISTRICT",
+     "ADJACENCY_FEATURE",
+     "ADJACENCY_IMPROVEMENT",
+     "ADJACENCY_NATURAL_WONDER",
+     "ADJACENCY_RESOURCE",
+     "ADJACENCY_RESOURCE_CLASS",
+     "ADJACENCY_RIVER",
+     "ADJACENCY_SEA_RESOURCE",
+     "ADJACENCY_TERRAIN",
+     "ADJACENCY_WONDER",
+     "NO_ADJACENCY"
+    ]
+   },
+   "AssetPreview": {
+    "type": "table",
+    "functions": [
+     "ClearLandmarkAt",
+     "ClearLandmarkSystem",
+     "ClearUnitSystem",
+     "Create",
+     "CreateBuildingAt",
+     "CreateDistrictAt",
+     "Destroy",
+     "DestroyAll",
+     "DestroyAt",
+     "GetAppealName",
+     "GetAssetCount",
+     "GetAssetName",
+     "GetCivName",
+     "GetDistrictBaseList",
+     "GetDistrictBuildingList",
+     "GetDistrictCount",
+     "GetDistrictName",
+     "GetEraName",
+     "GetInstanceCount",
+     "GetInstanceInfoByID",
+     "GetInstanceInfoByIndex",
+     "GetLandmarkAssetList",
+     "GetLandmarkCount",
+     "GetLandmarkName",
+     "GetUnitList",
+     "MakeHash",
+     "SetInstanceAnimation",
+     "SetInstanceAssetState",
+     "SetInstanceAutoDestroy",
+     "SetInstanceCulling",
+     "SetInstanceOrientation",
+     "SetInstancePosition",
+     "SetInstanceScale",
+     "SetInstanceSequenceLock",
+     "SpoofBuildingAt",
+     "SpoofCityAt",
+     "SpoofCityCivAt",
+     "SpoofDistrictBaseAt",
+     "SpoofLandmarkAt",
+     "SpoofUnitAt"
+    ],
+    "members": []
+   },
+   "AutoProfiler": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "Automation": {
+    "type": "table",
+    "functions": [
+     "ClearParameterSet",
+     "GenerateSaveName",
+     "GetLastGeneratedSaveName",
+     "GetLocalParameter",
+     "GetParameterSet",
+     "GetRandomNumber",
+     "GetSetParameter",
+     "GetStartupParameter",
+     "GetTime",
+     "IsActive",
+     "IsAutoStartEnabled",
+     "IsPaused",
+     "Log",
+     "LogDateAndTime",
+     "LogDivider",
+     "Pause",
+     "RemoveInputHandler",
+     "SendTestComplete",
+     "SetActive",
+     "SetAutoStartEnabled",
+     "SetInputHandler",
+     "SetLocalParameter",
+     "SetParameterSet",
+     "SetSetParameter"
+    ],
+    "members": []
+   },
+   "AutoplayManager": {
+    "type": "table",
+    "functions": [
+     "GetDisableAssertsForAutoplay",
+     "GetObserveAsPlayer",
+     "GetReturnAsPlayer",
+     "GetTurns",
+     "IsActive",
+     "SetActive",
+     "SetDisableAssertsForAutoplay",
+     "SetObserveAsPlayer",
+     "SetReturnAsPlayer",
+     "SetTurns"
+    ],
+    "members": []
+   },
+   "Benchmark": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "BoostSources": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BOOST_SOURCE_BARBARIAN_CLAN_STEAL",
+     "BOOST_SOURCE_CAPTURED_CITY",
+     "BOOST_SOURCE_ESPIONAGE",
+     "BOOST_SOURCE_GOODYHUT",
+     "BOOST_SOURCE_GREAT_PERSON",
+     "BOOST_SOURCE_RESEARCH_AGREEMENT",
+     "BOOST_SOURCE_TEAMMATE",
+     "BOOST_SOURCE_TRADING_POST",
+     "BOOST_SOURCE_TRIGGER",
+     "BOOST_SOURCE_WONDER",
+     "NO_BOOST_SOURCE"
+    ]
+   },
+   "BulkHide": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "C": {
+    "type": "table",
+    "functions": [
+     "BulkHide",
+     "CanLocalPlayerChangeOptions",
+     "CanLocalPlayerLoadGame",
+     "CanLocalPlayerSaveGame"
+    ],
+    "members": [
+     "Benchmark",
+     "BoostSources",
+     "C",
+     "Calendar",
+     "Challenges",
+     "ChatTargetTypes",
+     "Cities",
+     "CityCommandResults",
+     "CityCommandTypes",
+     "CityDestroyDirectives",
+     "CityManager",
+     "CityOperationResults",
+     "CityOperationTypes",
+     "CityProductionDirectives"
+    ]
+   },
+   "Calendar": {
+    "type": "table",
+    "functions": [
+     "GetTurnMonthForGame",
+     "GetTurnYearForGame",
+     "MakeDateStr",
+     "MakeYearStr"
+    ],
+    "members": []
+   },
+   "CanLocalPlayerChangeOptions": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "CanLocalPlayerLoadGame": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "CanLocalPlayerSaveGame": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "Challenges": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "ChatTargetTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CHATTARGET_ALL",
+     "CHATTARGET_PLAYER",
+     "CHATTARGET_TEAM",
+     "NO_CHATTARGET"
+    ]
+   },
+   "Cities": {
+    "type": "table",
+    "functions": [
+     "GetCityInPlot",
+     "GetPlotPurchaseCity",
+     "GetPlotWorkingCity"
+    ],
+    "members": []
+   },
+   "CityCommandResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITIES",
+     "CITIZENS",
+     "FAILURE_REASONS",
+     "LOCKED_CITIZENS",
+     "MAX_CITIZENS",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "PLOTS",
+     "UNITS"
+    ]
+   },
+   "CityCommandTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DESTROY",
+     "MANAGE",
+     "NAME_CITY",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_DATA0",
+     "PARAM_DATA1",
+     "PARAM_DATA2",
+     "PARAM_DATA3",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_MANAGE_CITIZEN",
+     "PARAM_MILITARY_FORMATION_TYPE",
+     "PARAM_MODIFIERS",
+     "PARAM_NAME",
+     "PARAM_PLOT_PURCHASE",
+     "PARAM_PROJECT_TYPE",
+     "PARAM_RANGED_ATTACK",
+     "PARAM_SWAP_TILE_OWNER",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_UNIT_TYPE",
+     "PARAM_WMD_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "PARAM_YIELD_TYPE",
+     "PURCHASE",
+     "RANGE_ATTACK",
+     "SET_FOCUS",
+     "SWAP_TILE_OWNER",
+     "WMD_STRIKE"
+    ]
+   },
+   "CityDestroyDirectives": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KEEP",
+     "LIBERATE_FOUNDER",
+     "LIBERATE_PREVIOUS_OWNER",
+     "RAZE",
+     "REJECT"
+    ]
+   },
+   "CityManager": {
+    "type": "table",
+    "functions": [
+     "CanStartCommand",
+     "CanStartOperation",
+     "GetCity",
+     "GetCityAt",
+     "GetCommandTargets",
+     "GetDistrictAt",
+     "GetOperationTargets",
+     "IsCity",
+     "IsDistrict",
+     "RequestCommand",
+     "RequestOperation"
+    ],
+    "members": []
+   },
+   "CityOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BLOCKED_PLOTS",
+     "CAN_TRAIN_ARMY",
+     "CAN_TRAIN_CORPS",
+     "CITIES",
+     "CITIZENS",
+     "FAILURE_REASONS",
+     "LOCKED_CITIZENS",
+     "MAX_CITIZENS",
+     "MODIFIERS",
+     "MOUNTAIN_PLOTS",
+     "NONE",
+     "NO_SUITABLE_LOCATION",
+     "PLOTS",
+     "PURCHASABLE_PLOTS",
+     "SUCCESS_CONDITIONS",
+     "UNITS"
+    ]
+   },
+   "CityOperationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BUILD",
+     "MILITARY_FORMATION_TYPE",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_INSERT_MODE",
+     "PARAM_MODIFIERS",
+     "PARAM_PRODUCTION_TYPE",
+     "PARAM_PROJECT_TYPE",
+     "PARAM_QUEUE_DESTINATION_LOCATION",
+     "PARAM_QUEUE_LOCATION",
+     "PARAM_QUEUE_SOURCE_LOCATION",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_UNIT_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "VALUE_APPEND",
+     "VALUE_CLEAR",
+     "VALUE_EXCLUSIVE",
+     "VALUE_INSERT_AT",
+     "VALUE_MOVE_TO",
+     "VALUE_POP_BACK",
+     "VALUE_POP_FRONT",
+     "VALUE_PREPEND",
+     "VALUE_REMOVE_AT",
+     "VALUE_REPLACE_AT",
+     "VALUE_SWAP"
+    ]
+   },
+   "CityProductionDirectives": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CONSTRUCT",
+     "PROJECT",
+     "TRAIN",
+     "ZONE"
+    ]
+   },
+   "CityTransferTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BY_COMBAT",
+     "BY_CULTURAL_IDENTITY",
+     "BY_GIFT",
+     "BY_LIBERATION"
+    ]
+   },
+   "CivilizationLevelTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CIVILIZATION_LEVEL_CITY_STATE",
+     "CIVILIZATION_LEVEL_FREE_CITIES",
+     "CIVILIZATION_LEVEL_FULL_CIV",
+     "CIVILIZATION_LEVEL_TRIBE",
+     "NO_CIVILIZATION_LEVEL"
+    ]
+   },
+   "CloudNotifyTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CLOUDNOTIFY_ERROR",
+     "CLOUDNOTIFY_GAMEREADY",
+     "CLOUDNOTIFY_NONE",
+     "CLOUDNOTIFY_YOURTURN"
+    ]
+   },
+   "CombatManager": {
+    "type": "table",
+    "functions": [
+     "CanAttackTarget",
+     "GenerateCombatResults",
+     "GetBestDefender",
+     "GetBestInterceptor",
+     "IsAttackChangeWarState",
+     "SimulateAttackInto",
+     "SimulateAttackVersus",
+     "SimulatePriorityAttackInto"
+    ],
+    "members": []
+   },
+   "CombatResultParameters": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALT_SOURCE_LOCATION",
+     "ANTI_AIR",
+     "ATTACKER",
+     "ATTACKER_ADVANCED_DURING_VISUALIZATION",
+     "ATTACKER_ADVANCES",
+     "COMBAT_STRENGTH",
+     "COMBAT_SUB_TYPE",
+     "COMBAT_TYPE",
+     "DAMAGE_FROM",
+     "DAMAGE_MEMBERS",
+     "DAMAGE_MEMBER_COUNT",
+     "DAMAGE_TO",
+     "DEFENDER",
+     "DEFENDER_CAPTURED",
+     "DEFENDER_RETALIATES",
+     "DEFENSE_DAMAGE_TO",
+     "ERA",
+     "EXPERIENCE_CHANGE",
+     "FINAL_DAMAGE_TO",
+     "FINAL_DEFENSE_DAMAGE_TO",
+     "ID",
+     "INTERCEPTOR",
+     "LOCATION",
+     "LOCATION_PILLAGED",
+     "MAX_DEFENSE_HIT_POINTS",
+     "MAX_HIT_POINTS",
+     "PREVIEW_TEXT_ANTI_AIR",
+     "PREVIEW_TEXT_ASSIST",
+     "PREVIEW_TEXT_DEFENSES",
+     "PREVIEW_TEXT_HEALTH",
+     "PREVIEW_TEXT_INTERCEPTOR",
+     "PREVIEW_TEXT_MODIFIER",
+     "PREVIEW_TEXT_OPPONENT",
+     "PREVIEW_TEXT_PROMOTION",
+     "PREVIEW_TEXT_RESOURCES",
+     "PREVIEW_TEXT_TERRAIN",
+     "STRENGTH_MODIFIER",
+     "VISUALIZE",
+     "WMD_STATUS",
+     "WMD_STRIKE_RANGE",
+     "WMD_TYPE"
+    ]
+   },
+   "CombatTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIR",
+     "BOMBARD",
+     "ICBM",
+     "MELEE",
+     "RANGED",
+     "RELIGIOUS"
+    ]
+   },
+   "CombatVisType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANTI_AIR",
+     "ATTACKER",
+     "DEFENDER",
+     "INTERCEPTOR"
+    ]
+   },
+   "ComponentType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITY",
+     "DISTRICT",
+     "UNIT"
+    ]
+   },
+   "ContextPtr": {
+    "type": "table",
+    "functions": [
+     "LookUpControl"
+    ],
+    "members": [
+     "CData"
+    ]
+   },
+   "Controls": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ARXManager",
+     "ActionPanel",
+     "AdditionalUserInterfaces",
+     "Automation_NarrationPopup",
+     "BannerAndFlags",
+     "BoostUnlockedPopup",
+     "CameraManager",
+     "ChooseArtifact",
+     "CityBannerManager",
+     "CityPanel",
+     "CityPanelOverview",
+     "CityStates",
+     "CivicsChooser",
+     "CivicsTree",
+     "Civilopedia",
+     "ClimateScreen",
+     "Core",
+     "DeclareWarPopup",
+     "DedicationPopup",
+     "Diplomacy",
+     "DiplomacyActionView",
+     "DiplomacyDealView",
+     "DiplomacyRibbon",
+     "DisloyalCityChooser",
+     "DistrictPlotIconManager",
+     "EdgeScroll",
+     "EndGame",
+     "EndGameMenu",
+     "EraCompletePopup",
+     "EraProgressPanel",
+     "EraReviewPopup",
+     "EspionageChooser",
+     "EspionageEscape",
+     "EspionageOverview",
+     "EspionagePopup",
+     "EventPopup",
+     "ExpansionIntro",
+     "FakePopups",
+     "FullscreenMapPopup",
+     "GenVFX",
+     "GlobalResourcePopup",
+     "GovernmentScreen",
+     "GovernorAssignmentChooser",
+     "GovernorPanel",
+     "GreatPeoplePopup",
+     "GreatWorkShowcase",
+     "GreatWorksOverview",
+     "HUD",
+     "HistoricMoments",
+     "HotSeatBackground",
+     "InGame",
+     "InGamePopup",
+     "LaunchBar",
+     "LeaderScene",
+     "MapLabelManager",
+     "MapPinManager",
+     "MapPinPopup",
+     "MinimapPanel",
+     "ModalLensPanel",
+     "MultiplayerTurnManager",
+     "NaturalDisasterPopup",
+     "NaturalWonderPopup",
+     "Network",
+     "NewTurnPanel",
+     "NotificationPanel",
+     "PBCNotificationPopup",
+     "PantheonChooser",
+     "PartialScreenHooks",
+     "PartialScreens",
+     "PausePanel",
+     "PlayerChange",
+     "PlotInfo",
+     "PlotToolTip",
+     "PowerLensManager",
+     "ProductionManager",
+     "ProductionPanel",
+     "ProjectBuiltPopup",
+     "RazeCity",
+     "ReligionScreen",
+     "ReportScreen",
+     "ReportsList",
+     "ResearchChooser",
+     "RockBandMoviePopup",
+     "RockBandPopup",
+     "Screens",
+     "SelectedMapPinContainer",
+     "SelectedUnit",
+     "SelectedUnitContainer",
+     "SettlerInfluenceIconManager",
+     "SettlerWarningIconManager",
+     "StatusMessagePanel",
+     "StrategicView",
+     "SwitchLayoutPopup",
+     "TechCivicCompletedPopup",
+     "TechTree",
+     "TopLevelHUD",
+     "TopOptionsMenu",
+     "TopPanel",
+     "TourismBannerManager",
+     "TradeOriginChooser",
+     "TradeOverview",
+     "TradeRouteChooser",
+     "UnitCaptured",
+     "UnitFlagManager",
+     "UnitPanel",
+     "UnitPromotionPopup",
+     "WonderBuiltPopup",
+     "WorldCongressBetweenTurns",
+     "WorldCongressIntro",
+     "WorldCongressPopup",
+     "WorldCrisisPopup",
+     "WorldInput",
+     "WorldPopups",
+     "WorldRankings",
+     "WorldTracker",
+     "WorldViewControls",
+     "WorldViewIconsManager",
+     "WorldViewPlotMessages"
+    ]
+   },
+   "CursorTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NORMAL",
+     "RANGE_ATTACK",
+     "WAIT"
+    ]
+   },
+   "DB": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "DealAgreementTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLIANCE",
+     "JOINT_WAR",
+     "MAKE_PEACE",
+     "OPEN_BORDERS",
+     "RESEARCH_AGREEMENT",
+     "THIRD_PARTY_WAR"
+    ]
+   },
+   "DealDirection": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INCOMING",
+     "OUTGOING"
+    ]
+   },
+   "DealItemSubTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "DealItemTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AGREEMENTS",
+     "ALL",
+     "CAPTIVE",
+     "CITIES",
+     "FAVOR",
+     "GOLD",
+     "GREATWORK",
+     "NONE",
+     "RESOURCES",
+     "TECHNOLOGY",
+     "UNITS"
+    ]
+   },
+   "DealManager": {
+    "type": "table",
+    "functions": [
+     "AreWorkingDealsEqual",
+     "ClearWorkingDeal",
+     "CopyIncomingToOutgoingWorkingDeal",
+     "EditWorkingDeal",
+     "GetPlayerDeals",
+     "GetPossibleDealItems",
+     "GetWorkingDeal",
+     "HasPendingDeal",
+     "SendWorkingDeal",
+     "ViewPendingDeal"
+    ],
+    "members": []
+   },
+   "DealProposalAction": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPTED",
+     "ADJUSTED",
+     "CLOSED",
+     "DEMANDED",
+     "EQUALIZE",
+     "EQUALIZE_FAILED",
+     "INSPECT",
+     "PENDING",
+     "PROPOSED",
+     "REJECTED",
+     "REJECTED_PERMANENT"
+    ]
+   },
+   "DealValidationResult": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "MISSING_DEPENDENCY",
+     "VALID"
+    ]
+   },
+   "DefenseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DISTRICT_GARRISON",
+     "DISTRICT_OUTER"
+    ]
+   },
+   "DefinitionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AGENDA",
+     "BUILDING",
+     "CIVILIZATION",
+     "CLIMATE",
+     "CULTURE",
+     "DISTRICT",
+     "FEATURE",
+     "FLAVOR",
+     "GAME_SPEED",
+     "GOVERNMENT",
+     "HANDICAP",
+     "IMPROVEMENT",
+     "MAP_SIZE",
+     "PLAYER",
+     "PLAYER_COLOR",
+     "PLAYER_TRAIT",
+     "POLICY",
+     "RESOURCE",
+     "ROUTE",
+     "SEA_LEVEL",
+     "TEAM",
+     "TECH",
+     "TERRAIN",
+     "UNIT",
+     "UNIT_PROMOTION",
+     "YIELD"
+    ]
+   },
+   "Definitions": {
+    "type": "table",
+    "functions": [
+     "GetTypeHash",
+     "GetTypeName"
+    ],
+    "members": []
+   },
+   "DiplomacyActionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLY",
+     "DECLARE_FRIEND",
+     "DENOUNCE",
+     "MAKE_DEAL",
+     "SET_DELEGATION",
+     "SET_EMBASSY",
+     "SET_OPEN_BORDERS",
+     "SET_WAR_STATE"
+    ]
+   },
+   "DiplomacyInitiatorTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AI",
+     "HUMAN",
+     "NONE"
+    ]
+   },
+   "DiplomacyManager": {
+    "type": "table",
+    "functions": [
+     "AddCommand",
+     "AddResponse",
+     "AddStatement",
+     "CloseSession",
+     "FindOpenSessionID",
+     "FindReasonAgendaTextKey",
+     "FindReasonTextKey",
+     "FindTextKey",
+     "GetKeyName",
+     "GetSessionInfo",
+     "HasQueuedSession",
+     "IsSessionIDOpen",
+     "RequestSession",
+     "SendAction",
+     "TestAction"
+    ],
+    "members": []
+   },
+   "DiplomacyMoodTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY",
+     "DEFEATED",
+     "ENRAGED",
+     "HAPPY",
+     "NEUTRAL",
+     "UNDEFINED",
+     "UNHAPPY"
+    ]
+   },
+   "DiplomacyResponseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACKNOWLEDGE",
+     "INITIAL",
+     "NEGATIVE",
+     "NONE",
+     "POSITIVE"
+    ]
+   },
+   "DiplomaticStates": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLIED",
+     "AWARE",
+     "DECLARED_FRIEND",
+     "DENOUNCED",
+     "FRIENDLY",
+     "INFLUENTIAL",
+     "MAX_INFLUENCE",
+     "MINOR_MINOR",
+     "MINOR_MINOR_WAR",
+     "NEUTRAL",
+     "NO_INFLUENCE",
+     "PATRON",
+     "PROTECTOR",
+     "UNFRIENDLY",
+     "WAR",
+     "WAR_WITH_MAJOR",
+     "WAR_WITH_MINOR"
+    ]
+   },
+   "DiplomaticThreatTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID_THREAT",
+     "MAJOR_THREAT",
+     "MINOR_THREAT",
+     "MODERATE_THREAT",
+     "NO_THREAT",
+     "UNKNOWN_THREAT"
+    ]
+   },
+   "DiplomaticTrustTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BARELY_KNOWN",
+     "DISTRUSTED",
+     "INVALID_TRUST",
+     "LOW_TRUST",
+     "NO_TRUST",
+     "SOME_TRUST",
+     "TRUSTED",
+     "UNKNOWN_TRUST"
+    ]
+   },
+   "DiplomaticVisibilityTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FULL",
+     "LIMITED",
+     "NONE",
+     "SECRET",
+     "TOP_SECRET"
+    ]
+   },
+   "DirectionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DIRECTION_EAST",
+     "DIRECTION_NORTHEAST",
+     "DIRECTION_NORTHWEST",
+     "DIRECTION_SOUTHEAST",
+     "DIRECTION_SOUTHWEST",
+     "DIRECTION_WEST",
+     "NO_DIRECTION",
+     "NUM_DIRECTION_TYPES"
+    ]
+   },
+   "DirtyComponentsManager": {
+    "type": "table",
+    "functions": [
+     "Create",
+     "Destroy"
+    ],
+    "members": []
+   },
+   "Drag": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "eDown",
+     "eDrag",
+     "eDragDisabled",
+     "eDrop"
+    ]
+   },
+   "EffectsManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "EndTurnBlockingTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ENDTURN_BLOCKING_ARTIFACT",
+     "ENDTURN_BLOCKING_BELIEF",
+     "ENDTURN_BLOCKING_CITY_RANGE_ATTACK",
+     "ENDTURN_BLOCKING_CIVIC",
+     "ENDTURN_BLOCKING_CLAIM_GREAT_PERSON",
+     "ENDTURN_BLOCKING_COMMEMORATION_AVAILABLE",
+     "ENDTURN_BLOCKING_CONSIDER_DISLOYAL_CITY",
+     "ENDTURN_BLOCKING_CONSIDER_GOVERNMENT_CHANGE",
+     "ENDTURN_BLOCKING_CONSIDER_RAZE_CITY",
+     "ENDTURN_BLOCKING_DISTRICT_RANGE_ATTACK",
+     "ENDTURN_BLOCKING_EMERGENCY_NEEDS_ATTENTION",
+     "ENDTURN_BLOCKING_FILL_CIVIC_SLOT",
+     "ENDTURN_BLOCKING_GIVE_INFLUENCE_TOKEN",
+     "ENDTURN_BLOCKING_GOVERNOR_APPOINTMENT",
+     "ENDTURN_BLOCKING_GOVERNOR_IDLE",
+     "ENDTURN_BLOCKING_GOVERNOR_OPPORTUNITY",
+     "ENDTURN_BLOCKING_GOVERNOR_PROMOTION",
+     "ENDTURN_BLOCKING_PANTHEON",
+     "ENDTURN_BLOCKING_PRODUCTION",
+     "ENDTURN_BLOCKING_RELIGION",
+     "ENDTURN_BLOCKING_RESEARCH",
+     "ENDTURN_BLOCKING_SPY_CHOOSE_DRAGNET_PRIORITY",
+     "ENDTURN_BLOCKING_SPY_CHOOSE_ESCAPE_ROUTE",
+     "ENDTURN_BLOCKING_STACKED_UNITS",
+     "ENDTURN_BLOCKING_UNITS",
+     "ENDTURN_BLOCKING_UNIT_NEEDS_ORDERS",
+     "ENDTURN_BLOCKING_UNIT_PROMOTION",
+     "ENDTURN_BLOCKING_WORLD_CONGRESS_LOOK",
+     "ENDTURN_BLOCKING_WORLD_CONGRESS_SESSION",
+     "NO_ENDTURN_BLOCKING"
+    ]
+   },
+   "EraTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "EspionageResultTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CAPTURED",
+     "FAIL_MUST_ESCAPE",
+     "FAIL_UNDETECTED",
+     "KILLED",
+     "NO_RESULT",
+     "NUM_ESPIONAGE_RESULTS",
+     "SUCCESS_MUST_ESCAPE",
+     "SUCCESS_UNDETECTED"
+    ]
+   },
+   "EventSubTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPT_RELIGIOUS_HEAL",
+     "ADD",
+     "BUILDING",
+     "CLEAR_CONTAMINATION",
+     "COMBAT",
+     "COMPLETION",
+     "CONVERT_BARBARIAN",
+     "CREATE_DISTRICT",
+     "CREATE_GREAT_WORK",
+     "CREATE_IMPROVEMENT",
+     "CREATE_ROUTE",
+     "CREATE_TRADE_ROUTE",
+     "CREATE_WONDER",
+     "DAMAGE",
+     "DISTRICT",
+     "EVANGELIZE_BELIEF",
+     "EXTRACT_ARTIFACT",
+     "FOUND_CITY",
+     "FOUND_RELIGION",
+     "GIVE_RELIGIOUS_HEAL",
+     "HARVEST_RESOURCE",
+     "LAUNCH_INQUISITION",
+     "PILLAGE",
+     "PILLAGED",
+     "PLANT_FOREST",
+     "PLOT",
+     "PROJECT",
+     "REMOVE",
+     "REMOVE_FEATURE",
+     "REMOVE_HERESY",
+     "REPAIR",
+     "SPREAD_RELIGION",
+     "TOURISM_BOMB",
+     "UNIT",
+     "VISIBILITY"
+    ]
+   },
+   "Events": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CityAddedToMap",
+     "CityOccupationChanged",
+     "CityProductionCompleted",
+     "CityRemovedFromMap",
+     "CivicCompleted",
+     "DiplomacyDeclareWar",
+     "DiplomacyMakePeace",
+     "GameCoreEventPlaybackComplete",
+     "InputActionTriggered",
+     "LensLayerOff",
+     "LensLayerOn",
+     "LoadGameViewStateDone",
+     "LocalPlayerTurnBegin",
+     "LocalPlayerTurnEnd",
+     "NotificationAdded",
+     "ResearchCompleted",
+     "SystemUpdateUI",
+     "UIIdle",
+     "UnitDamageChanged",
+     "UnitKilledInCombat",
+     "UnitMoved",
+     "UnitVisibilityChanged"
+    ]
+   },
+   "ExposedMembers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AG"
+    ]
+   },
+   "FalloutDamages": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "USE_FALLOUT_DEFAULT"
+    ]
+   },
+   "FiraxisLive": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "FireWireTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FIREWIRE_INVALID_ID"
+    ]
+   },
+   "FlowDirectionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FLOWDIRECTION_NORTH",
+     "FLOWDIRECTION_NORTHEAST",
+     "FLOWDIRECTION_NORTHEAST_MASK",
+     "FLOWDIRECTION_NORTHWEST",
+     "FLOWDIRECTION_NORTHWEST_MASK",
+     "FLOWDIRECTION_NORTH_MASK",
+     "FLOWDIRECTION_SOUTH",
+     "FLOWDIRECTION_SOUTHEAST",
+     "FLOWDIRECTION_SOUTHEAST_MASK",
+     "FLOWDIRECTION_SOUTHWEST",
+     "FLOWDIRECTION_SOUTHWEST_MASK",
+     "FLOWDIRECTION_SOUTH_MASK",
+     "NO_FLOWDIRECTION",
+     "NUM_FLOWDIRECTION_TYPES"
+    ]
+   },
+   "Game": {
+    "type": "table",
+    "functions": [
+     "GenerateUnitName",
+     "GetActivePlayerCount",
+     "GetArtifactAtPlot",
+     "GetArtifactByIndex",
+     "GetBarbarianManager",
+     "GetComponentID",
+     "GetCulture",
+     "GetCurrentGameTurn",
+     "GetCurrentTurnPhase",
+     "GetCurrentTurnPhaseName",
+     "GetCurrentTurnPhaseSound",
+     "GetCurrentTurnSegment",
+     "GetCurrentTurnSegmentName",
+     "GetDefeatRequirements",
+     "GetEconomicManager",
+     "GetEmergencyManager",
+     "GetEras",
+     "GetFalloutManager",
+     "GetGameDiplomacy",
+     "GetGameEndTurn",
+     "GetGossipManager",
+     "GetGreatPeople",
+     "GetGreatWorkDataFromIndex",
+     "GetGreatWorkPlayer",
+     "GetGreatWorkType",
+     "GetGreatWorkTypeFromIndex",
+     "GetHeroesManager",
+     "GetHistoryManager",
+     "GetLocalObserver",
+     "GetLocalPlayer",
+     "GetMaxGameTurns",
+     "GetNationalParks",
+     "GetPhaseName",
+     "GetPhaseSound",
+     "GetPlayers",
+     "GetProperties",
+     "GetProperty",
+     "GetQuestsManager",
+     "GetReligion",
+     "GetTechs",
+     "GetTradeManager",
+     "GetUnitNamePrefix",
+     "GetUnitNameSuffix",
+     "GetUnits",
+     "GetVictoryProgressForTeam",
+     "GetVictoryRequirements",
+     "GetWinningTeam",
+     "GetWorldCongress",
+     "IsAllowStrategicCommands",
+     "IsAllowTacticalCommands",
+     "IsDefeatEnabled",
+     "IsVictoryEnabled",
+     "ObserverCanSeePlayer"
+    ],
+    "members": []
+   },
+   "GameCapabilities": {
+    "type": "table",
+    "functions": [
+     "HasCapability"
+    ],
+    "members": []
+   },
+   "GameClimate": {
+    "type": "table",
+    "functions": [
+     "GetActiveDroughtAtPlot",
+     "GetActiveDroughtByIndex",
+     "GetActiveDroughtIDAtPlot",
+     "GetActiveDroughtPlotsByIndex",
+     "GetActiveDroughtTypeAtPlot",
+     "GetActiveStormAtPlot",
+     "GetActiveStormByIndex",
+     "GetActiveStormIDAtPlot",
+     "GetActiveStormPlotsByIndex",
+     "GetActiveStormTypeAtPlot",
+     "GetCO2FootprintModifier",
+     "GetClimateChangeForLastSeaLevelEvent",
+     "GetClimateChangeFromRealism",
+     "GetClimateChangeFromTemperature",
+     "GetClimateChangeLevel",
+     "GetCurrentAverageTemperature",
+     "GetDeforestationType",
+     "GetDroughtByID",
+     "GetDroughtClimateIncreasedChance",
+     "GetDroughtPercentChance",
+     "GetDroughtPlotsByID",
+     "GetDroughtTurnsAtPlot",
+     "GetEruptionClimateIncreasedChance",
+     "GetEruptionPercentChance",
+     "GetFireClimateIncreasedChance",
+     "GetFirePercentChance",
+     "GetFloodClimateIncreasedChance",
+     "GetFloodPercentChance",
+     "GetLocationsForPossibleTriggerableEvents",
+     "GetNextIceLossTurns",
+     "GetNextSeaLevelRiseTurns",
+     "GetNumActiveDroughts",
+     "GetNumActiveStorms",
+     "GetNumStorms",
+     "GetOneOffByID",
+     "GetOneOffPlotsByID",
+     "GetPlayerCO2Footprint",
+     "GetPlayerRawResourceConsumption",
+     "GetPlayerResourceCO2Footprint",
+     "GetPlayerResourceConsumption",
+     "GetSeverityForLastSeaLevelEvent",
+     "GetStormByID",
+     "GetStormClimateIncreasedChance",
+     "GetStormPercentChance",
+     "GetStormPlotsByID",
+     "GetTemperatureChange",
+     "GetTilesFlooded",
+     "GetTilesSubmerged",
+     "GetTotalCO2Footprint",
+     "IsStormRevealed"
+    ],
+    "members": []
+   },
+   "GameConfiguration": {
+    "type": "table",
+    "functions": [
+     "AddEnabledMods",
+     "ClearEnabledMods",
+     "GetAIPlayerCount",
+     "GetAIPlayerIDs",
+     "GetAvailablePlayerCount",
+     "GetAvailablePlayerIDs",
+     "GetCalendarType",
+     "GetCivilizationUsageIDs",
+     "GetCloudTurnPlayer",
+     "GetEnableModsMetaString",
+     "GetEnabledGameModesMetaString",
+     "GetEnabledMods",
+     "GetFirstAvailablePlayer",
+     "GetGameMode",
+     "GetGameSpeedType",
+     "GetGameState",
+     "GetHandicapType",
+     "GetHiddenPlayerCount",
+     "GetHiddenPlayerIDs",
+     "GetHumanPlayerCount",
+     "GetHumanPlayerIDs",
+     "GetInUsePlayerCount",
+     "GetInUsePlayerIDs",
+     "GetMaxTurns",
+     "GetMultiplayerPlayerIDs",
+     "GetObserverCount",
+     "GetObserverIDs",
+     "GetParticipatingPlayerCount",
+     "GetParticipatingPlayerIDs",
+     "GetPausePlayer",
+     "GetPossibleParticipatingPlayerIDs",
+     "GetRequiredMods",
+     "GetRuleSet",
+     "GetStartEra",
+     "GetStartTurn",
+     "GetStartYear",
+     "GetTeamName",
+     "GetTeamPlayerCount",
+     "GetTurnLimitType",
+     "GetTurnTimerType",
+     "GetValue",
+     "IsAnyMultiplayer",
+     "IsCrossPlayInternetMultiplayer",
+     "IsHotseat",
+     "IsInternetMultiplayer",
+     "IsKickVoting",
+     "IsLANMultiplayer",
+     "IsMatchMaking",
+     "IsNetworkMultiplayer",
+     "IsPaused",
+     "IsPlayByCloud",
+     "IsSavedGame",
+     "IsWorldBuilder",
+     "IsWorldBuilderEditor",
+     "MakeHash",
+     "PlayersWantPause",
+     "RegenerateSeeds",
+     "RemovePlayer",
+     "SetCalendarType",
+     "SetCloudTurnPlayer",
+     "SetGameMode",
+     "SetGameSpeedType",
+     "SetGameState",
+     "SetHandicapType",
+     "SetKickVoting",
+     "SetMatchMaking",
+     "SetMaxTurns",
+     "SetParticipatingPlayerCount",
+     "SetRuleSet",
+     "SetStartEra",
+     "SetStartTurn",
+     "SetStartYear",
+     "SetToDefaultGameName",
+     "SetToDefaults",
+     "SetToPreGame",
+     "SetTurnLimitType",
+     "SetTurnTimerType",
+     "SetValue",
+     "SetValueHash",
+     "SetWorldBuilder",
+     "SetWorldBuilderEditor",
+     "UpdateEnabledMods"
+    ],
+    "members": []
+   },
+   "GameDefines": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "MAX_MAJOR_CIVS",
+     "MAX_PLAYERS"
+    ]
+   },
+   "GameEffects": {
+    "type": "table",
+    "functions": [
+     "GetModifierActive",
+     "GetModifierArgumentString",
+     "GetModifierCount",
+     "GetModifierDefinition",
+     "GetModifierOwner",
+     "GetModifierOwnerRequirementSet",
+     "GetModifierReferenceCount",
+     "GetModifierSubjectCount",
+     "GetModifierSubjects",
+     "GetModifierText",
+     "GetModifierTextKey",
+     "GetModifierTrackedObjectCount",
+     "GetModifierTrackedObjects",
+     "GetModifierTrackedOjectRequirementSet",
+     "GetModifiers",
+     "GetObjectName",
+     "GetObjectReferenceCount",
+     "GetObjectString",
+     "GetObjectType",
+     "GetObjectsPlayerId",
+     "GetRequirementContext",
+     "GetRequirementCount",
+     "GetRequirementDefinition",
+     "GetRequirementInnerRequirementSets",
+     "GetRequirementInnerRequirements",
+     "GetRequirementReferenceCount",
+     "GetRequirementSetContext",
+     "GetRequirementSetCount",
+     "GetRequirementSetDefinition",
+     "GetRequirementSetInnerRequirements",
+     "GetRequirementSetReferenceCount",
+     "GetRequirementSetState",
+     "GetRequirementSetSubject",
+     "GetRequirementSets",
+     "GetRequirementState",
+     "GetRequirementSubject",
+     "GetRequirementText",
+     "GetRequirementTextKey",
+     "GetRequirements"
+    ],
+    "members": []
+   },
+   "GameInfo": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "GameModeTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CROSSPLAY",
+     "HOTSEAT",
+     "INTERNET",
+     "LAN",
+     "PLAYBYCLOUD",
+     "SINGLEPLAYER"
+    ]
+   },
+   "GamePadInputType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INPUT_TYPE_BUMPERS",
+     "INPUT_TYPE_DPAD",
+     "INPUT_TYPE_FIELD",
+     "INPUT_TYPE_LEFTSTICK",
+     "INPUT_TYPE_LEFTSTICKDPAD",
+     "INPUT_TYPE_PAD_BUTTONS",
+     "INPUT_TYPE_PLOT",
+     "INPUT_TYPE_RIGHTSTICK"
+    ]
+   },
+   "GameRandomEvents": {
+    "type": "table",
+    "functions": [
+     "GetCurrentAffectedCities",
+     "GetCurrentTurnEvent",
+     "GetCurrentTurnEventAtPlot",
+     "GetEventsForTurn"
+    ],
+    "members": []
+   },
+   "GameStateTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "GAMESTATE_LAUNCHED",
+     "GAMESTATE_LOAD_PREGAME",
+     "GAMESTATE_PREGAME"
+    ]
+   },
+   "GameSummary": {
+    "type": "table",
+    "functions": [
+     "CoalesceDataSet",
+     "GetDataSetCount",
+     "GetDataSetDisplayDescription",
+     "GetDataSetDisplayName",
+     "GetDataSetName",
+     "GetDataSetValue",
+     "GetDataSetValues",
+     "GetDataSetVisible",
+     "HasDataSetValues"
+    ],
+    "members": []
+   },
+   "GamepadEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ButtonDown",
+     "ButtonUp",
+     "JoystickMotion"
+    ]
+   },
+   "Gestures": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Any",
+     "Dragging",
+     "Holding",
+     "Stretching"
+    ]
+   },
+   "GetTickCount": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "GlobalParameters": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "HallofFame": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "HeroDiscoverySources": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DISCOVERY_SOURCE_CITY_STATE_INFLUENCE",
+     "DISCOVERY_SOURCE_CITY_STATE_SUZERAIN",
+     "DISCOVERY_SOURCE_ENCOUNTER",
+     "DISCOVERY_SOURCE_GOODY_HUT",
+     "DISCOVERY_SOURCE_NATURAL_WONDER",
+     "DISCOVERY_SOURCE_NEW_CONTINENT",
+     "DISCOVERY_SOURCE_PROJECT",
+     "NO_DISCOVERY_SOURCE"
+    ]
+   },
+   "IconManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "IdentityConversionOutcome": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "GAINING_LOYALTY",
+     "LOSING_LOYALTY",
+     "STABLE"
+    ]
+   },
+   "Initialize": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "Input": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "InputContext": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Diplomacy",
+     "EndGame",
+     "FullscreenMap",
+     "GameOptions",
+     "Loading",
+     "Popup",
+     "Ready",
+     "Reveal",
+     "Shell",
+     "Startup",
+     "Tutorial",
+     "Universal",
+     "World"
+    ]
+   },
+   "InputLayoutTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CONSOLE",
+     "PC"
+    ]
+   },
+   "InterfaceModeTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIRLIFT",
+     "AIR_ATTACK",
+     "ATTACK",
+     "BUILDING_PLACEMENT",
+     "BUILD_IMPROVEMENT_ADJACENT",
+     "CINEMATIC",
+     "CITY_MANAGEMENT",
+     "CITY_PLOT_SELECTION",
+     "CITY_RANGE_ATTACK",
+     "CITY_SELECTION",
+     "COASTAL_RAID",
+     "DEBUG",
+     "DEPLOY",
+     "DISEMBARK",
+     "DISTRICT_PLACEMENT",
+     "DISTRICT_RANGE_ATTACK",
+     "EMBARK",
+     "FORM_ARMY",
+     "FORM_CORPS",
+     "FULLSCREEN_MAP",
+     "ICBM_STRIKE",
+     "KILL_WEAKER_UNIT",
+     "MAKE_TRADE_ROUTE",
+     "MOVE_JUMP",
+     "MOVE_TO",
+     "NATURAL_WONDER",
+     "NAVAL_GOLD_RAID",
+     "NONE",
+     "PARADROP",
+     "PLACE_MAP_PIN",
+     "PRIORITY_TARGET",
+     "RANGE_ATTACK",
+     "REBASE",
+     "RESTORE_UNIT_MOVES",
+     "ROUTE_TO",
+     "SACRIFICE_SELECTION",
+     "SELECTION",
+     "SPY_CHOOSE_MISSION",
+     "SPY_TRAVEL_TO_CITY",
+     "TELEPORT_TO_CITY",
+     "TRANSFORM_UNIT",
+     "VIEW_MODAL_LENS",
+     "WB_SELECT_PLOT",
+     "WMD_STRIKE"
+    ]
+   },
+   "IsAbleToShowDelayedPopups": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "IsLocalPlayerTurnActive": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "JoinGameErrorType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "JOINGAME_GAME_STARTED",
+     "JOINGAME_NO_ERROR",
+     "JOINGAME_ROOM_FULL",
+     "JOINGAME_TOO_MANY_MATCHES"
+    ]
+   },
+   "KeyEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KeyDown",
+     "KeyUp",
+     "WM_KEYDOWN",
+     "WM_KEYUP"
+    ]
+   },
+   "Keys": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "(205 members)"
+    ]
+   },
+   "KickReason": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KICK_HOST",
+     "KICK_MATCH_DELETED",
+     "KICK_MOD_ERROR",
+     "KICK_MOD_MISSING",
+     "KICK_NONE",
+     "KICK_NO_HOST",
+     "KICK_NO_ROOM",
+     "KICK_TIMEOUT",
+     "KICK_UNAUTHORIZED",
+     "KICK_UNRECOGNIZED",
+     "KICK_VERSION_MISMATCH"
+    ]
+   },
+   "KickVoteReasonType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KICKVOTE_AFK",
+     "KICKVOTE_CHEATING",
+     "KICKVOTE_GRIEFING",
+     "KICKVOTE_NONE"
+    ]
+   },
+   "KickVoteResultType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KICKVOTERESULT_NOT_ENOUGH_PLAYERS",
+     "KICKVOTERESULT_PENDING",
+     "KICKVOTERESULT_TIME_ELAPSED",
+     "KICKVOTERESULT_VOTED_NO_KICK",
+     "KICKVOTERESULT_VOTE_PASSED"
+    ]
+   },
+   "LeaderRandomPoolTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LEADER_RANDOM_POOL_1",
+     "LEADER_RANDOM_POOL_2",
+     "LEADER_RANDOM_POOL_DEFAULT"
+    ]
+   },
+   "LobbyTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LOBBY_CROSSPLAY",
+     "LOBBY_FIRAXIS_CLOUD",
+     "LOBBY_INTERNET",
+     "LOBBY_LAN",
+     "LOBBY_NONE",
+     "LOBBY_SERVER"
+    ]
+   },
+   "Locale": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "LuaEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DiplomacyActionView_HideIngameUI",
+     "DiplomacyActionView_ShowIngameUI",
+     "EndGameMenu_Closed",
+     "EndGameMenu_Shown",
+     "FullscreenMap_Closed",
+     "FullscreenMap_Shown",
+     "NaturalDisasterPopup_Closed",
+     "NaturalDisasterPopup_Shown",
+     "NaturalWonderPopup_Closed",
+     "NaturalWonderPopup_Shown",
+     "ProjectBuiltPopup_Closed",
+     "ProjectBuiltPopup_Shown",
+     "RockBandMoviePopup_Closed",
+     "RockBandMoviePopup_Shown",
+     "Tutorial_ToggleInGameOptionsMenu",
+     "Tutorial_TutorialEndHideBulkUI",
+     "WonderBuiltPopup_Closed",
+     "WonderBuiltPopup_Shown"
+    ]
+   },
+   "Map": {
+    "type": "table",
+    "functions": [
+     "GetAdjacentPlot",
+     "GetAdjacentPlots",
+     "GetCityPlots",
+     "GetContinentPlots",
+     "GetContinentPlotsAppeal",
+     "GetContinentPlotsLoyalty",
+     "GetContinentPlotsWaterAvailability",
+     "GetContinentsInUse",
+     "GetFeatureCount",
+     "GetGridSize",
+     "GetLandPlotCount",
+     "GetLandResourceCount",
+     "GetMapSize",
+     "GetMaxPlotDistance",
+     "GetNeighborPlots",
+     "GetPlot",
+     "GetPlotByIndex",
+     "GetPlotCount",
+     "GetPlotDistance",
+     "GetPlotIndex",
+     "GetPlotLocation",
+     "GetPlotXY",
+     "GetPlotXYWithRangeCheck",
+     "GetResourceCount",
+     "GetUnitsAt",
+     "GetVisibleContinentPlots",
+     "IsPlot",
+     "IsWrapX",
+     "IsWrapY"
+    ],
+    "members": []
+   },
+   "MapConfiguration": {
+    "type": "table",
+    "functions": [
+     "GetImportFilename",
+     "GetMapSize",
+     "GetMapWrap",
+     "GetMaxMajorPlayers",
+     "GetMaxMinorPlayers",
+     "GetMinMajorPlayers",
+     "GetMinMinorPlayers",
+     "GetScript",
+     "GetValue",
+     "SetImportFilename",
+     "SetMapSize",
+     "SetMapWrap",
+     "SetMaxMajorPlayers",
+     "SetMaxMinorPlayers",
+     "SetMinMajorPlayers",
+     "SetMinMinorPlayers",
+     "SetScript",
+     "SetValue"
+    ],
+    "members": []
+   },
+   "MapFeatureManager": {
+    "type": "table",
+    "functions": [
+     "CanSufferEruption",
+     "GetNamedVolcanoes",
+     "GetNumActiveVolcanoes",
+     "GetNumEruptions",
+     "GetNumNaturalWonderVolcanoes",
+     "GetNumNormalVolcanoes",
+     "GetNumVolcanoes",
+     "GetPercentVolcanoesActive",
+     "GetTotalVolcanoes",
+     "GetVolcanoName",
+     "GetVolcanoNameByType",
+     "GetVolcanoType",
+     "GetVolcanoTypeAtIndex",
+     "IsActiveVolcano",
+     "IsAffectedByEruption",
+     "IsVolcano",
+     "IsVolcanoErupting"
+    ],
+    "members": []
+   },
+   "MapLayers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY",
+     "PRIMARY",
+     "RELIGIOUS",
+     "SPY",
+     "TRADE"
+    ]
+   },
+   "Matchmaking": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "MilitaryFormationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ARMY_FORMATION",
+     "ARMY_MILITARY_FORMATION",
+     "CORPS_FORMATION",
+     "CORPS_MILITARY_FORMATION",
+     "NO_MILITARY_FORMATION",
+     "STANDARD_FORMATION",
+     "STANDARD_MILITARY_FORMATION"
+    ]
+   },
+   "Modding": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "MomentDataTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "MOMENT_DATA_BELIEF",
+     "MOMENT_DATA_BUILDING",
+     "MOMENT_DATA_CITY_STATE_PLAYER",
+     "MOMENT_DATA_CIVIC",
+     "MOMENT_DATA_CONTINENT",
+     "MOMENT_DATA_DISTRICT",
+     "MOMENT_DATA_EMERGENCY",
+     "MOMENT_DATA_FEATURE",
+     "MOMENT_DATA_GOVERNMENT",
+     "MOMENT_DATA_GOVERNOR",
+     "MOMENT_DATA_GREAT_PERSON_INDIVIDUAL",
+     "MOMENT_DATA_GREAT_WORK",
+     "MOMENT_DATA_HERO_CLASS",
+     "MOMENT_DATA_IMPROVEMENT",
+     "MOMENT_DATA_NAMED_RIVER",
+     "MOMENT_DATA_NAMED_VOLCANO",
+     "MOMENT_DATA_OLD_RELIGION",
+     "MOMENT_DATA_PLAYER_ERA",
+     "MOMENT_DATA_PROJECT",
+     "MOMENT_DATA_RANDOM_EVENT",
+     "MOMENT_DATA_RELIGION",
+     "MOMENT_DATA_RESOLUTION",
+     "MOMENT_DATA_RESOURCE",
+     "MOMENT_DATA_TARGET_PLAYER",
+     "MOMENT_DATA_TARGET_PLAYER_ERA",
+     "MOMENT_DATA_TECHNOLOGY",
+     "MOMENT_DATA_UNIT",
+     "MOMENT_DATA_WAR",
+     "NO_MOMENT_DATA"
+    ]
+   },
+   "Mouse": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "eDblTap",
+     "eLClick",
+     "eLDblClick",
+     "eMClick",
+     "eMDblClick",
+     "eMouseEnter",
+     "eMouseExit",
+     "eRClick",
+     "eRDblClick",
+     "eTap",
+     "eWheel"
+    ]
+   },
+   "MouseEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LButtonDoubleClick",
+     "LButtonDown",
+     "LButtonUp",
+     "MButtonDoubleClick",
+     "MButtonDown",
+     "MButtonUp",
+     "MouseFirst",
+     "MouseLast",
+     "MouseMove",
+     "MouseWheel",
+     "PointerDown",
+     "PointerEnter",
+     "PointerLeave",
+     "PointerUp",
+     "PointerUpdate",
+     "RButtonDoubleClick",
+     "RButtonDown",
+     "RButtonUp"
+    ]
+   },
+   "NetPlayerTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID_PLAYERID"
+    ]
+   },
+   "Network": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "NetworkPlatform": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NETWORK_PLATFORM_EOS",
+     "NETWORK_PLATFORM_RAIL",
+     "NETWORK_PLATFORM_STEAM",
+     "NETWORK_PLATFORM_UNKNOWN"
+    ]
+   },
+   "NotificationGroups": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "NotificationManager": {
+    "type": "table",
+    "functions": [
+     "Dismiss",
+     "Find",
+     "FindEndTurnBlocking",
+     "FindType",
+     "GetAllEndTurnBlocking",
+     "GetFirstEndTurnBlocking",
+     "GetList",
+     "RestoreVisualState",
+     "SendNotification"
+    ],
+    "members": []
+   },
+   "NotificationParameterTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CanUserDismiss"
+    ]
+   },
+   "NotificationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "(169 members)"
+    ]
+   },
+   "OnDiplomacyHideIngameUI": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnDiplomacyShowIngameUI": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnDisasterRevealPopupClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnDisasterRevealPopupShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnEndGameMenuClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnEndGameMenuShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnFullscreenMapClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnFullscreenMapShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnGameCoreEventPlaybackComplete": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnInputActionTriggered": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnInputHandler": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnLensLayerOff": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnLensLayerOn": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnLoadGameViewStateDone": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnNaturalWonderPopupClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnNaturalWonderPopupShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnPopupQueueChange": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnProjectBuiltClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnProjectBuiltShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnRefreshAttemptPopupRelease": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnRockBandMoviePopupClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnRockBandMoviePopupShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnShow": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnShutdown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnTurnBegin": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnTurnEnd": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnTutorialEndHide": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnTutorialToggleInGameOptionsMenu": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnUIIdle": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnUpdateUI": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnWonderBuiltPopupClosed": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OnWonderBuiltPopupShown": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OpenInGameOptionsMenu": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "OperationResultsTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALL",
+     "NONE",
+     "NO_SOURCES",
+     "NO_TARGETS"
+    ]
+   },
+   "OptionFileTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Application",
+     "Audio",
+     "Graphics",
+     "KeyMap",
+     "User"
+    ]
+   },
+   "Options": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "ParameterTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LOCATION",
+     "MESSAGE",
+     "SUMMARY"
+    ]
+   },
+   "Path": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayByCloudEndTurnBehaviorType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "PBC_ENDTURN_ASK_ME",
+     "PBC_ENDTURN_DO_NOTHING",
+     "PBC_ENDTURN_EXIT_MAINMENU"
+    ]
+   },
+   "PlayByCloudReadyBehaviorType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "PBC_READY_ASK_ME",
+     "PBC_READY_DO_NOTHING",
+     "PBC_READY_EXIT_LOBBY"
+    ]
+   },
+   "PlayerComponentTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITY",
+     "DISTRICT",
+     "FORMATION",
+     "UNDEFINED",
+     "UNIT"
+    ]
+   },
+   "PlayerConfiguration": {
+    "type": "table",
+    "functions": [
+     "DeleteMapPin",
+     "GetCivilizationDescription",
+     "GetCivilizationLevelTypeID",
+     "GetCivilizationShortDescription",
+     "GetCivilizationTypeID",
+     "GetCivilizationTypeName",
+     "GetHandicapTypeID",
+     "GetHotseatPassword",
+     "GetLeaderName",
+     "GetLeaderRandomPoolID",
+     "GetLeaderTypeID",
+     "GetLeaderTypeName",
+     "GetMapPin",
+     "GetMapPinID",
+     "GetMapPins",
+     "GetModReady",
+     "GetNetworkIdentifer",
+     "GetNickName",
+     "GetPlayerName",
+     "GetReady",
+     "GetSlotName",
+     "GetSlotStatus",
+     "GetStartingPosition",
+     "GetTeam",
+     "GetTeamName",
+     "GetValue",
+     "GetWantsPause",
+     "IsAI",
+     "IsAlive",
+     "IsAvailable",
+     "IsHidden",
+     "IsHuman",
+     "IsHumanRequired",
+     "IsInUse",
+     "IsLocked",
+     "IsObserver",
+     "IsParticipant",
+     "IsPossibleParticipant",
+     "SetCivilizationTypeName",
+     "SetHandicapTypeID",
+     "SetHidden",
+     "SetHotseatName",
+     "SetHotseatPassword",
+     "SetLeaderName",
+     "SetLeaderRandomPoolID",
+     "SetLeaderTypeName",
+     "SetLocked",
+     "SetMajorCiv",
+     "SetReady",
+     "SetSlotStatus",
+     "SetTeam",
+     "SetValue",
+     "SetWantsPause"
+    ],
+    "members": [
+     "TypeName",
+     "__instances"
+    ]
+   },
+   "PlayerConfigurations": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayerManager": {
+    "type": "table",
+    "functions": [
+     "GetAlive",
+     "GetAliveBarbarianIDs",
+     "GetAliveBarbarians",
+     "GetAliveBarbariansCount",
+     "GetAliveIDs",
+     "GetAliveMajorIDs",
+     "GetAliveMajors",
+     "GetAliveMajorsCount",
+     "GetAliveMinorIDs",
+     "GetAliveMinors",
+     "GetAliveMinorsCount",
+     "GetWasEverAlive",
+     "GetWasEverAliveCount",
+     "GetWasEverAliveIDs",
+     "GetWasEverAliveMajorIDs",
+     "GetWasEverAliveMajors",
+     "GetWasEverAliveMajorsCount",
+     "IsAlive",
+     "IsBarbarian",
+     "IsMajor",
+     "IsValid"
+    ],
+    "members": []
+   },
+   "PlayerOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_NAME",
+     "ADDITIONAL_DESCRIPTION",
+     "CITIES",
+     "DISTRICTS",
+     "DISTRICT_TYPE",
+     "FAILURE_REASONS",
+     "FEATURE_TYPE",
+     "IMPROVEMENTS",
+     "IS_BLOCKED",
+     "IS_INDIRECT",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "NONE",
+     "PLOTS",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "PlayerOperations": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPT_EMERGENCY",
+     "ADD_BELIEF",
+     "APPOINT_GOVERNOR",
+     "ASSIGN_GOVERNOR",
+     "BRIBE_CLAN",
+     "CHOOSE_ARTIFACT_PLAYER",
+     "COMMEMORATE",
+     "COMPLIMENT_PRIDE_MOMENT",
+     "DIPLOMACY_DECLARE_WAR",
+     "DIPLOMACY_MAKE_PEACE",
+     "EXECUTE_SCRIPT",
+     "FOUND_PANTHEON",
+     "FOUND_RELIGION",
+     "GIVE_INFLUENCE_TOKEN",
+     "HIRE_CLAN",
+     "INCITE_CLAN",
+     "LEVY_MILITARY",
+     "MOVE_GREAT_WORK",
+     "NAME_CORPORATION",
+     "PARAM_BELIEF_TYPE",
+     "PARAM_BUILDING_DEST",
+     "PARAM_BUILDING_SRC",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY_DEST",
+     "PARAM_CITY_ONE",
+     "PARAM_CITY_SRC",
+     "PARAM_CITY_TWO",
+     "PARAM_CIVIC_TYPE",
+     "PARAM_COMMEMORATION_TYPE",
+     "PARAM_CORPORATION_CUSTOM_NAME",
+     "PARAM_DISCUSSION_TYPE",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_EMERGENCY_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_GOVERNOR_PROMOTION_TYPE",
+     "PARAM_GOVERNOR_TYPE",
+     "PARAM_GREAT_PERSON_INDIVIDUAL_TYPE",
+     "PARAM_GREAT_WORK_INDEX",
+     "PARAM_INSERT_MODE",
+     "PARAM_MODIFIERS",
+     "PARAM_MOMENT_ID",
+     "PARAM_OTHER_PLAYER",
+     "PARAM_PLAYER_ONE",
+     "PARAM_PLAYER_TWO",
+     "PARAM_PLOT_ONE",
+     "PARAM_PLOT_TWO",
+     "PARAM_RELIGION_CUSTOM_NAME",
+     "PARAM_RELIGION_TYPE",
+     "PARAM_RESOLUTION_OPTION",
+     "PARAM_RESOLUTION_SELECTION",
+     "PARAM_RESOLUTION_TYPE",
+     "PARAM_RESOURCE_TYPE",
+     "PARAM_SLOT",
+     "PARAM_TEAM_ONE",
+     "PARAM_TEAM_TWO",
+     "PARAM_TECH_TYPE",
+     "PARAM_UNIT_ID",
+     "PARAM_WORLD_CONGRESS_VOTES",
+     "PARAM_YIELD_TYPE",
+     "PATRONIZE_GREAT_PERSON",
+     "PROGRESS_CIVIC",
+     "PROMOTE_GOVERNOR",
+     "RANSOM_CLAN",
+     "RECRUIT_GREAT_PERSON",
+     "REJECT_EMERGENCY",
+     "REJECT_GREAT_PERSON",
+     "RESEARCH",
+     "RETURN_LEVIED_MILITARY",
+     "SET_ESCAPE_ROUTE",
+     "START_OBSERVER_MODE",
+     "UNLOCK_POLICIES",
+     "VALUE_APPEND",
+     "VALUE_EXCLUSIVE",
+     "VALUE_PREPEND",
+     "WORLD_CONGRESS_DISCUSSION_SELECTION",
+     "WORLD_CONGRESS_DISCUSSION_VOTE",
+     "WORLD_CONGRESS_INDICATE_DESIRE",
+     "WORLD_CONGRESS_LOOKED_AT_AVAILABLE",
+     "WORLD_CONGRESS_RESOLUTION_BID",
+     "WORLD_CONGRESS_RESOLUTION_SELECTION",
+     "WORLD_CONGRESS_RESOLUTION_VOTE",
+     "WORLD_CONGRESS_SUBMIT_TURN"
+    ]
+   },
+   "PlayerTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BARBARIAN",
+     "NONE",
+     "OBSERVER"
+    ]
+   },
+   "PlayerVisibilityManager": {
+    "type": "table",
+    "functions": [
+     "GetPlayerVisibility",
+     "IsVisibleToNonOwner"
+    ],
+    "members": []
+   },
+   "Players": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayersVisibility": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "Plot": {
+    "type": "table",
+    "functions": [
+     "CanHaveDistrict",
+     "CanHaveWonder",
+     "GetAdjacencyBonusTooltip",
+     "GetAdjacencyBonusType",
+     "GetAdjacencyYield",
+     "GetAirUnits",
+     "GetAppeal",
+     "GetArea",
+     "GetAreaID",
+     "GetComponentID",
+     "GetContinentType",
+     "GetDefenseModifier",
+     "GetDistrictID",
+     "GetDistrictType",
+     "GetFeature",
+     "GetFeatureType",
+     "GetImprovementOwner",
+     "GetImprovementType",
+     "GetIndex",
+     "GetMovementCost",
+     "GetNationalParkName",
+     "GetNearestLandArea",
+     "GetNearestLandPlot",
+     "GetOwner",
+     "GetProperty",
+     "GetResourceCount",
+     "GetResourceType",
+     "GetResourceTypeHash",
+     "GetRiverCrossingCount",
+     "GetRiverEFlowDirection",
+     "GetRiverSEFlowDirection",
+     "GetRiverSWFlowDirection",
+     "GetRouteType",
+     "GetTerrainClassType",
+     "GetTerrainType",
+     "GetUnitCount",
+     "GetWonderType",
+     "GetWorkerCount",
+     "GetX",
+     "GetY",
+     "GetYield",
+     "HasFeatureBeenAdded",
+     "IsAdjacentOwned",
+     "IsAdjacentPlayer",
+     "IsAdjacentToArea",
+     "IsAdjacentToLand",
+     "IsAdjacentToShallowWater",
+     "IsAt",
+     "IsCanyon",
+     "IsChokepoint",
+     "IsCity",
+     "IsCoastalLand",
+     "IsFlatlands",
+     "IsFreshWater",
+     "IsHills",
+     "IsImpassable",
+     "IsImprovementPillaged",
+     "IsInternalOnlyDistrict",
+     "IsLake",
+     "IsMountain",
+     "IsNEOfCliff",
+     "IsNEOfRiver",
+     "IsNWOfCliff",
+     "IsNWOfRiver",
+     "IsNationalPark",
+     "IsNaturalWonder",
+     "IsNone",
+     "IsOpenGround",
+     "IsOwned",
+     "IsRiver",
+     "IsRiverAdjacent",
+     "IsRiverConnection",
+     "IsRiverCrossing",
+     "IsRiverCrossingFlowClockwise",
+     "IsRiverCrossingToPlot",
+     "IsRiverSide",
+     "IsRoughGround",
+     "IsRoute",
+     "IsRoutePillaged",
+     "IsShallowWater",
+     "IsStartingPlot",
+     "IsUnit",
+     "IsValidFoundLocation",
+     "IsWOfCliff",
+     "IsWOfRiver",
+     "IsWater",
+     "IsWonderComplete",
+     "SharesAdjacentArea"
+    ],
+    "members": [
+     "TypeName",
+     "__instances"
+    ]
+   },
+   "PlotHighlightTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ATTACK",
+     "MOVEMENT",
+     "PLACEMENT"
+    ]
+   },
+   "PopupPriority": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Achievement",
+     "Civilopedia",
+     "Current",
+     "Default",
+     "EndGameMenu",
+     "High",
+     "HotSeatBackground",
+     "InGameTopOptionsMenu",
+     "Low",
+     "Medium",
+     "MediumHigh",
+     "PausePanel",
+     "PlayerChange",
+     "Tutorial",
+     "TutorialHigh",
+     "Utmost",
+     "WorldCongressBetweenTurns",
+     "WorldCongressIntro",
+     "WorldCongressPopup"
+    ]
+   },
+   "PromiseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DONT_CONVERT_MY_CITIES",
+     "DONT_DIG_UP_MY_ARTIFACTS",
+     "DONT_SETTLE_NEAR_ME",
+     "DONT_SPY_ON_ME",
+     "KEEP_TROOPS_AWAY_FROM_ME"
+    ]
+   },
+   "PushDataSearchOptions": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "IsClosed",
+     "IsOpen",
+     "IsSeen",
+     "IsUnseen"
+    ]
+   },
+   "RealizeTooltipBehavior": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "ReportingEvents": {
+    "type": "table",
+    "functions": [
+     "Send",
+     "SendLuaEvent"
+    ],
+    "members": []
+   },
+   "ReportingStatusTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DEFAULT",
+     "GOSSIP"
+    ]
+   },
+   "RestartRefreshRequest": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "ResultFormat": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DETAILED",
+     "SUMMARY"
+    ]
+   },
+   "RevealedState": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "HIDDEN",
+     "REVEALED",
+     "VISIBLE"
+    ]
+   },
+   "RibbonHUDStats": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FOCUS",
+     "HIDE",
+     "SHOW"
+    ]
+   },
+   "RiverManager": {
+    "type": "table",
+    "functions": [
+     "CanBeFlooded",
+     "EnumerateRivers",
+     "GetFloodplainLocation",
+     "GetFloodplainPlots",
+     "GetNumFloodableRivers",
+     "GetNumFloods",
+     "GetNumRivers",
+     "GetRiverByID",
+     "GetRiverByIndex",
+     "GetRiverForFloodplain",
+     "GetRiverIDAtIndex",
+     "GetRiverIndexByID",
+     "GetRiverName",
+     "GetRiverNameByType",
+     "GetRiverType",
+     "GetRiverTypeAtIndex",
+     "GetRiverTypes",
+     "IsFlooded"
+    ],
+    "members": []
+   },
+   "RouteTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "SaveDirectories": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AUTOMATION",
+     "BENCHMARK",
+     "DEFAULT",
+     "DEMO",
+     "TUTORIAL",
+     "USER"
+    ]
+   },
+   "SaveFileTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "GAME_CONFIGURATION",
+     "GAME_STATE"
+    ]
+   },
+   "SaveLocationOptions": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AUTOSAVE",
+     "DIRECTORIES",
+     "LOAD_METADATA",
+     "MOST_RECENT_ONLY",
+     "NORMAL",
+     "NO_OPTIONS",
+     "PREVIOUS",
+     "QUICKSAVE"
+    ]
+   },
+   "SaveLocations": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FIRAXIS_CLOUD",
+     "LOCAL_STORAGE",
+     "STEAM_CLOUD"
+    ]
+   },
+   "SaveTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "HOTSEAT",
+     "NETWORK_MULTIPLAYER",
+     "SINGLE_PLAYER",
+     "TILED_MAP",
+     "WORLDBUILDER_MAP"
+    ]
+   },
+   "Search": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "ServerType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "SERVER_TYPE_CROSSPLAY",
+     "SERVER_TYPE_FIRAXIS_CLOUD",
+     "SERVER_TYPE_HOTSEAT",
+     "SERVER_TYPE_INTERNET",
+     "SERVER_TYPE_LAN",
+     "SERVER_TYPE_NONE",
+     "SERVER_TYPE_STEAM",
+     "SERVER_TYPE_STEAM_DEDICATED"
+    ]
+   },
+   "SimUnitSystem": {
+    "type": "table",
+    "functions": [
+     "ChangeVisMemberArtAttachment",
+     "ChangeVisMemberArtAttachmentTint",
+     "ChangeVisMemberArtVariation",
+     "GetVisHeading",
+     "GetVisHexHeading",
+     "GetVisMemberArtState",
+     "GetVisMemberCount",
+     "GetVisMemberState",
+     "SetAnimationState",
+     "SetVisFormation",
+     "SetVisHexHeading",
+     "SetVisMemberAnimationState",
+     "SetVisMemberDamage",
+     "SetVisMemberHeading",
+     "SetVisMemberPitchRoll"
+    ],
+    "members": []
+   },
+   "SlotStatus": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "SS_CLOSED",
+     "SS_COMPUTER",
+     "SS_OBSERVER",
+     "SS_OPEN",
+     "SS_TAKEN"
+    ]
+   },
+   "StateName": {
+    "type": "string",
+    "functions": [],
+    "members": []
+   },
+   "Steam": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_ClearReferenceMap": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_GetReferenceMapAlpha": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_SetReferenceMap": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_SetReferenceMapAlpha": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "SystemUpdateUI": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BulkHideUI",
+     "BulkShowUI",
+     "PostReloadUI",
+     "ReloadUI",
+     "ReprocessAnchoring",
+     "RestoreUI",
+     "ScreenResize",
+     "TouchInputChanged",
+     "TouchTipBehaviorChanged",
+     "UnloadUI"
+    ]
+   },
+   "TTManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "TeamTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NO_TEAM"
+    ]
+   },
+   "Teams": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "TerrainManager": {
+    "type": "table",
+    "functions": [
+     "GetCoastalLowlandType",
+     "IsFlooded",
+     "IsProtected",
+     "IsSubmerged"
+    ],
+    "members": []
+   },
+   "Territories": {
+    "type": "table",
+    "functions": [
+     "GetCount",
+     "GetTerritory",
+     "GetTerritoryAt",
+     "Members",
+     "MembersAux"
+    ],
+    "members": []
+   },
+   "TooltipBehavior": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AlwaysShowing",
+     "Off",
+     "ShowAfterDelay",
+     "ShowOnButton",
+     "ShowOnHold"
+    ]
+   },
+   "TouchManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "TransportType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "TRANSPORT_ENET",
+     "TRANSPORT_EOS",
+     "TRANSPORT_NONE",
+     "TRANSPORT_RAIL",
+     "TRANSPORT_STEAM"
+    ]
+   },
+   "TurnLimitTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CUSTOM",
+     "GAMESPEED",
+     "NONE"
+    ]
+   },
+   "TurnNotifyFrequencyModes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "TurnNotify_EveryTurn",
+     "TurnNotify_MyTurn"
+    ]
+   },
+   "TutorialLevel": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LEVEL_CIV_FAMILIAR",
+     "LEVEL_EXPERIENCED_PLAYER",
+     "LEVEL_NEW_TO_XP1",
+     "LEVEL_NEW_TO_XP2",
+     "LEVEL_TBS_FAMILIAR",
+     "NO_TUTORIAL"
+    ]
+   },
+   "UI": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "UILens": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "UIManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "UITree": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "UITutorialManager": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CData"
+    ]
+   },
+   "UnitCommandResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FAILURE_REASONS",
+     "PLOTS",
+     "PROMOTIONS",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "UnitCommandTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIRLIFT",
+     "AUTOMATE",
+     "CANCEL",
+     "CONDEMN_HERETIC",
+     "DELETE",
+     "DISPERSE_CLAN",
+     "DISTRICT_PRODUCTION",
+     "ENTER_FORMATION",
+     "EXECUTE_SCRIPT",
+     "EXIT_FORMATION",
+     "FORM_ARMY",
+     "FORM_CORPS",
+     "GIFT",
+     "KILL_WEAKER_UNIT",
+     "MOVE_JUMP",
+     "NAME_UNIT",
+     "NAVAL_GOLD_RAID",
+     "PARADROP",
+     "PARAM_CITY_ID",
+     "PARAM_CITY_PLAYER",
+     "PARAM_NAME",
+     "PARAM_PROMOTION_TYPE",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_X",
+     "PARAM_Y",
+     "PLUNDER_TRADE_ROUTE",
+     "PRIORITY_TARGET",
+     "PROJECT_PRODUCTION",
+     "PROMOTE",
+     "RAID_CLAN",
+     "RESOURCE_INSPIRE",
+     "RESTORE_UNIT_MOVES",
+     "STOP_AUTOMATION",
+     "TRANSFORM_UNIT",
+     "TYPE",
+     "UPGRADE",
+     "WAKE",
+     "WONDER_PRODUCTION"
+    ]
+   },
+   "UnitManager": {
+    "type": "table",
+    "functions": [
+     "CanStartCommand",
+     "CanStartOperation",
+     "GetAbilitySummaries",
+     "GetActivityType",
+     "GetCommandHelpText",
+     "GetCommandResults",
+     "GetCommandTargets",
+     "GetEstablishInCityTime",
+     "GetMoveToPath",
+     "GetMoveToPathEx",
+     "GetOperationConfirmationText",
+     "GetOperationDetailText",
+     "GetOperationTargets",
+     "GetQueuedDestination",
+     "GetReachableMovement",
+     "GetReachableTargets",
+     "GetReachableZonesOfControl",
+     "GetResultProbability",
+     "GetTimeToComplete",
+     "GetTravelTime",
+     "GetTypeName",
+     "GetUnit",
+     "GetUnitArmyMaintenance",
+     "GetUnitCorpsMaintenance",
+     "GetUnitMaintenance",
+     "GetUnitTypeBaseLifespan",
+     "IsUnit",
+     "RequestCommand",
+     "RequestCommandImmediate",
+     "RequestOperation"
+    ],
+    "members": []
+   },
+   "UnitOperationMoveModifiers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY_ROUTE",
+     "ATTACK",
+     "DECLARE_WAR",
+     "IGNORE_DANGER",
+     "IGNORE_STACKING",
+     "IGNORE_STACKING_AFTER_TURN",
+     "IGNORE_ZOC",
+     "MAXIMIZE_EXPLORE",
+     "MOVE_IGNORE_UNEXPLORED_DESTINATION",
+     "NONE",
+     "ROUTE_ALLOW_UNEXPLORED",
+     "STAY_ON_LAND",
+     "TERRITORY_NO_ENEMY",
+     "TERRITORY_NO_UNEXPLORED"
+    ]
+   },
+   "UnitOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_NAME",
+     "ADDITIONAL_DESCRIPTION",
+     "BEST_IMPROVEMENT",
+     "CITIES",
+     "FAILURE_REASONS",
+     "FEATURE_TYPE",
+     "IMPROVEMENTS",
+     "IS_BLOCKED",
+     "IS_INDIRECT",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "NONE",
+     "PLOTS",
+     "PROMOTIONS",
+     "ROUTE_TYPE",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "UnitOperationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIR_ATTACK",
+     "ALERT",
+     "BUILD_CAMPUS",
+     "BUILD_ENCAMPMENT",
+     "BUILD_ENTERTAINMENT_COMPLEX",
+     "BUILD_HARBOR",
+     "BUILD_HOLY_SITE",
+     "BUILD_IMPROVEMENT",
+     "BUILD_IMPROVEMENT_ADJACENT",
+     "BUILD_ROUTE",
+     "BUILD_THEATER_DISTRICT",
+     "CLEAR_CONTAMINATION",
+     "COASTAL_RAID",
+     "DEPLOY",
+     "DISEMBARK",
+     "EMBARK",
+     "EXECUTE_SCRIPT",
+     "FORTIFY",
+     "FOUND_CITY",
+     "HARVEST_RESOURCE",
+     "MAKE_TRADE_ROUTE",
+     "MOVE_TO",
+     "MOVE_TO_UNIT",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_CITY_ID",
+     "PARAM_CITY_PLAYER",
+     "PARAM_DIRECTIVE",
+     "PARAM_FLAGS",
+     "PARAM_IMPROVEMENT0_TYPE",
+     "PARAM_IMPROVEMENT_TYPE",
+     "PARAM_MODIFIERS",
+     "PARAM_OPERATION_TYPE",
+     "PARAM_PROMOTION0_TYPE",
+     "PARAM_RESOURCE0_TYPE",
+     "PARAM_RESOURCE_TYPE",
+     "PARAM_SOURCE_LOCATION",
+     "PARAM_TARGET_LOCATION",
+     "PARAM_TURN",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_WMD0_TYPE",
+     "PARAM_WMD_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "PILLAGE",
+     "RANGE_ATTACK",
+     "REBASE",
+     "REMOVE_FEATURE",
+     "REMOVE_IMPROVEMENT",
+     "REPAIR",
+     "RETRAIN",
+     "ROUTE_TO",
+     "SPY_COUNTERSPY",
+     "SPY_DISRUPT_ROCKETRY",
+     "SPY_FABRICATE_SCANDAL",
+     "SPY_FOMENT_UNREST",
+     "SPY_GAIN_SOURCES",
+     "SPY_GREAT_WORK_HEIST",
+     "SPY_LISTENING_POST",
+     "SPY_NEUTRALIZE_GOVERNOR",
+     "SPY_RECRUIT_PARTISANS",
+     "SPY_SABOTAGE_PRODUCTION",
+     "SPY_SIPHON_FUNDS",
+     "SPY_STEAL_TECH_BOOST",
+     "SPY_TRAVEL_NEW_CITY",
+     "SPY_ZOMBIFY",
+     "SWAP_UNITS",
+     "TELEPORT_TO_CITY",
+     "TYPE",
+     "UPGRADE",
+     "WAIT_FOR",
+     "WMD_STRIKE"
+    ]
+   },
+   "UnitPropertyKeys": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LifespanRemaining",
+     "MaxHitPoints"
+    ]
+   },
+   "Units": {
+    "type": "table",
+    "functions": [
+     "AreUnitsInPlot",
+     "AreUnitsInPlotLayerID",
+     "GetLayerCount",
+     "GetPlayerUnitsInPlot",
+     "GetPlayerUnitsInPlotLayerID",
+     "GetUnitByIndexInPlot",
+     "GetUnitCountInPlot",
+     "GetUnitCountInPlotLayerID",
+     "GetUnitCountInPlotLayerIndex",
+     "GetUnitsInPlot",
+     "GetUnitsInPlotLayerID",
+     "GetUnitsInPlotLayerIndex"
+    ],
+    "members": []
+   },
+   "UserConfiguration": {
+    "type": "table",
+    "functions": [
+     "CommitToOptions",
+     "GetChatTextValue",
+     "GetCivicsTreeFilterIndex",
+     "GetCivicsTreeSearchString",
+     "GetClockFormat",
+     "GetPlayByCloudClientReadyBehavior",
+     "GetPlayByCloudEndTurnBehavior",
+     "GetPlotTooltipDelay",
+     "GetRibbonStats",
+     "GetShowCivicsTreeGovernment",
+     "GetShowCivicsTreeKey",
+     "GetShowTechTreeKey",
+     "GetTechTreeFilterIndex",
+     "GetTechTreeSearchString",
+     "GetValue",
+     "IsAutoEndTurn",
+     "IsAutoProdQueueEnabled",
+     "IsAutoUnitCycle",
+     "IsCityRangeAttackTurnBlocking",
+     "IsEdgePanEnabled",
+     "IsQuickCombat",
+     "IsQuickMovement",
+     "IsValueLocked",
+     "LayoutOverride",
+     "LockValue",
+     "NoBasicHelp",
+     "ReplaceDragWithClick",
+     "RestoreCheckpoint",
+     "SaveCheckpoint",
+     "SetCivicsTreeFilterIndex",
+     "SetCivicsTreeSearchString",
+     "SetLockedValue",
+     "SetShowCivicsTreeGovernment",
+     "SetShowCivicsTreeKey",
+     "SetShowTechTreeKey",
+     "SetTechTreeFilterIndex",
+     "SetTechTreeSearchString",
+     "SetValue",
+     "ShowMapGrid",
+     "ShowMapLabelsDeserts",
+     "ShowMapLabelsLakes",
+     "ShowMapLabelsMountainRanges",
+     "ShowMapLabelsNationalParks",
+     "ShowMapLabelsNaturalWonders",
+     "ShowMapLabelsOceans",
+     "ShowMapLabelsRivers",
+     "ShowMapLabelsSeas",
+     "ShowMapLabelsVolcanoes",
+     "ShowMapResources",
+     "ShowMapYield",
+     "TutorialLevel",
+     "UnitConfirmationLevel"
+    ],
+    "members": []
+   },
+   "VisibilityLayerTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "IMPROVEMENTS",
+     "RESOURCES",
+     "ROUTES",
+     "STEALTH",
+     "STEALTH0",
+     "TERRAIN"
+    ]
+   },
+   "WarTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "COLONIAL_WAR",
+     "DEFENSIVE_PACT",
+     "FORMAL_WAR",
+     "GOLDEN_AGE_WAR",
+     "HOLY_WAR",
+     "IDEOLOGICAL_WAR",
+     "JOINT_WAR",
+     "LIBERATION_WAR",
+     "NO_WAR",
+     "PROTECTORATE_WAR",
+     "RECONQUEST_WAR",
+     "SURPRISE_WAR",
+     "SUZERAIN_WAR",
+     "TERRITORIAL_WAR",
+     "WAR_OF_RETRIBUTION"
+    ]
+   },
+   "WorldBuilder": {
+    "type": "table",
+    "functions": [
+     "IsActive"
+    ],
+    "members": []
+   },
+   "WorldBuilderModes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "PLACE_BUILDINGS",
+     "PLACE_CITIES",
+     "PLACE_CLIFFS",
+     "PLACE_CONTINENTS",
+     "PLACE_DISTRICTS",
+     "PLACE_FEATURES",
+     "PLACE_IMPROVEMENTS",
+     "PLACE_RESOURCES",
+     "PLACE_RIVERS",
+     "PLACE_ROUTES",
+     "PLACE_START_POSITIONS",
+     "PLACE_TERRAIN",
+     "PLACE_TERRAIN_OWNER",
+     "PLACE_UNITS",
+     "PLACE_WONDERS",
+     "SET_VISIBILITY"
+    ]
+   },
+   "WorldBuilderSignals": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "MODE_CHANGE"
+    ]
+   },
+   "WorldRenderView": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "VIEW_2D",
+     "VIEW_3D"
+    ]
+   },
+   "WorldView": {
+    "type": "table",
+    "functions": [
+     "HasAssetFor",
+     "HasAssetForBuilding",
+     "HasAssetForDistrict",
+     "HasAssetForFeature",
+     "HasAssetForResource",
+     "HasAssetForUnit",
+     "HasAssetForWonder",
+     "PlayEffectAtXY",
+     "SetVFXImport"
+    ],
+    "members": []
+   },
+   "YieldTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CULTURE",
+     "FAITH",
+     "FOOD",
+     "GOLD",
+     "PRODUCTION",
+     "SCIENCE"
+    ]
+   }
+  },
+  "objects": {
+   "Player": [
+    "CanUnreadyTurn",
+    "GetAgendaTypes",
+    "GetAgendasAndVisibilities",
+    "GetCategoryScore",
+    "GetCities",
+    "GetCivilianLoyalty",
+    "GetComponentID",
+    "GetCulture",
+    "GetDiplomacy",
+    "GetDiplomaticAI",
+    "GetDistricts",
+    "GetEra",
+    "GetFavor",
+    "GetFavorEnteringCongress",
+    "GetFavorPerTurn",
+    "GetFavorPerTurnToolTip",
+    "GetGovernors",
+    "GetGrandStrategicAI",
+    "GetGreatPeoplePoints",
+    "GetID",
+    "GetImprovements",
+    "GetInfluence",
+    "GetInfluenceMap",
+    "GetProperties",
+    "GetProperty",
+    "GetReligion",
+    "GetResources",
+    "GetScore",
+    "GetStats",
+    "GetTeam",
+    "GetTechs",
+    "GetTrade",
+    "GetTreasury",
+    "GetUnits",
+    "GetWMDs",
+    "IsAI",
+    "IsAlive",
+    "IsBarbarian",
+    "IsFreeCities",
+    "IsHuman",
+    "IsMajor",
+    "IsMinor",
+    "IsTurnActive",
+    "IsTurnActiveComplete",
+    "WasEverAlive"
+   ],
+   "PlayerCities": [
+    "FindClosest",
+    "FindID",
+    "GetCapitalCity",
+    "GetCount",
+    "GetFirstRangedAttackCity",
+    "GetNextCapturedCity",
+    "GetNextRebelledCity",
+    "IsCityWithinRange",
+    "Members"
+   ],
+   "PlayerUnits": [
+    "FindID",
+    "GetCount",
+    "GetFirstReadyUnit",
+    "GetNextExtractingArchaeologist",
+    "GetProcessingState",
+    "Members"
+   ],
+   "PlayerTechs": [
+    "CanResearch",
+    "CanTriggerBoost",
+    "GetResearchCost",
+    "GetResearchPath",
+    "GetResearchProgress",
+    "GetResearchQueue",
+    "GetResearchingTech",
+    "GetScienceYield",
+    "GetScienceYieldToolTip",
+    "GetTurnsLeft",
+    "GetTurnsToResearch",
+    "HasBoostBeenTriggered",
+    "HasTech",
+    "IsResearchingTech",
+    "IsTechRevealed",
+    "ResearchQueue",
+    "ResearchQueueAux"
+   ],
+   "PlayerCulture": [
+    "CanChangeGovernment",
+    "CanChangeGovernmentAtAll",
+    "CanPolicyBeSlotted",
+    "CanProgress",
+    "CanSlotPolicy",
+    "CanTriggerBoost",
+    "CivicCompletedThisTurn",
+    "CivicUnlocksGovernment",
+    "GetAnarchyEndTurn",
+    "GetAnarchyTurns",
+    "GetAutoThemedBuilding",
+    "GetCivicCompletedThisTurn",
+    "GetCivicPath",
+    "GetCivicQueue",
+    "GetCostToUnlockPolicies",
+    "GetCulturalProgress",
+    "GetCultureCost",
+    "GetCultureYield",
+    "GetCultureYieldToolTip",
+    "GetCurrentGovernment",
+    "GetEnactPolicyCost",
+    "GetExtraTradeRouteTourismModifier",
+    "GetFlatBonus",
+    "GetGreatWorksInCity",
+    "GetIncrementingBonus",
+    "GetIncrementingBonusIncrement",
+    "GetIncrementingBonusInterval",
+    "GetIncrementingBonusTurnsUntilNext",
+    "GetLifetimeCulture",
+    "GetNumPoliciesUnlocked",
+    "GetNumPolicySlots",
+    "GetNumPolicySlotsOpen",
+    "GetPolicyToUnlock",
+    "GetProgressingCivic",
+    "GetSlotPolicy",
+    "GetSlotType",
+    "GetStaycationers",
+    "GetTourismAt",
+    "GetTourismTooltipAt",
+    "GetTouristsAt",
+    "GetTouristsFrom",
+    "GetTouristsFromTooltip",
+    "GetTouristsTo",
+    "GetTurnsLeft",
+    "GetTurnsToProgressCivic",
+    "GetTurnsUntilDominant",
+    "GetTurnsUntilVictory",
+    "GovernmentChangeConsidered",
+    "GovernmentChangeMade",
+    "HasBoostBeenTriggered",
+    "HasCivic",
+    "IsAutoThemedEligible",
+    "IsCivicRevealed",
+    "IsDominantOver",
+    "IsEverAutoThemable",
+    "IsGovernmentUnlocked",
+    "IsInAnarchy",
+    "IsPolicyActive",
+    "IsPolicyBanned",
+    "IsPolicyObsolete",
+    "IsPolicyUnlocked",
+    "PolicyChangeMade",
+    "RequestChangeGovernment",
+    "RequestClearSlot",
+    "RequestEnactPolicy",
+    "RequestPolicyChanges",
+    "SetGovernmentChangeConsidered"
+   ],
+   "PlayerTreasury": [
+    "CanAfford",
+    "GetBuildingMaintenance",
+    "GetDistrictMaintenance",
+    "GetGoldBalance",
+    "GetGoldYield",
+    "GetGoldYieldToolTip",
+    "GetMaintDiscountPerUnit",
+    "GetTotalMaintenance",
+    "GetTotalMaintenanceToolTip",
+    "GetUnitMaintenance",
+    "GetWMDMaintenance"
+   ],
+   "PlayerDiplomacy": [
+    "CalcFavorPerTurnFromAlliances",
+    "CanDeclareWarOn",
+    "CanLiberateCityTo",
+    "CanMakePeaceWith",
+    "ComputeCityWarmongerPoints",
+    "ComputeDOWWarmongerPoints",
+    "ComputeResearchAgreementTurns",
+    "GetAllianceLevel",
+    "GetAlliancePointsPerTurn",
+    "GetAlliancePointsTooltip",
+    "GetAllianceTurnsThisLevel",
+    "GetAllianceTurnsToNextLevel",
+    "GetAllianceTurnsUntilExpiration",
+    "GetAllianceType",
+    "GetAtWarChangeTurn",
+    "GetDeclaredFriendshipTurn",
+    "GetDenounceTurn",
+    "GetDiplomaticActionCost",
+    "GetGrievancesAgainst",
+    "GetMetTurn",
+    "GetMission",
+    "GetNextEscapingSpyID",
+    "GetNextPursuedSpyID",
+    "GetNthCapturedSpy",
+    "GetNthOffMapSpy",
+    "GetNumPlayersMet",
+    "GetNumSpiesCaptured",
+    "GetNumSpiesOffMap",
+    "GetPlayersMet",
+    "GetPlayersMetIDs",
+    "GetRecentMissions",
+    "GetResearchAgreementTech",
+    "GetSourceTurnsRemaining",
+    "GetSpyCapacity",
+    "GetVisibilityOn",
+    "GetWarmongerLevel",
+    "HasDefensivePact",
+    "HasDelegationAt",
+    "HasEmbassyAt",
+    "HasMet",
+    "HasOpenBordersFrom",
+    "IsAtWarWith",
+    "IsAtWarWithHumans",
+    "IsDiplomaticActionValid",
+    "IsFightingAnyJointWarWith",
+    "IsFightingJointWarAgainst",
+    "IsPromiseMade",
+    "IsVisibilitySourceActive"
+   ],
+   "PlayerReligion": [
+    "CanAfford",
+    "CanCreatePantheon",
+    "GetFaithBalance",
+    "GetFaithYield",
+    "GetFaithYieldToolTip",
+    "GetHolyCityID",
+    "GetNumBeliefsEarned",
+    "GetPantheon",
+    "GetReligionInMajorityOfCities",
+    "GetReligionTypeCreated",
+    "HasLaunchedInquisition",
+    "HasReligiousFoundingUnit"
+   ],
+   "PlayerResources": [
+    "GetBonusResourcePerTurn",
+    "GetCityResourceAllocations",
+    "GetExportedResourceAmount",
+    "GetPowerResourceDemandPerTurn",
+    "GetReservedResourceAmount",
+    "GetResourceAccumulationPerTurn",
+    "GetResourceAllocationCities",
+    "GetResourceAmount",
+    "GetResourceImportPerTurn",
+    "GetResourceStockpileCap",
+    "GetResourcesExtractedByCity",
+    "GetUnitResourceDemandPerTurn",
+    "HasExportedResource",
+    "HasResource",
+    "IsResourceBanned",
+    "IsResourceExtractableAt",
+    "IsResourceVisible"
+   ],
+   "PlayerStats": [
+    "GetDiplomaticVictoryPoints",
+    "GetDiplomaticVictoryPointsTooltip",
+    "GetHasRevivedPlayer",
+    "GetMilitaryStrength",
+    "GetMilitaryStrengthWithoutTreasury",
+    "GetNumBuildingsOfType",
+    "GetNumCitiesFollowingReligion",
+    "GetNumCivicsCompleted",
+    "GetNumProjectsAdvanced",
+    "GetNumTechsResearched",
+    "GetScienceVictoryPoints",
+    "GetScienceVictoryPointsPerTurn",
+    "GetScienceVictoryPointsTotalNeeded",
+    "GetTourism",
+    "GetTourismToolTip"
+   ],
+   "PlayerInfluence": [
+    "CanGiveInfluence",
+    "CanGiveTokensToPlayer",
+    "CanLevyMilitary",
+    "CanReceiveInfluence",
+    "GetLevyMilitaryCost",
+    "GetLevyTurnCounter",
+    "GetLevyTurnLimit",
+    "GetMostTokensReceived",
+    "GetPointsEarned",
+    "GetPointsPerTurn",
+    "GetPointsThreshold",
+    "GetSuzerain",
+    "GetTokensPerThreshold",
+    "GetTokensReceived",
+    "GetTokensToGive",
+    "IsGivingTokensConsidered",
+    "IsSuzerainUniqueBonusDisabled",
+    "SetGivingTokensConsidered"
+   ],
+   "PlayerGovernors": [
+    "CanAppoint",
+    "CanAppointGovernor",
+    "CanAssignGovernor",
+    "CanEarnPromotion",
+    "CanEverAppointGovernor",
+    "CanPromote",
+    "CanPromoteGovernor",
+    "GetAssignedCity",
+    "GetAssignedGovernor",
+    "GetBaseTurnsUntilEstablished",
+    "GetGovernor",
+    "GetGovernorList",
+    "GetGovernorPoints",
+    "GetGovernorPointsSpent",
+    "GetSecretSociety",
+    "GetTurnsToEstablish",
+    "HasGovernor",
+    "HasTitleBeenConsidered",
+    "IsAwareOfSecretSociety",
+    "IsGovernorEstablished",
+    "SetTitleConsidered"
+   ],
+   "PlayerEras": [
+    "(unavailable)"
+   ],
+   "PlayerTrade": [
+    "CalcFavorPerTurnFromTradePartners",
+    "GetInternationalYieldModifier",
+    "GetLandRangeRefuel",
+    "GetNumOutgoingRoutes",
+    "GetOutgoingRouteCapacity",
+    "GetWaterRangeRefuel"
+   ],
+   "PlayerAi": [
+    "(unavailable)"
+   ],
+   "PlayerConfiguration": [
+    "DeleteMapPin",
+    "GetCivilizationDescription",
+    "GetCivilizationLevelTypeID",
+    "GetCivilizationShortDescription",
+    "GetCivilizationTypeID",
+    "GetCivilizationTypeName",
+    "GetHandicapTypeID",
+    "GetHotseatPassword",
+    "GetLeaderName",
+    "GetLeaderRandomPoolID",
+    "GetLeaderTypeID",
+    "GetLeaderTypeName",
+    "GetMapPin",
+    "GetMapPinID",
+    "GetMapPins",
+    "GetModReady",
+    "GetNetworkIdentifer",
+    "GetNickName",
+    "GetPlayerName",
+    "GetReady",
+    "GetSlotName",
+    "GetSlotStatus",
+    "GetStartingPosition",
+    "GetTeam",
+    "GetTeamName",
+    "GetValue",
+    "GetWantsPause",
+    "IsAI",
+    "IsAlive",
+    "IsAvailable",
+    "IsHidden",
+    "IsHuman",
+    "IsHumanRequired",
+    "IsInUse",
+    "IsLocked",
+    "IsObserver",
+    "IsParticipant",
+    "IsPossibleParticipant",
+    "SetCivilizationTypeName",
+    "SetHandicapTypeID",
+    "SetHidden",
+    "SetHotseatName",
+    "SetHotseatPassword",
+    "SetLeaderName",
+    "SetLeaderRandomPoolID",
+    "SetLeaderTypeName",
+    "SetLocked",
+    "SetMajorCiv",
+    "SetReady",
+    "SetSlotStatus",
+    "SetTeam",
+    "SetValue",
+    "SetWantsPause"
+   ],
+   "PlayerVisibility": [
+    "GetLayerValue",
+    "GetState",
+    "IsRevealed",
+    "IsUnitVisible",
+    "IsVisible"
+   ],
+   "City": [
+    "CanRaze",
+    "GetAllAssignedGovernors",
+    "GetAmenityAdvice",
+    "GetAssignedGovernor",
+    "GetBuildQueue",
+    "GetBuildingPotentialYield",
+    "GetBuildingYield",
+    "GetBuildings",
+    "GetCitizens",
+    "GetCityAI",
+    "GetComponentID",
+    "GetCulturalIdentity",
+    "GetCulture",
+    "GetDistrictID",
+    "GetDistricts",
+    "GetGold",
+    "GetGrowth",
+    "GetHousingAdvice",
+    "GetID",
+    "GetJustConqueredFrom",
+    "GetLastTransferType",
+    "GetLocation",
+    "GetLoyaltyAdvice",
+    "GetName",
+    "GetOriginalOwner",
+    "GetOwner",
+    "GetOwnerBeforeOccupation",
+    "GetPopulation",
+    "GetPower",
+    "GetPowerAdvice",
+    "GetProperties",
+    "GetProperty",
+    "GetReligion",
+    "GetTrade",
+    "GetX",
+    "GetY",
+    "GetYield",
+    "GetYieldToolTip",
+    "IsCapital",
+    "IsOccupied",
+    "IsOriginalCapital"
+   ],
+   "CityBuildQueue": [
+    "CanProduce",
+    "GetAt",
+    "GetBuildingCost",
+    "GetBuildingProgress",
+    "GetCity",
+    "GetConstructionPlot",
+    "GetConstructionsAtLocation",
+    "GetCurrentProductionTypeHash",
+    "GetCurrentProductionTypeModifier",
+    "GetDistrictCost",
+    "GetDistrictProgress",
+    "GetNumEntriesOfProductionTypeHash",
+    "GetPreviousProductionTypeHash",
+    "GetProductionYield",
+    "GetProjectCost",
+    "GetProjectProgress",
+    "GetSize",
+    "GetTurnsLeft",
+    "GetUnitArmyCost",
+    "GetUnitCorpsCost",
+    "GetUnitCost",
+    "GetUnitProgress",
+    "GetUnitResourceCost",
+    "HasBeenPlaced",
+    "HasProductionProgress"
+   ],
+   "CityBuildings": [
+    "GetBuildingMaintenance",
+    "GetBuildingNameOverride",
+    "GetBuildingTourismFromGreatWorks",
+    "GetBuildingYieldFromGreatWorks",
+    "GetBuildingsAtLocation",
+    "GetCity",
+    "GetCreatorNameFromIndex",
+    "GetGreatWorkInSlot",
+    "GetGreatWorkSlotType",
+    "GetGreatWorkTypeFromIndex",
+    "GetNumGreatWorkSlots",
+    "GetPlayerFromIndex",
+    "GetTurnFromIndex",
+    "HasBuilding",
+    "IsBuildingThemedCorrectly",
+    "IsPillaged"
+   ],
+   "CityDistricts": [
+    "FindID",
+    "GetCount",
+    "GetDistrict",
+    "GetNumAllowedDistrictsRequiringPopulation",
+    "GetNumDistricts",
+    "GetNumZonedDistrictsRequiringPopulation",
+    "HasDistrict",
+    "IsComplete",
+    "IsContaminated",
+    "IsPillaged",
+    "Members"
+   ],
+   "CityGrowth": [
+    "GetAmenities",
+    "GetAmenitiesFromCityStates",
+    "GetAmenitiesFromCivics",
+    "GetAmenitiesFromDistricts",
+    "GetAmenitiesFromEntertainment",
+    "GetAmenitiesFromGovernors",
+    "GetAmenitiesFromGreatPeople",
+    "GetAmenitiesFromImprovements",
+    "GetAmenitiesFromLuxuries",
+    "GetAmenitiesFromNationalParks",
+    "GetAmenitiesFromNaturalWonders",
+    "GetAmenitiesFromReligion",
+    "GetAmenitiesFromStartingEra",
+    "GetAmenitiesFromTraits",
+    "GetAmenitiesLostFromBankruptcy",
+    "GetAmenitiesLostFromWarWeariness",
+    "GetAmenitiesNeeded",
+    "GetCity",
+    "GetFood",
+    "GetFoodSurplus",
+    "GetGrowthThreshold",
+    "GetHappiness",
+    "GetHappinessGrowthModifier",
+    "GetHappinessNonFoodYieldModifier",
+    "GetHousing",
+    "GetHousingFromBuildings",
+    "GetHousingFromCivics",
+    "GetHousingFromDistricts",
+    "GetHousingFromGreatPeople",
+    "GetHousingFromGreatWorks",
+    "GetHousingFromImprovements",
+    "GetHousingFromStartingEra",
+    "GetHousingFromWater",
+    "GetHousingGrowthModifier",
+    "GetLoyaltyGrowthModifier",
+    "GetOccupationGrowthModifier",
+    "GetOtherGrowthModifier",
+    "GetOverallGrowthModifier",
+    "GetTurnsUntilGrowth",
+    "GetTurnsUntilStarvation"
+   ],
+   "CityCitizens": [
+    "IsDisfavoredYield",
+    "IsFavoredYield",
+    "IsPlotWorked"
+   ],
+   "CityCulture": [
+    "GetCity",
+    "GetCultureYield",
+    "GetCurrentCulture",
+    "GetNextPlot",
+    "GetNextPlotCultureCost",
+    "GetTourism",
+    "GetTurnsUntilExpansion"
+   ],
+   "CityReligion": [
+    "GetActivePantheon",
+    "GetCity",
+    "GetMajorityReligion",
+    "GetNextReligion",
+    "GetPressureFromCity",
+    "GetReligionsInCity",
+    "GetReligiousPressureSources",
+    "GetTotalPressureOnCity",
+    "GetTurnsToNextReligion"
+   ],
+   "CityTrade": [
+    "GetCity",
+    "GetIncomingRoutes",
+    "GetOutgoingRoutes",
+    "HasActiveTradingPost",
+    "HasInactiveTradingPost",
+    "HasTradeRouteFrom"
+   ],
+   "CityGold": [
+    "CanPlaceUnit",
+    "GetPlotPurchaseCost",
+    "GetPurchaseCost",
+    "IsBuildingFaithPurchaseEnabled",
+    "IsUnitFaithPurchaseEnabled"
+   ],
+   "Unit": [
+    "GetAbility",
+    "GetActionCharges",
+    "GetAirSlots",
+    "GetAirUnits",
+    "GetAntiAirCombat",
+    "GetArchaeology",
+    "GetArchaeologyHomeCity",
+    "GetAttacksRemaining",
+    "GetBarbarianTargetPlayer",
+    "GetBarbarianTribeIndex",
+    "GetBombardCombat",
+    "GetBuildCharges",
+    "GetCombat",
+    "GetComponentID",
+    "GetDamage",
+    "GetDisasterCharges",
+    "GetExperience",
+    "GetFormationClass",
+    "GetFormationID",
+    "GetFormationMaxMoves",
+    "GetFormationMovesRemaining",
+    "GetFormationUnitCount",
+    "GetFortifyTurns",
+    "GetGreatPerson",
+    "GetGreatWorkIndex",
+    "GetHeroClassType",
+    "GetID",
+    "GetLocation",
+    "GetLootName",
+    "GetMaxDamage",
+    "GetMaxMoves",
+    "GetMilitaryFormation",
+    "GetMovementMovesRemaining",
+    "GetMovesRemaining",
+    "GetName",
+    "GetOriginalOwner",
+    "GetOwner",
+    "GetParkCharges",
+    "GetPlotId",
+    "GetProperties",
+    "GetProperty",
+    "GetPursuingSpyName",
+    "GetRange",
+    "GetRangedCombat",
+    "GetReligionType",
+    "GetReligiousHealCharges",
+    "GetReligiousStrength",
+    "GetRockBand",
+    "GetSpreadCharges",
+    "GetSpyOperation",
+    "GetSpyOperationEndTurn",
+    "GetTrade",
+    "GetType",
+    "GetUnitType",
+    "GetUpgradeCost",
+    "GetUpgradeResourceCost",
+    "GetX",
+    "GetY",
+    "HasHiddenVisibility",
+    "HasMovedIntoZOC",
+    "HasPendingOperations",
+    "IgnoresZOC",
+    "IsAutomated",
+    "IsCannotAttack",
+    "IsDead",
+    "IsDelayedDeath",
+    "IsEmbarked",
+    "IsHuman",
+    "IsReadyToAutomate",
+    "IsReadyToMove",
+    "IsReadyToSelect"
+   ],
+   "UnitExperience": [
+    "GetExperienceForNextLevel",
+    "GetExperiencePoints",
+    "GetLevel",
+    "GetPromotions",
+    "GetUnit",
+    "GetVeteranName",
+    "HasPromotion"
+   ],
+   "UnitAbility": [
+    "GetAbilities"
+   ],
+   "Plot": [
+    "CanHaveDistrict",
+    "CanHaveWonder",
+    "GetAdjacencyBonusTooltip",
+    "GetAdjacencyBonusType",
+    "GetAdjacencyYield",
+    "GetAirUnits",
+    "GetAppeal",
+    "GetArea",
+    "GetAreaID",
+    "GetComponentID",
+    "GetContinentType",
+    "GetDefenseModifier",
+    "GetDistrictID",
+    "GetDistrictType",
+    "GetFeature",
+    "GetFeatureType",
+    "GetImprovementOwner",
+    "GetImprovementType",
+    "GetIndex",
+    "GetMovementCost",
+    "GetNationalParkName",
+    "GetNearestLandArea",
+    "GetNearestLandPlot",
+    "GetOwner",
+    "GetProperty",
+    "GetResourceCount",
+    "GetResourceType",
+    "GetResourceTypeHash",
+    "GetRiverCrossingCount",
+    "GetRiverEFlowDirection",
+    "GetRiverSEFlowDirection",
+    "GetRiverSWFlowDirection",
+    "GetRouteType",
+    "GetTerrainClassType",
+    "GetTerrainType",
+    "GetUnitCount",
+    "GetWonderType",
+    "GetWorkerCount",
+    "GetX",
+    "GetY",
+    "GetYield",
+    "HasFeatureBeenAdded",
+    "IsAdjacentOwned",
+    "IsAdjacentPlayer",
+    "IsAdjacentToArea",
+    "IsAdjacentToLand",
+    "IsAdjacentToShallowWater",
+    "IsAt",
+    "IsCanyon",
+    "IsChokepoint",
+    "IsCity",
+    "IsCoastalLand",
+    "IsFlatlands",
+    "IsFreshWater",
+    "IsHills",
+    "IsImpassable",
+    "IsImprovementPillaged",
+    "IsInternalOnlyDistrict",
+    "IsLake",
+    "IsMountain",
+    "IsNEOfCliff",
+    "IsNEOfRiver",
+    "IsNWOfCliff",
+    "IsNWOfRiver",
+    "IsNationalPark",
+    "IsNaturalWonder",
+    "IsNone",
+    "IsOpenGround",
+    "IsOwned",
+    "IsRiver",
+    "IsRiverAdjacent",
+    "IsRiverConnection",
+    "IsRiverCrossing",
+    "IsRiverCrossingFlowClockwise",
+    "IsRiverCrossingToPlot",
+    "IsRiverSide",
+    "IsRoughGround",
+    "IsRoute",
+    "IsRoutePillaged",
+    "IsShallowWater",
+    "IsStartingPlot",
+    "IsUnit",
+    "IsValidFoundLocation",
+    "IsWOfCliff",
+    "IsWOfRiver",
+    "IsWater",
+    "IsWonderComplete",
+    "SharesAdjacentArea"
+   ],
+   "District": [
+    "CanAttack",
+    "GetAdjacencyYield",
+    "GetAirSlots",
+    "GetAirUnitCount",
+    "GetAirUnits",
+    "GetAttackStrength",
+    "GetBaseDefenseStrength",
+    "GetCity",
+    "GetComponentID",
+    "GetDamage",
+    "GetDefenseStrength",
+    "GetExtraRegionalEntertainment",
+    "GetExtraRegionalRange",
+    "GetID",
+    "GetLocation",
+    "GetMaxDamage",
+    "GetOwner",
+    "GetReligionHealRate",
+    "GetType",
+    "GetX",
+    "GetY",
+    "GetYield",
+    "IsComplete",
+    "IsPillaged",
+    "IsUnderSiege"
+   ]
+  }
+ },
+ "GameCore_Tuner": {
+  "globals": {
+   "ActionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_ENDTURN",
+     "ACTION_RETIRE",
+     "ACTION_UNREADYTURN",
+     "NO_ACTION"
+    ]
+   },
+   "ActivityTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTIVITY_AWAKE",
+     "ACTIVITY_HEAL",
+     "ACTIVITY_HOLD",
+     "ACTIVITY_INTERCEPT",
+     "ACTIVITY_OPERATION",
+     "ACTIVITY_SENTRY",
+     "ACTIVITY_SLEEP",
+     "NO_ACTIVITY"
+    ]
+   },
+   "AdjacencyBonusTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ADJACENCY_DISTRICT",
+     "ADJACENCY_FEATURE",
+     "ADJACENCY_IMPROVEMENT",
+     "ADJACENCY_NATURAL_WONDER",
+     "ADJACENCY_RESOURCE",
+     "ADJACENCY_RESOURCE_CLASS",
+     "ADJACENCY_RIVER",
+     "ADJACENCY_SEA_RESOURCE",
+     "ADJACENCY_TERRAIN",
+     "ADJACENCY_WONDER",
+     "NO_ADJACENCY"
+    ]
+   },
+   "AreaBuilder": {
+    "type": "table",
+    "functions": [
+     "Calculate",
+     "Recalculate"
+    ],
+    "members": []
+   },
+   "Areas": {
+    "type": "table",
+    "functions": [
+     "FindBiggestArea",
+     "GetArea",
+     "GetCount",
+     "GetLandCount",
+     "Members",
+     "MembersAux"
+    ],
+    "members": []
+   },
+   "Automation": {
+    "type": "table",
+    "functions": [
+     "ClearParameterSet",
+     "GenerateSaveName",
+     "GetLastGeneratedSaveName",
+     "GetLocalParameter",
+     "GetParameterSet",
+     "GetRandomNumber",
+     "GetSetParameter",
+     "GetStartupParameter",
+     "GetTime",
+     "IsActive",
+     "IsAutoStartEnabled",
+     "IsPaused",
+     "Log",
+     "LogDateAndTime",
+     "LogDivider",
+     "Pause",
+     "RemoveInputHandler",
+     "SendTestComplete",
+     "SetActive",
+     "SetAutoStartEnabled",
+     "SetInputHandler",
+     "SetLocalParameter",
+     "SetParameterSet",
+     "SetSetParameter"
+    ],
+    "members": []
+   },
+   "AutoplayManager": {
+    "type": "table",
+    "functions": [
+     "GetDisableAssertsForAutoplay",
+     "GetObserveAsPlayer",
+     "GetReturnAsPlayer",
+     "GetTurns",
+     "IsActive",
+     "SetActive",
+     "SetDisableAssertsForAutoplay",
+     "SetObserveAsPlayer",
+     "SetReturnAsPlayer",
+     "SetTurns"
+    ],
+    "members": []
+   },
+   "C": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "C",
+     "Cities",
+     "CityCommandResults",
+     "CityCommandTypes",
+     "CityDestroyDirectives",
+     "CityManager",
+     "CityOperationResults",
+     "CityOperationTypes",
+     "CityProductionDirectives"
+    ]
+   },
+   "Cities": {
+    "type": "table",
+    "functions": [
+     "DestroyCity",
+     "GetCityInPlot",
+     "GetPlotPurchaseCity",
+     "GetPlotWorkingCity",
+     "IsCityInPlot"
+    ],
+    "members": []
+   },
+   "CityCommandResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITIES",
+     "CITIZENS",
+     "FAILURE_REASONS",
+     "LOCKED_CITIZENS",
+     "MAX_CITIZENS",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "PLOTS",
+     "UNITS"
+    ]
+   },
+   "CityCommandTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DESTROY",
+     "MANAGE",
+     "NAME_CITY",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_DATA0",
+     "PARAM_DATA1",
+     "PARAM_DATA2",
+     "PARAM_DATA3",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_MANAGE_CITIZEN",
+     "PARAM_MILITARY_FORMATION_TYPE",
+     "PARAM_MODIFIERS",
+     "PARAM_NAME",
+     "PARAM_PLOT_PURCHASE",
+     "PARAM_PROJECT_TYPE",
+     "PARAM_RANGED_ATTACK",
+     "PARAM_SWAP_TILE_OWNER",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_UNIT_TYPE",
+     "PARAM_WMD_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "PARAM_YIELD_TYPE",
+     "PURCHASE",
+     "RANGE_ATTACK",
+     "SET_FOCUS",
+     "SWAP_TILE_OWNER",
+     "WMD_STRIKE"
+    ]
+   },
+   "CityDestroyDirectives": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KEEP",
+     "LIBERATE_FOUNDER",
+     "LIBERATE_PREVIOUS_OWNER",
+     "RAZE",
+     "REJECT"
+    ]
+   },
+   "CityManager": {
+    "type": "table",
+    "functions": [
+     "DestroyCity",
+     "DestroyDistrict",
+     "GetCity",
+     "GetCityAt",
+     "GetDistrict",
+     "GetDistrictAt",
+     "GetFreeCityAt",
+     "SetAsCapital",
+     "SetAsOriginalCapital",
+     "TransferCity",
+     "TransferCityToFreeCities"
+    ],
+    "members": []
+   },
+   "CityOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BLOCKED_PLOTS",
+     "CAN_TRAIN_ARMY",
+     "CAN_TRAIN_CORPS",
+     "CITIES",
+     "CITIZENS",
+     "FAILURE_REASONS",
+     "LOCKED_CITIZENS",
+     "MAX_CITIZENS",
+     "MODIFIERS",
+     "MOUNTAIN_PLOTS",
+     "NONE",
+     "NO_SUITABLE_LOCATION",
+     "PLOTS",
+     "PURCHASABLE_PLOTS",
+     "SUCCESS_CONDITIONS",
+     "UNITS"
+    ]
+   },
+   "CityOperationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BUILD",
+     "MILITARY_FORMATION_TYPE",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_INSERT_MODE",
+     "PARAM_MODIFIERS",
+     "PARAM_PRODUCTION_TYPE",
+     "PARAM_PROJECT_TYPE",
+     "PARAM_QUEUE_DESTINATION_LOCATION",
+     "PARAM_QUEUE_LOCATION",
+     "PARAM_QUEUE_SOURCE_LOCATION",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_UNIT_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "VALUE_APPEND",
+     "VALUE_CLEAR",
+     "VALUE_EXCLUSIVE",
+     "VALUE_INSERT_AT",
+     "VALUE_MOVE_TO",
+     "VALUE_POP_BACK",
+     "VALUE_POP_FRONT",
+     "VALUE_PREPEND",
+     "VALUE_REMOVE_AT",
+     "VALUE_REPLACE_AT",
+     "VALUE_SWAP"
+    ]
+   },
+   "CityProductionDirectives": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CONSTRUCT",
+     "PROJECT",
+     "TRAIN",
+     "ZONE"
+    ]
+   },
+   "CityTransferTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BY_COMBAT",
+     "BY_CULTURAL_IDENTITY",
+     "BY_GIFT",
+     "BY_LIBERATION"
+    ]
+   },
+   "CivilizationLevelTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CIVILIZATION_LEVEL_CITY_STATE",
+     "CIVILIZATION_LEVEL_FREE_CITIES",
+     "CIVILIZATION_LEVEL_FULL_CIV",
+     "CIVILIZATION_LEVEL_TRIBE",
+     "NO_CIVILIZATION_LEVEL"
+    ]
+   },
+   "CombatManager": {
+    "type": "table",
+    "functions": [
+     "CanAttackTarget",
+     "GenerateCombatResults",
+     "GetBestDefender",
+     "GetBestInterceptor",
+     "IsAttackChangeWarState",
+     "SimulateAttackInto",
+     "SimulateAttackVersus",
+     "SimulatePriorityAttackInto"
+    ],
+    "members": []
+   },
+   "CombatResultParameters": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALT_SOURCE_LOCATION",
+     "ANTI_AIR",
+     "ATTACKER",
+     "ATTACKER_ADVANCED_DURING_VISUALIZATION",
+     "ATTACKER_ADVANCES",
+     "COMBAT_STRENGTH",
+     "COMBAT_SUB_TYPE",
+     "COMBAT_TYPE",
+     "DAMAGE_FROM",
+     "DAMAGE_MEMBERS",
+     "DAMAGE_MEMBER_COUNT",
+     "DAMAGE_TO",
+     "DEFENDER",
+     "DEFENDER_CAPTURED",
+     "DEFENDER_RETALIATES",
+     "DEFENSE_DAMAGE_TO",
+     "ERA",
+     "EXPERIENCE_CHANGE",
+     "FINAL_DAMAGE_TO",
+     "FINAL_DEFENSE_DAMAGE_TO",
+     "ID",
+     "INTERCEPTOR",
+     "LOCATION",
+     "LOCATION_PILLAGED",
+     "MAX_DEFENSE_HIT_POINTS",
+     "MAX_HIT_POINTS",
+     "PREVIEW_TEXT_ANTI_AIR",
+     "PREVIEW_TEXT_ASSIST",
+     "PREVIEW_TEXT_DEFENSES",
+     "PREVIEW_TEXT_HEALTH",
+     "PREVIEW_TEXT_INTERCEPTOR",
+     "PREVIEW_TEXT_MODIFIER",
+     "PREVIEW_TEXT_OPPONENT",
+     "PREVIEW_TEXT_PROMOTION",
+     "PREVIEW_TEXT_RESOURCES",
+     "PREVIEW_TEXT_TERRAIN",
+     "STRENGTH_MODIFIER",
+     "VISUALIZE",
+     "WMD_STATUS",
+     "WMD_STRIKE_RANGE",
+     "WMD_TYPE"
+    ]
+   },
+   "CombatVisType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANTI_AIR",
+     "ATTACKER",
+     "DEFENDER",
+     "INTERCEPTOR"
+    ]
+   },
+   "ComponentType": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITY",
+     "DISTRICT",
+     "UNIT"
+    ]
+   },
+   "CursorTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NORMAL",
+     "RANGE_ATTACK",
+     "WAIT"
+    ]
+   },
+   "DB": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "DealAgreementTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLIANCE",
+     "JOINT_WAR",
+     "MAKE_PEACE",
+     "OPEN_BORDERS",
+     "RESEARCH_AGREEMENT",
+     "THIRD_PARTY_WAR"
+    ]
+   },
+   "DealDirection": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INCOMING",
+     "OUTGOING"
+    ]
+   },
+   "DealItemSubTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "DealItemTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AGREEMENTS",
+     "ALL",
+     "CAPTIVE",
+     "CITIES",
+     "FAVOR",
+     "GOLD",
+     "GREATWORK",
+     "NONE",
+     "RESOURCES",
+     "TECHNOLOGY",
+     "UNITS"
+    ]
+   },
+   "DealManager": {
+    "type": "table",
+    "functions": [
+     "AreWorkingDealsEqual",
+     "ClearWorkingDeal",
+     "CopyIncomingToOutgoingWorkingDeal",
+     "EnactWorkingDeal",
+     "GetPlayerDeals",
+     "GetPossibleDealItems",
+     "GetWorkingDeal",
+     "HasPendingDeal",
+     "RequestUpdate",
+     "SendWorkingDeal"
+    ],
+    "members": []
+   },
+   "DealProposalAction": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPTED",
+     "ADJUSTED",
+     "CLOSED",
+     "DEMANDED",
+     "EQUALIZE",
+     "EQUALIZE_FAILED",
+     "INSPECT",
+     "PENDING",
+     "PROPOSED",
+     "REJECTED",
+     "REJECTED_PERMANENT"
+    ]
+   },
+   "DealValidationResult": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "MISSING_DEPENDENCY",
+     "VALID"
+    ]
+   },
+   "DefenseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DISTRICT_GARRISON",
+     "DISTRICT_OUTER"
+    ]
+   },
+   "DefinitionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AGENDA",
+     "BUILDING",
+     "CIVILIZATION",
+     "CLIMATE",
+     "CULTURE",
+     "DISTRICT",
+     "FEATURE",
+     "FLAVOR",
+     "GAME_SPEED",
+     "GOVERNMENT",
+     "HANDICAP",
+     "IMPROVEMENT",
+     "MAP_SIZE",
+     "PLAYER",
+     "PLAYER_COLOR",
+     "PLAYER_TRAIT",
+     "POLICY",
+     "RESOURCE",
+     "ROUTE",
+     "SEA_LEVEL",
+     "TEAM",
+     "TECH",
+     "TERRAIN",
+     "UNIT",
+     "UNIT_PROMOTION",
+     "YIELD"
+    ]
+   },
+   "DiplomacyActionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLY",
+     "DECLARE_FRIEND",
+     "DENOUNCE",
+     "MAKE_DEAL",
+     "SET_DELEGATION",
+     "SET_EMBASSY",
+     "SET_OPEN_BORDERS",
+     "SET_WAR_STATE"
+    ]
+   },
+   "DiplomacyInitiatorTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AI",
+     "HUMAN",
+     "NONE"
+    ]
+   },
+   "DiplomacyMoodTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY",
+     "DEFEATED",
+     "ENRAGED",
+     "HAPPY",
+     "NEUTRAL",
+     "UNDEFINED",
+     "UNHAPPY"
+    ]
+   },
+   "DiplomacyResponseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACKNOWLEDGE",
+     "INITIAL",
+     "NEGATIVE",
+     "NONE",
+     "POSITIVE"
+    ]
+   },
+   "DiplomaticStates": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALLIED",
+     "AWARE",
+     "DECLARED_FRIEND",
+     "DENOUNCED",
+     "FRIENDLY",
+     "INFLUENTIAL",
+     "MAX_INFLUENCE",
+     "MINOR_MINOR",
+     "MINOR_MINOR_WAR",
+     "NEUTRAL",
+     "NO_INFLUENCE",
+     "PATRON",
+     "PROTECTOR",
+     "UNFRIENDLY",
+     "WAR",
+     "WAR_WITH_MAJOR",
+     "WAR_WITH_MINOR"
+    ]
+   },
+   "DiplomaticThreatTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID_THREAT",
+     "MAJOR_THREAT",
+     "MINOR_THREAT",
+     "MODERATE_THREAT",
+     "NO_THREAT",
+     "UNKNOWN_THREAT"
+    ]
+   },
+   "DiplomaticTrustTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "BARELY_KNOWN",
+     "DISTRUSTED",
+     "INVALID_TRUST",
+     "LOW_TRUST",
+     "NO_TRUST",
+     "SOME_TRUST",
+     "TRUSTED",
+     "UNKNOWN_TRUST"
+    ]
+   },
+   "DiplomaticVisibilityTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FULL",
+     "LIMITED",
+     "NONE",
+     "SECRET",
+     "TOP_SECRET"
+    ]
+   },
+   "DirectionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DIRECTION_EAST",
+     "DIRECTION_NORTHEAST",
+     "DIRECTION_NORTHWEST",
+     "DIRECTION_SOUTHEAST",
+     "DIRECTION_SOUTHWEST",
+     "DIRECTION_WEST",
+     "NO_DIRECTION",
+     "NUM_DIRECTION_TYPES"
+    ]
+   },
+   "Drag": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "eDown",
+     "eDrag",
+     "eDragDisabled",
+     "eDrop"
+    ]
+   },
+   "EndTurnBlockingTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ENDTURN_BLOCKING_ARTIFACT",
+     "ENDTURN_BLOCKING_BELIEF",
+     "ENDTURN_BLOCKING_CITY_RANGE_ATTACK",
+     "ENDTURN_BLOCKING_CIVIC",
+     "ENDTURN_BLOCKING_CLAIM_GREAT_PERSON",
+     "ENDTURN_BLOCKING_COMMEMORATION_AVAILABLE",
+     "ENDTURN_BLOCKING_CONSIDER_DISLOYAL_CITY",
+     "ENDTURN_BLOCKING_CONSIDER_GOVERNMENT_CHANGE",
+     "ENDTURN_BLOCKING_CONSIDER_RAZE_CITY",
+     "ENDTURN_BLOCKING_DISTRICT_RANGE_ATTACK",
+     "ENDTURN_BLOCKING_EMERGENCY_NEEDS_ATTENTION",
+     "ENDTURN_BLOCKING_FILL_CIVIC_SLOT",
+     "ENDTURN_BLOCKING_GIVE_INFLUENCE_TOKEN",
+     "ENDTURN_BLOCKING_GOVERNOR_APPOINTMENT",
+     "ENDTURN_BLOCKING_GOVERNOR_IDLE",
+     "ENDTURN_BLOCKING_GOVERNOR_OPPORTUNITY",
+     "ENDTURN_BLOCKING_GOVERNOR_PROMOTION",
+     "ENDTURN_BLOCKING_PANTHEON",
+     "ENDTURN_BLOCKING_PRODUCTION",
+     "ENDTURN_BLOCKING_RELIGION",
+     "ENDTURN_BLOCKING_RESEARCH",
+     "ENDTURN_BLOCKING_SPY_CHOOSE_DRAGNET_PRIORITY",
+     "ENDTURN_BLOCKING_SPY_CHOOSE_ESCAPE_ROUTE",
+     "ENDTURN_BLOCKING_STACKED_UNITS",
+     "ENDTURN_BLOCKING_UNITS",
+     "ENDTURN_BLOCKING_UNIT_NEEDS_ORDERS",
+     "ENDTURN_BLOCKING_UNIT_PROMOTION",
+     "ENDTURN_BLOCKING_WORLD_CONGRESS_LOOK",
+     "ENDTURN_BLOCKING_WORLD_CONGRESS_SESSION",
+     "NO_ENDTURN_BLOCKING"
+    ]
+   },
+   "EraTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "EspionageResultTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CAPTURED",
+     "FAIL_MUST_ESCAPE",
+     "FAIL_UNDETECTED",
+     "KILLED",
+     "NO_RESULT",
+     "NUM_ESPIONAGE_RESULTS",
+     "SUCCESS_MUST_ESCAPE",
+     "SUCCESS_UNDETECTED"
+    ]
+   },
+   "EventSubTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPT_RELIGIOUS_HEAL",
+     "ADD",
+     "BUILDING",
+     "CLEAR_CONTAMINATION",
+     "COMBAT",
+     "COMPLETION",
+     "CONVERT_BARBARIAN",
+     "CREATE_DISTRICT",
+     "CREATE_GREAT_WORK",
+     "CREATE_IMPROVEMENT",
+     "CREATE_ROUTE",
+     "CREATE_TRADE_ROUTE",
+     "CREATE_WONDER",
+     "DAMAGE",
+     "DISTRICT",
+     "EVANGELIZE_BELIEF",
+     "EXTRACT_ARTIFACT",
+     "FOUND_CITY",
+     "FOUND_RELIGION",
+     "GIVE_RELIGIOUS_HEAL",
+     "HARVEST_RESOURCE",
+     "LAUNCH_INQUISITION",
+     "PILLAGE",
+     "PILLAGED",
+     "PLANT_FOREST",
+     "PLOT",
+     "PROJECT",
+     "REMOVE",
+     "REMOVE_FEATURE",
+     "REMOVE_HERESY",
+     "REPAIR",
+     "SPREAD_RELIGION",
+     "TOURISM_BOMB",
+     "UNIT",
+     "VISIBILITY"
+    ]
+   },
+   "Events": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "ExposedMembers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AG"
+    ]
+   },
+   "FlowDirectionTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FLOWDIRECTION_NORTH",
+     "FLOWDIRECTION_NORTHEAST",
+     "FLOWDIRECTION_NORTHEAST_MASK",
+     "FLOWDIRECTION_NORTHWEST",
+     "FLOWDIRECTION_NORTHWEST_MASK",
+     "FLOWDIRECTION_NORTH_MASK",
+     "FLOWDIRECTION_SOUTH",
+     "FLOWDIRECTION_SOUTHEAST",
+     "FLOWDIRECTION_SOUTHEAST_MASK",
+     "FLOWDIRECTION_SOUTHWEST",
+     "FLOWDIRECTION_SOUTHWEST_MASK",
+     "FLOWDIRECTION_SOUTH_MASK",
+     "NO_FLOWDIRECTION",
+     "NUM_FLOWDIRECTION_TYPES"
+    ]
+   },
+   "Fractal": {
+    "type": "table",
+    "functions": [
+     "Create",
+     "CreateRifts"
+    ],
+    "members": []
+   },
+   "Game": {
+    "type": "table",
+    "functions": [
+     "AddWorldViewText",
+     "GetBarbarianManager",
+     "GetComponentID",
+     "GetCurrentGameTurn",
+     "GetCurrentTurnPhase",
+     "GetCurrentTurnPhaseName",
+     "GetCurrentTurnSegment",
+     "GetCurrentTurnSegmentName",
+     "GetDefeatRequirements",
+     "GetEras",
+     "GetFalloutManager",
+     "GetGameDiplomacy",
+     "GetGreatPeople",
+     "GetHeroesManager",
+     "GetLocalObserver",
+     "GetLocalPlayer",
+     "GetObjectFromComponentID",
+     "GetPhaseName",
+     "GetPlayers",
+     "GetProperties",
+     "GetProperty",
+     "GetQuestsManager",
+     "GetRandNum",
+     "GetRandomSeed",
+     "GetReligion",
+     "GetTradeManager",
+     "GetVictoryProgressForTeam",
+     "GetVictoryRequirements",
+     "GetWinningTeam",
+     "IsAllowStrategicCommands",
+     "IsAllowTacticalCommands",
+     "IsDefeatEnabled",
+     "IsVictoryEnabled",
+     "ObserverCanSeePlayer",
+     "RetirePlayer",
+     "SetCurrentGameTurn",
+     "SetProperty",
+     "SetRandomSeed",
+     "SetWinningTeam",
+     "UnlockAchievement",
+     "WriteHistoryLog"
+    ],
+    "members": []
+   },
+   "GameCapabilities": {
+    "type": "table",
+    "functions": [
+     "HasCapability"
+    ],
+    "members": []
+   },
+   "GameClimate": {
+    "type": "table",
+    "functions": [
+     "GetActiveDroughtAtPlot",
+     "GetActiveDroughtByIndex",
+     "GetActiveDroughtIDAtPlot",
+     "GetActiveDroughtPlotsByIndex",
+     "GetActiveDroughtTypeAtPlot",
+     "GetActiveStormAtPlot",
+     "GetActiveStormByIndex",
+     "GetActiveStormIDAtPlot",
+     "GetActiveStormPlotsByIndex",
+     "GetActiveStormTypeAtPlot",
+     "GetCO2FootprintModifier",
+     "GetClimateChangeForLastSeaLevelEvent",
+     "GetClimateChangeFromRealism",
+     "GetClimateChangeFromTemperature",
+     "GetClimateChangeLevel",
+     "GetCurrentAverageTemperature",
+     "GetDeforestationType",
+     "GetDroughtByID",
+     "GetDroughtClimateIncreasedChance",
+     "GetDroughtPercentChance",
+     "GetDroughtPlotsByID",
+     "GetDroughtTurnsAtPlot",
+     "GetEruptionClimateIncreasedChance",
+     "GetEruptionPercentChance",
+     "GetFireClimateIncreasedChance",
+     "GetFirePercentChance",
+     "GetFloodClimateIncreasedChance",
+     "GetFloodPercentChance",
+     "GetLocationsForPossibleTriggerableEvents",
+     "GetNextIceLossTurns",
+     "GetNextSeaLevelRiseTurns",
+     "GetNumActiveDroughts",
+     "GetNumActiveStorms",
+     "GetNumStorms",
+     "GetOneOffByID",
+     "GetOneOffPlotsByID",
+     "GetPlayerCO2Footprint",
+     "GetPlayerRawResourceConsumption",
+     "GetPlayerResourceCO2Footprint",
+     "GetPlayerResourceConsumption",
+     "GetSeverityForLastSeaLevelEvent",
+     "GetStormByID",
+     "GetStormClimateIncreasedChance",
+     "GetStormPercentChance",
+     "GetStormPlotsByID",
+     "GetTemperatureChange",
+     "GetTilesFlooded",
+     "GetTilesSubmerged",
+     "GetTotalCO2Footprint",
+     "IsStormRevealed"
+    ],
+    "members": []
+   },
+   "GameConfiguration": {
+    "type": "table",
+    "functions": [
+     "GetGameSpeedType",
+     "GetMaxTurns",
+     "GetStartEra",
+     "GetStartTurn",
+     "GetStartYear",
+     "GetTurnTimerType",
+     "GetValue",
+     "IsAnyMultiplayer",
+     "IsNetworkMultiplayer"
+    ],
+    "members": []
+   },
+   "GameDefines": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "MAX_MAJOR_CIVS",
+     "MAX_PLAYERS"
+    ]
+   },
+   "GameEffects": {
+    "type": "table",
+    "functions": [
+     "GetModifierActive",
+     "GetModifierArgumentString",
+     "GetModifierCount",
+     "GetModifierDefinition",
+     "GetModifierOwner",
+     "GetModifierOwnerRequirementSet",
+     "GetModifierReferenceCount",
+     "GetModifierSubjectCount",
+     "GetModifierSubjects",
+     "GetModifierText",
+     "GetModifierTextKey",
+     "GetModifierTrackedObjectCount",
+     "GetModifierTrackedObjects",
+     "GetModifierTrackedOjectRequirementSet",
+     "GetModifiers",
+     "GetObjectName",
+     "GetObjectReferenceCount",
+     "GetObjectString",
+     "GetObjectType",
+     "GetObjectsPlayerId",
+     "GetRequirementContext",
+     "GetRequirementCount",
+     "GetRequirementDefinition",
+     "GetRequirementInnerRequirementSets",
+     "GetRequirementInnerRequirements",
+     "GetRequirementReferenceCount",
+     "GetRequirementSetContext",
+     "GetRequirementSetCount",
+     "GetRequirementSetDefinition",
+     "GetRequirementSetInnerRequirements",
+     "GetRequirementSetReferenceCount",
+     "GetRequirementSetState",
+     "GetRequirementSetSubject",
+     "GetRequirementSets",
+     "GetRequirementState",
+     "GetRequirementSubject",
+     "GetRequirementText",
+     "GetRequirementTextKey",
+     "GetRequirements"
+    ],
+    "members": []
+   },
+   "GameEvents": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "GameInfo": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "GameRandomEvents": {
+    "type": "table",
+    "functions": [
+     "ApplyEvent",
+     "GetCurrentAffectedCities",
+     "GetCurrentTurnEvent",
+     "GetCurrentTurnEventAtPlot",
+     "GetEventsForTurn"
+    ],
+    "members": []
+   },
+   "GameSummary": {
+    "type": "table",
+    "functions": [
+     "AdjustDataSetValue",
+     "CoalesceDataSet",
+     "CreateObject",
+     "FindDataPoint",
+     "FindDataSet",
+     "GetCityObject",
+     "GetDataPoints",
+     "GetDataSetCount",
+     "GetDataSetDisplayDescription",
+     "GetDataSetDisplayName",
+     "GetDataSetName",
+     "GetDataSetValue",
+     "GetDataSetValues",
+     "GetDataSetVisible",
+     "GetDataSets",
+     "GetLastDataSetValue",
+     "GetObjects",
+     "GetOrCreateDataPoint",
+     "GetOrCreateDataSet",
+     "GetPlayerObject",
+     "GetRulesetTypes",
+     "HasDataSetValues",
+     "LookupDataPoint",
+     "LookupDataSet",
+     "SetDataPoint",
+     "SetDataSetValue",
+     "SetRulesetType",
+     "UpdateDataPoint"
+    ],
+    "members": []
+   },
+   "GamepadEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ButtonDown",
+     "ButtonUp",
+     "JoystickMotion"
+    ]
+   },
+   "Gestures": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Any",
+     "Dragging",
+     "Holding",
+     "Stretching"
+    ]
+   },
+   "GetTickCount": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "GlobalParameters": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "IdentityConversionOutcome": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "GAINING_LOYALTY",
+     "LOSING_LOYALTY",
+     "STABLE"
+    ]
+   },
+   "ImprovementBuilder": {
+    "type": "table",
+    "functions": [
+     "CanHaveImprovement",
+     "SetImprovementPillaged",
+     "SetImprovementType"
+    ],
+    "members": []
+   },
+   "InputLayoutTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CONSOLE",
+     "PC"
+    ]
+   },
+   "KeyEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "KeyDown",
+     "KeyUp",
+     "WM_KEYDOWN",
+     "WM_KEYUP"
+    ]
+   },
+   "Keys": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "(205 members)"
+    ]
+   },
+   "Locale": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "LuaEvents": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "Map": {
+    "type": "table",
+    "functions": [
+     "FindSecondContinent",
+     "FindWater",
+     "GetAdjacentPlot",
+     "GetAdjacentPlots",
+     "GetContinentCoastalPlots",
+     "GetContinentPlots",
+     "GetContinentPlotsAppeal",
+     "GetContinentPlotsWaterAvailability",
+     "GetContinentsInUse",
+     "GetFeatureCount",
+     "GetGridSize",
+     "GetLandPlotCount",
+     "GetLandResourceCount",
+     "GetMapSize",
+     "GetMaxPlotDistance",
+     "GetNeighborPlots",
+     "GetPlot",
+     "GetPlotByIndex",
+     "GetPlotCount",
+     "GetPlotDistance",
+     "GetPlotIndex",
+     "GetPlotLocation",
+     "GetPlotXY",
+     "GetPlotXYWithRangeCheck",
+     "GetResourceCount",
+     "GetRingPlots",
+     "GetUnitsAt",
+     "IsPlot",
+     "IsWrapX",
+     "IsWrapY"
+    ],
+    "members": []
+   },
+   "MapConfiguration": {
+    "type": "table",
+    "functions": [
+     "GetValue"
+    ],
+    "members": []
+   },
+   "MapFeatureManager": {
+    "type": "table",
+    "functions": [
+     "CanSufferEruption",
+     "GetNamedVolcanoes",
+     "GetNumActiveVolcanoes",
+     "GetNumEruptions",
+     "GetNumNaturalWonderVolcanoes",
+     "GetNumNormalVolcanoes",
+     "GetNumVolcanoes",
+     "GetPercentVolcanoesActive",
+     "GetTotalVolcanoes",
+     "GetVolcanoName",
+     "GetVolcanoNameByType",
+     "GetVolcanoType",
+     "GetVolcanoTypeAtIndex",
+     "IsActiveVolcano",
+     "IsAffectedByEruption",
+     "IsVolcano",
+     "IsVolcanoErupting"
+    ],
+    "members": []
+   },
+   "MapLayers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY",
+     "PRIMARY",
+     "RELIGIOUS",
+     "SPY",
+     "TRADE"
+    ]
+   },
+   "MilitaryFormationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ARMY_FORMATION",
+     "CORPS_FORMATION",
+     "STANDARD_FORMATION"
+    ]
+   },
+   "MomentDataTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "MOMENT_DATA_BELIEF",
+     "MOMENT_DATA_BUILDING",
+     "MOMENT_DATA_CITY_STATE_PLAYER",
+     "MOMENT_DATA_CIVIC",
+     "MOMENT_DATA_CONTINENT",
+     "MOMENT_DATA_DISTRICT",
+     "MOMENT_DATA_EMERGENCY",
+     "MOMENT_DATA_FEATURE",
+     "MOMENT_DATA_GOVERNMENT",
+     "MOMENT_DATA_GOVERNOR",
+     "MOMENT_DATA_GREAT_PERSON_INDIVIDUAL",
+     "MOMENT_DATA_GREAT_WORK",
+     "MOMENT_DATA_HERO_CLASS",
+     "MOMENT_DATA_IMPROVEMENT",
+     "MOMENT_DATA_NAMED_RIVER",
+     "MOMENT_DATA_NAMED_VOLCANO",
+     "MOMENT_DATA_OLD_RELIGION",
+     "MOMENT_DATA_PLAYER_ERA",
+     "MOMENT_DATA_PROJECT",
+     "MOMENT_DATA_RANDOM_EVENT",
+     "MOMENT_DATA_RELIGION",
+     "MOMENT_DATA_RESOLUTION",
+     "MOMENT_DATA_RESOURCE",
+     "MOMENT_DATA_TARGET_PLAYER",
+     "MOMENT_DATA_TARGET_PLAYER_ERA",
+     "MOMENT_DATA_TECHNOLOGY",
+     "MOMENT_DATA_UNIT",
+     "MOMENT_DATA_WAR",
+     "NO_MOMENT_DATA"
+    ]
+   },
+   "Mouse": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "eDblTap",
+     "eLClick",
+     "eLDblClick",
+     "eMClick",
+     "eMDblClick",
+     "eMouseEnter",
+     "eMouseExit",
+     "eRClick",
+     "eRDblClick",
+     "eTap",
+     "eWheel"
+    ]
+   },
+   "MouseEvents": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LButtonDoubleClick",
+     "LButtonDown",
+     "LButtonUp",
+     "MButtonDoubleClick",
+     "MButtonDown",
+     "MButtonUp",
+     "MouseFirst",
+     "MouseLast",
+     "MouseMove",
+     "MouseWheel",
+     "PointerDown",
+     "PointerEnter",
+     "PointerLeave",
+     "PointerUp",
+     "PointerUpdate",
+     "RButtonDoubleClick",
+     "RButtonDown",
+     "RButtonUp"
+    ]
+   },
+   "NotificationGroups": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "NotificationManager": {
+    "type": "table",
+    "functions": [
+     "Dismiss",
+     "Find",
+     "FindEndTurnBlocking",
+     "FindType",
+     "GetAllEndTurnBlocking",
+     "GetFirstEndTurnBlocking",
+     "GetList",
+     "RestoreVisualState",
+     "SendNotification"
+    ],
+    "members": []
+   },
+   "NotificationParameterTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CanUserDismiss"
+    ]
+   },
+   "NotificationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "(169 members)"
+    ]
+   },
+   "OperationResultsTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ALL",
+     "NONE",
+     "NO_SOURCES",
+     "NO_TARGETS"
+    ]
+   },
+   "OptionFileTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Application",
+     "Audio",
+     "Graphics",
+     "KeyMap",
+     "User"
+    ]
+   },
+   "ParameterTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "LOCATION",
+     "MESSAGE",
+     "SUMMARY"
+    ]
+   },
+   "Path": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayerComponentTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CITY",
+     "DISTRICT",
+     "FORMATION",
+     "UNDEFINED",
+     "UNIT"
+    ]
+   },
+   "PlayerConfiguration": {
+    "type": "table",
+    "functions": [
+     "GetCivilizationDescription",
+     "GetCivilizationLevelTypeID",
+     "GetCivilizationLevelTypeName",
+     "GetCivilizationShortDescription",
+     "GetCivilizationTypeID",
+     "GetCivilizationTypeName",
+     "GetColor",
+     "GetHandicapTypeID",
+     "GetLeaderName",
+     "GetLeaderTypeID",
+     "GetLeaderTypeName",
+     "GetNickName",
+     "GetPlayerName",
+     "GetSlotName",
+     "GetSlotStatus",
+     "GetStartingPosition"
+    ],
+    "members": [
+     "TypeName",
+     "__instances"
+    ]
+   },
+   "PlayerConfigurations": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayerManager": {
+    "type": "table",
+    "functions": [
+     "GetAlive",
+     "GetAliveBarbarianIDs",
+     "GetAliveBarbarians",
+     "GetAliveBarbariansCount",
+     "GetAliveIDs",
+     "GetAliveMajorIDs",
+     "GetAliveMajors",
+     "GetAliveMajorsCount",
+     "GetAliveMinorIDs",
+     "GetAliveMinors",
+     "GetAliveMinorsCount",
+     "GetDefaultProperty",
+     "GetFreeCitiesPlayer",
+     "GetFreeCitiesPlayerID",
+     "GetPlayer",
+     "GetProperty",
+     "GetWasEverAlive",
+     "GetWasEverAliveCount",
+     "GetWasEverAliveIDs",
+     "GetWasEverAliveMajorIDs",
+     "GetWasEverAliveMajors",
+     "GetWasEverAliveMajorsCount",
+     "IsAlive",
+     "IsValid",
+     "IsValidID",
+     "SetDefaultProperty",
+     "SetLocalObserverTo",
+     "SetLocalPlayerAndObserver",
+     "SetProperty",
+     "WasEverAlive"
+    ],
+    "members": []
+   },
+   "PlayerOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_NAME",
+     "ADDITIONAL_DESCRIPTION",
+     "CITIES",
+     "DISTRICTS",
+     "DISTRICT_TYPE",
+     "FAILURE_REASONS",
+     "FEATURE_TYPE",
+     "IMPROVEMENTS",
+     "IS_BLOCKED",
+     "IS_INDIRECT",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "NONE",
+     "PLOTS",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "PlayerOperations": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACCEPT_EMERGENCY",
+     "ADD_BELIEF",
+     "APPOINT_GOVERNOR",
+     "ASSIGN_GOVERNOR",
+     "BRIBE_CLAN",
+     "CHOOSE_ARTIFACT_PLAYER",
+     "COMMEMORATE",
+     "COMPLIMENT_PRIDE_MOMENT",
+     "DIPLOMACY_DECLARE_WAR",
+     "DIPLOMACY_MAKE_PEACE",
+     "EXECUTE_SCRIPT",
+     "FOUND_PANTHEON",
+     "FOUND_RELIGION",
+     "GIVE_INFLUENCE_TOKEN",
+     "HIRE_CLAN",
+     "INCITE_CLAN",
+     "LEVY_MILITARY",
+     "MOVE_GREAT_WORK",
+     "NAME_CORPORATION",
+     "PARAM_BELIEF_TYPE",
+     "PARAM_BUILDING_DEST",
+     "PARAM_BUILDING_SRC",
+     "PARAM_BUILDING_TYPE",
+     "PARAM_CITY_DEST",
+     "PARAM_CITY_ONE",
+     "PARAM_CITY_SRC",
+     "PARAM_CITY_TWO",
+     "PARAM_CIVIC_TYPE",
+     "PARAM_COMMEMORATION_TYPE",
+     "PARAM_CORPORATION_CUSTOM_NAME",
+     "PARAM_DISCUSSION_TYPE",
+     "PARAM_DISTRICT_TYPE",
+     "PARAM_EMERGENCY_TYPE",
+     "PARAM_FLAGS",
+     "PARAM_GOVERNOR_PROMOTION_TYPE",
+     "PARAM_GOVERNOR_TYPE",
+     "PARAM_GREAT_PERSON_INDIVIDUAL_TYPE",
+     "PARAM_GREAT_WORK_INDEX",
+     "PARAM_INSERT_MODE",
+     "PARAM_MODIFIERS",
+     "PARAM_MOMENT_ID",
+     "PARAM_OTHER_PLAYER",
+     "PARAM_PLAYER_ONE",
+     "PARAM_PLAYER_TWO",
+     "PARAM_PLOT_ONE",
+     "PARAM_PLOT_TWO",
+     "PARAM_RELIGION_CUSTOM_NAME",
+     "PARAM_RELIGION_TYPE",
+     "PARAM_RESOLUTION_OPTION",
+     "PARAM_RESOLUTION_SELECTION",
+     "PARAM_RESOLUTION_TYPE",
+     "PARAM_RESOURCE_TYPE",
+     "PARAM_SLOT",
+     "PARAM_TEAM_ONE",
+     "PARAM_TEAM_TWO",
+     "PARAM_TECH_TYPE",
+     "PARAM_UNIT_ID",
+     "PARAM_WORLD_CONGRESS_VOTES",
+     "PARAM_YIELD_TYPE",
+     "PATRONIZE_GREAT_PERSON",
+     "PROGRESS_CIVIC",
+     "PROMOTE_GOVERNOR",
+     "RANSOM_CLAN",
+     "RECRUIT_GREAT_PERSON",
+     "REJECT_EMERGENCY",
+     "REJECT_GREAT_PERSON",
+     "RESEARCH",
+     "RETURN_LEVIED_MILITARY",
+     "SET_ESCAPE_ROUTE",
+     "START_OBSERVER_MODE",
+     "UNLOCK_POLICIES",
+     "VALUE_APPEND",
+     "VALUE_EXCLUSIVE",
+     "VALUE_PREPEND",
+     "WORLD_CONGRESS_DISCUSSION_SELECTION",
+     "WORLD_CONGRESS_DISCUSSION_VOTE",
+     "WORLD_CONGRESS_INDICATE_DESIRE",
+     "WORLD_CONGRESS_LOOKED_AT_AVAILABLE",
+     "WORLD_CONGRESS_RESOLUTION_BID",
+     "WORLD_CONGRESS_RESOLUTION_SELECTION",
+     "WORLD_CONGRESS_RESOLUTION_VOTE",
+     "WORLD_CONGRESS_SUBMIT_TURN"
+    ]
+   },
+   "PlayerTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE",
+     "OBSERVER"
+    ]
+   },
+   "PlayerVisibilityManager": {
+    "type": "table",
+    "functions": [
+     "GetPlayerVisibility",
+     "IsVisibleToNonOwner"
+    ],
+    "members": []
+   },
+   "Players": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PlayersVisibility": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "PopupPriority": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "Achievement",
+     "Civilopedia",
+     "Current",
+     "Default",
+     "EndGameMenu",
+     "High",
+     "HotSeatBackground",
+     "InGameTopOptionsMenu",
+     "Low",
+     "Medium",
+     "MediumHigh",
+     "PausePanel",
+     "PlayerChange",
+     "Tutorial",
+     "TutorialHigh",
+     "Utmost",
+     "WorldCongressBetweenTurns",
+     "WorldCongressIntro",
+     "WorldCongressPopup"
+    ]
+   },
+   "PromiseTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DONT_CONVERT_MY_CITIES",
+     "DONT_DIG_UP_MY_ARTIFACTS",
+     "DONT_SETTLE_NEAR_ME",
+     "DONT_SPY_ON_ME",
+     "KEEP_TROOPS_AWAY_FROM_ME"
+    ]
+   },
+   "PushDataSearchOptions": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "IsClosed",
+     "IsOpen",
+     "IsSeen",
+     "IsUnseen"
+    ]
+   },
+   "ReportingEvents": {
+    "type": "table",
+    "functions": [
+     "Send",
+     "SendLuaEvent"
+    ],
+    "members": []
+   },
+   "ReportingStatusTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DEFAULT",
+     "GOSSIP"
+    ]
+   },
+   "ResourceBuilder": {
+    "type": "table",
+    "functions": [
+     "CanHaveResource",
+     "ChangeResourceCount",
+     "GetAdjacentResourceCount",
+     "SetResourceCount",
+     "SetResourceType"
+    ],
+    "members": []
+   },
+   "ResultFormat": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "DETAILED",
+     "SUMMARY"
+    ]
+   },
+   "RevealedState": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "HIDDEN",
+     "REVEALED",
+     "VISIBLE"
+    ]
+   },
+   "RibbonHUDStats": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FOCUS",
+     "HIDE",
+     "SHOW"
+    ]
+   },
+   "RiverManager": {
+    "type": "table",
+    "functions": [
+     "CanBeFlooded",
+     "EnumerateRivers",
+     "GetFloodplainLocation",
+     "GetFloodplainPlots",
+     "GetNumFloodableRivers",
+     "GetNumFloods",
+     "GetNumRivers",
+     "GetRiverByID",
+     "GetRiverByIndex",
+     "GetRiverForFloodplain",
+     "GetRiverIDAtIndex",
+     "GetRiverIndexByID",
+     "GetRiverName",
+     "GetRiverNameByType",
+     "GetRiverType",
+     "GetRiverTypeAtIndex",
+     "GetRiverTypes",
+     "IsFlooded"
+    ],
+    "members": []
+   },
+   "RouteBuilder": {
+    "type": "table",
+    "functions": [
+     "CanHaveRoute",
+     "SetRoutePillaged",
+     "SetRouteType"
+    ],
+    "members": []
+   },
+   "RouteTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "NONE"
+    ]
+   },
+   "SaveDirectories": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AUTOMATION",
+     "BENCHMARK",
+     "DEFAULT",
+     "DEMO",
+     "TUTORIAL",
+     "USER"
+    ]
+   },
+   "SaveFileTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "GAME_CONFIGURATION",
+     "GAME_STATE"
+    ]
+   },
+   "SaveLocationOptions": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AUTOSAVE",
+     "DIRECTORIES",
+     "LOAD_METADATA",
+     "MOST_RECENT_ONLY",
+     "NORMAL",
+     "NO_OPTIONS",
+     "PREVIOUS",
+     "QUICKSAVE"
+    ]
+   },
+   "SaveLocations": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FIRAXIS_CLOUD",
+     "LOCAL_STORAGE",
+     "STEAM_CLOUD"
+    ]
+   },
+   "SaveTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "HOTSEAT",
+     "NETWORK_MULTIPLAYER",
+     "SINGLE_PLAYER",
+     "TILED_MAP",
+     "WORLDBUILDER_MAP"
+    ]
+   },
+   "SlotStatus": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "SS_CLOSED",
+     "SS_COMPUTER",
+     "SS_OBSERVER",
+     "SS_OPEN",
+     "SS_TAKEN"
+    ]
+   },
+   "StartPositioner": {
+    "type": "table",
+    "functions": [
+     "DivideMapIntoMajorRegions",
+     "DivideMapIntoMinorRegions",
+     "GetMajorCivStartInfo",
+     "GetMajorCivStartPlots",
+     "GetMinorCivStartInfo",
+     "GetMinorCivStartPlots",
+     "GetNumMajorCivStarts",
+     "GetNumMinorCivStarts",
+     "GetOceanStartTile",
+     "GetPlotFertility",
+     "GetTotalOceanStartCandidates",
+     "MarkMajorRegionUsed",
+     "PlaceOceanStartCivs"
+    ],
+    "members": []
+   },
+   "StateName": {
+    "type": "string",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_ClearReferenceMap": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_GetReferenceMapAlpha": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_SetReferenceMap": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "StrategicView_SetReferenceMapAlpha": {
+    "type": "function",
+    "functions": [],
+    "members": []
+   },
+   "Teams": {
+    "type": "table",
+    "functions": [],
+    "members": []
+   },
+   "TerrainBuilder": {
+    "type": "table",
+    "functions": [
+     "AddCoastalLowland",
+     "AddIce",
+     "AnalyzeChokepoints",
+     "CanHaveFeature",
+     "GenerateFloodplains",
+     "GetAdjacentFeatureCount",
+     "GetFeaturePlacementPlotList",
+     "GetFractalFlags",
+     "GetInlandCorner",
+     "GetRandomNumber",
+     "SetContinentType",
+     "SetFeatureType",
+     "SetMultiPlotFeatureType",
+     "SetNEOfCliff",
+     "SetNEOfRiver",
+     "SetNWOfCliff",
+     "SetNWOfRiver",
+     "SetTerrainType",
+     "SetWOfCliff",
+     "SetWOfRiver",
+     "StampContinents"
+    ],
+    "members": []
+   },
+   "TerrainManager": {
+    "type": "table",
+    "functions": [
+     "ClearCoastalFlooding",
+     "FloodCoast",
+     "GetCoastalLowlandType",
+     "IsFlooded",
+     "IsProtected",
+     "IsSubmerged",
+     "SubmergeCoast"
+    ],
+    "members": []
+   },
+   "Territories": {
+    "type": "table",
+    "functions": [
+     "GetCount",
+     "GetTerritory",
+     "GetTerritoryAt",
+     "Members",
+     "MembersAux"
+    ],
+    "members": []
+   },
+   "TurnNotifyFrequencyModes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "TurnNotify_EveryTurn",
+     "TurnNotify_MyTurn"
+    ]
+   },
+   "Unit": {
+    "type": "table",
+    "functions": [
+     "ChangeActionCharges",
+     "ChangeDamage",
+     "ChangeExtraMoves",
+     "ChangeMovesRemaining",
+     "GetAbility",
+     "GetActionCharges",
+     "GetAntiAirCombat",
+     "GetAttacksRemaining",
+     "GetBombardCombat",
+     "GetBuildCharges",
+     "GetChildIDs",
+     "GetCombat",
+     "GetComponentID",
+     "GetDamage",
+     "GetDisasterCharges",
+     "GetDomain",
+     "GetExperience",
+     "GetExtraMoves",
+     "GetFormationClass",
+     "GetFormationID",
+     "GetFormationMaxMoves",
+     "GetFormationMovesRemaining",
+     "GetFormationUnitCount",
+     "GetFormationUnitIDs",
+     "GetFormationUnits",
+     "GetFortifyTurns",
+     "GetGreatPerson",
+     "GetHeroClassType",
+     "GetID",
+     "GetLocation",
+     "GetMaxDamage",
+     "GetMaxMoves",
+     "GetMilitaryFormation",
+     "GetMovementMovesRemaining",
+     "GetMovesRemaining",
+     "GetName",
+     "GetOperationParameter",
+     "GetOperationType",
+     "GetOriginalOwner",
+     "GetOwner",
+     "GetParentID",
+     "GetParkCharges",
+     "GetProperties",
+     "GetProperty",
+     "GetRange",
+     "GetRangedCombat",
+     "GetReligion",
+     "GetType",
+     "GetTypeHash",
+     "GetUpgradeCost",
+     "GetX",
+     "GetY",
+     "HasHiddenVisibility",
+     "HasMovedIntoZOC",
+     "HasPendingOperations",
+     "IgnoresZOC",
+     "IsDead",
+     "IsDelayedDeath",
+     "IsEmbarked",
+     "IsGreatPerson",
+     "IsHero",
+     "IsHuman",
+     "IsReadyToAutomate",
+     "IsReadyToMove",
+     "IsReadyToSelect",
+     "SetActionCharges",
+     "SetDamage",
+     "SetFortifyTurns",
+     "SetMilitaryFormation",
+     "SetProperty"
+    ],
+    "members": [
+     "TypeName",
+     "__instances"
+    ]
+   },
+   "UnitCommandResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "FAILURE_REASONS",
+     "PLOTS",
+     "PROMOTIONS",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "UnitCommandTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIRLIFT",
+     "AUTOMATE",
+     "CANCEL",
+     "CONDEMN_HERETIC",
+     "DELETE",
+     "DISPERSE_CLAN",
+     "DISTRICT_PRODUCTION",
+     "ENTER_FORMATION",
+     "EXECUTE_SCRIPT",
+     "EXIT_FORMATION",
+     "FORM_ARMY",
+     "FORM_CORPS",
+     "GIFT",
+     "KILL_WEAKER_UNIT",
+     "MOVE_JUMP",
+     "NAME_UNIT",
+     "NAVAL_GOLD_RAID",
+     "PARADROP",
+     "PARAM_CITY_ID",
+     "PARAM_CITY_PLAYER",
+     "PARAM_NAME",
+     "PARAM_PROMOTION_TYPE",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_X",
+     "PARAM_Y",
+     "PLUNDER_TRADE_ROUTE",
+     "PRIORITY_TARGET",
+     "PROJECT_PRODUCTION",
+     "PROMOTE",
+     "RAID_CLAN",
+     "RESOURCE_INSPIRE",
+     "RESTORE_UNIT_MOVES",
+     "STOP_AUTOMATION",
+     "TRANSFORM_UNIT",
+     "TYPE",
+     "UPGRADE",
+     "WAKE",
+     "WONDER_PRODUCTION"
+    ]
+   },
+   "UnitManager": {
+    "type": "table",
+    "functions": [
+     "CanFormMilitaryFormation",
+     "ChangeMovesRemaining",
+     "FinishMoves",
+     "GetMoveToPath",
+     "GetOperationTypeName",
+     "GetOwnerName",
+     "GetTypeName",
+     "GetUnit",
+     "InitUnit",
+     "InitUnitValidAdjacentHex",
+     "Kill",
+     "MoveUnit",
+     "PlaceUnit",
+     "ReportActivation",
+     "RestoreMovement",
+     "RestoreMovementToFormation",
+     "RestoreUnitAttacks",
+     "WakeUnit"
+    ],
+    "members": []
+   },
+   "UnitOperationMoveModifiers": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ANY_ROUTE",
+     "ATTACK",
+     "DECLARE_WAR",
+     "IGNORE_DANGER",
+     "IGNORE_STACKING",
+     "IGNORE_STACKING_AFTER_TURN",
+     "IGNORE_ZOC",
+     "MAXIMIZE_EXPLORE",
+     "MOVE_IGNORE_UNEXPLORED_DESTINATION",
+     "NONE",
+     "ROUTE_ALLOW_UNEXPLORED",
+     "STAY_ON_LAND",
+     "TERRITORY_NO_ENEMY",
+     "TERRITORY_NO_UNEXPLORED"
+    ]
+   },
+   "UnitOperationResults": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "ACTION_NAME",
+     "ADDITIONAL_DESCRIPTION",
+     "BEST_IMPROVEMENT",
+     "CITIES",
+     "FAILURE_REASONS",
+     "FEATURE_TYPE",
+     "IMPROVEMENTS",
+     "IS_BLOCKED",
+     "IS_INDIRECT",
+     "MODIFIERS",
+     "MODIFIER_IS_TARGET",
+     "MODIFIER_NONE",
+     "NONE",
+     "PLOTS",
+     "PROMOTIONS",
+     "ROUTE_TYPE",
+     "UNITS",
+     "UNIT_TYPE"
+    ]
+   },
+   "UnitOperationTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "AIR_ATTACK",
+     "ALERT",
+     "BUILD_CAMPUS",
+     "BUILD_ENCAMPMENT",
+     "BUILD_ENTERTAINMENT_COMPLEX",
+     "BUILD_HARBOR",
+     "BUILD_HOLY_SITE",
+     "BUILD_IMPROVEMENT",
+     "BUILD_IMPROVEMENT_ADJACENT",
+     "BUILD_ROUTE",
+     "BUILD_THEATER_DISTRICT",
+     "CLEAR_CONTAMINATION",
+     "COASTAL_RAID",
+     "DEPLOY",
+     "DISEMBARK",
+     "EMBARK",
+     "EXECUTE_SCRIPT",
+     "FORTIFY",
+     "FOUND_CITY",
+     "HARVEST_RESOURCE",
+     "MAKE_TRADE_ROUTE",
+     "MOVE_TO",
+     "MOVE_TO_UNIT",
+     "PARAM_CITY0_ID",
+     "PARAM_CITY0_PLAYER",
+     "PARAM_CITY1_ID",
+     "PARAM_CITY1_PLAYER",
+     "PARAM_CITY_ID",
+     "PARAM_CITY_PLAYER",
+     "PARAM_DIRECTIVE",
+     "PARAM_FLAGS",
+     "PARAM_IMPROVEMENT0_TYPE",
+     "PARAM_IMPROVEMENT_TYPE",
+     "PARAM_MODIFIERS",
+     "PARAM_OPERATION_TYPE",
+     "PARAM_PROMOTION0_TYPE",
+     "PARAM_RESOURCE0_TYPE",
+     "PARAM_RESOURCE_TYPE",
+     "PARAM_SOURCE_LOCATION",
+     "PARAM_TARGET_LOCATION",
+     "PARAM_TURN",
+     "PARAM_UNIT0_ID",
+     "PARAM_UNIT0_PLAYER",
+     "PARAM_UNIT1_ID",
+     "PARAM_UNIT1_PLAYER",
+     "PARAM_UNIT_ID",
+     "PARAM_UNIT_PLAYER",
+     "PARAM_WMD0_TYPE",
+     "PARAM_WMD_TYPE",
+     "PARAM_X",
+     "PARAM_X0",
+     "PARAM_X1",
+     "PARAM_Y",
+     "PARAM_Y0",
+     "PARAM_Y1",
+     "PILLAGE",
+     "RANGE_ATTACK",
+     "REBASE",
+     "REMOVE_FEATURE",
+     "REMOVE_IMPROVEMENT",
+     "REPAIR",
+     "RETRAIN",
+     "ROUTE_TO",
+     "SPY_COUNTERSPY",
+     "SPY_DISRUPT_ROCKETRY",
+     "SPY_FABRICATE_SCANDAL",
+     "SPY_FOMENT_UNREST",
+     "SPY_GAIN_SOURCES",
+     "SPY_GREAT_WORK_HEIST",
+     "SPY_LISTENING_POST",
+     "SPY_NEUTRALIZE_GOVERNOR",
+     "SPY_RECRUIT_PARTISANS",
+     "SPY_SABOTAGE_PRODUCTION",
+     "SPY_SIPHON_FUNDS",
+     "SPY_STEAL_TECH_BOOST",
+     "SPY_TRAVEL_NEW_CITY",
+     "SPY_ZOMBIFY",
+     "SWAP_UNITS",
+     "TELEPORT_TO_CITY",
+     "TYPE",
+     "UPGRADE",
+     "WAIT_FOR",
+     "WMD_STRIKE"
+    ]
+   },
+   "Units": {
+    "type": "table",
+    "functions": [
+     "AreUnitsInPlot",
+     "AreUnitsInPlotLayerID",
+     "GetUnitByIndexInPlot",
+     "GetUnitCountInPlot",
+     "GetUnitCountInPlotLayerID",
+     "GetUnitsInPlot",
+     "GetUnitsInPlotLayerID"
+    ],
+    "members": []
+   },
+   "VisibilityLayerTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "IMPROVEMENTS",
+     "RESOURCES",
+     "ROUTES",
+     "STEALTH",
+     "STEALTH0",
+     "TERRAIN"
+    ]
+   },
+   "WarTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "COLONIAL_WAR",
+     "DEFENSIVE_PACT",
+     "FORMAL_WAR",
+     "GOLDEN_AGE_WAR",
+     "HOLY_WAR",
+     "IDEOLOGICAL_WAR",
+     "JOINT_WAR",
+     "LIBERATION_WAR",
+     "NO_WAR",
+     "PROTECTORATE_WAR",
+     "RECONQUEST_WAR",
+     "SURPRISE_WAR",
+     "SUZERAIN_WAR",
+     "TERRITORIAL_WAR",
+     "WAR_OF_RETRIBUTION"
+    ]
+   },
+   "WorldBuilder": {
+    "type": "table",
+    "functions": [
+     "CanRedo",
+     "CanUndo",
+     "CityManager",
+     "ClearVisibilityPreviewPlayer",
+     "ConfigurationManager",
+     "EndUndoBlock",
+     "GenerateID",
+     "GetID",
+     "GetWBAdvancedMode",
+     "IsActive",
+     "IsMod",
+     "MapManager",
+     "ModManager",
+     "PlayerManager",
+     "Redo",
+     "SetID",
+     "SetMod",
+     "SetVisibilityPreviewPlayer",
+     "SetWBAdvancedMode",
+     "StartUndoBlock",
+     "Undo",
+     "UnitManager"
+    ],
+    "members": []
+   },
+   "WorldBuilderModes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "PLACE_BUILDINGS",
+     "PLACE_CITIES",
+     "PLACE_CLIFFS",
+     "PLACE_CONTINENTS",
+     "PLACE_DISTRICTS",
+     "PLACE_FEATURES",
+     "PLACE_IMPROVEMENTS",
+     "PLACE_RESOURCES",
+     "PLACE_RIVERS",
+     "PLACE_ROUTES",
+     "PLACE_START_POSITIONS",
+     "PLACE_TERRAIN",
+     "PLACE_TERRAIN_OWNER",
+     "PLACE_UNITS",
+     "PLACE_WONDERS",
+     "SET_VISIBILITY"
+    ]
+   },
+   "WorldBuilderSignals": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "INVALID",
+     "MODE_CHANGE"
+    ]
+   },
+   "WorldRenderView": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "VIEW_2D",
+     "VIEW_3D"
+    ]
+   },
+   "YieldTypes": {
+    "type": "table",
+    "functions": [],
+    "members": [
+     "CULTURE",
+     "FAITH",
+     "FOOD",
+     "GOLD",
+     "PRODUCTION",
+     "SCIENCE"
+    ]
+   }
+  },
+  "objects": {
+   "Player": [
+    "AttachModifierByID",
+    "ChangeScoringScenario1",
+    "ChangeScoringScenario2",
+    "ChangeScoringScenario3",
+    "GetAi_Diplomacy",
+    "GetAi_Military",
+    "GetAi_Religion",
+    "GetCities",
+    "GetComponentID",
+    "GetCulture",
+    "GetDiplomacy",
+    "GetDistricts",
+    "GetEra",
+    "GetEras",
+    "GetGovernors",
+    "GetGreatPeoplePoints",
+    "GetID",
+    "GetInfluence",
+    "GetProperty",
+    "GetReligion",
+    "GetResources",
+    "GetScore",
+    "GetScoringScenario1",
+    "GetScoringScenario2",
+    "GetScoringScenario3",
+    "GetStartingPlot",
+    "GetStats",
+    "GetTeam",
+    "GetTechs",
+    "GetTrade",
+    "GetTreasury",
+    "GetUnits",
+    "GetWMDs",
+    "GrantWMDs",
+    "GrantYield",
+    "IsAlive",
+    "IsBarbarian",
+    "IsHuman",
+    "IsInitialized",
+    "IsMajor",
+    "IsTurnActive",
+    "IsTurnActiveComplete",
+    "SetProperty",
+    "SetScoringScenario1",
+    "SetScoringScenario2",
+    "SetScoringScenario3",
+    "SetStartingPlot",
+    "WasEverAlive"
+   ],
+   "PlayerCities": [
+    "Create",
+    "Destroy",
+    "FindClosest",
+    "FindID",
+    "GetCapitalCity",
+    "GetCount",
+    "GetOriginalCapitalCity",
+    "IsValidFoundLocation",
+    "Members"
+   ],
+   "PlayerUnits": [
+    "Create",
+    "Destroy",
+    "FindID",
+    "GetCount",
+    "IsBuildDisabled",
+    "Members",
+    "RecomputeAllCosts",
+    "RecomputeCost",
+    "SetBuildDisabled"
+   ],
+   "PlayerTechs": [
+    "CanResearch",
+    "ChangeCurrentResearchProgress",
+    "GetResearchCost",
+    "GetResearchProgress",
+    "GetResearchingTech",
+    "GetScienceYield",
+    "GetTurnsLeft",
+    "GetTurnsToResearch",
+    "HasBoostBeenTriggered",
+    "HasTech",
+    "IsResearchingTech",
+    "ResearchQueue",
+    "ResearchQueueAux",
+    "ReverseBoost",
+    "SetResearchProgress",
+    "SetResearchingTech",
+    "SetTech",
+    "TriggerBoost"
+   ],
+   "PlayerCulture": [
+    "ChangeCurrentCulturalProgress",
+    "CivicCompletedThisTurn",
+    "ClearPolicySlot",
+    "GetAnarchyTurns",
+    "GetCivicCompletedThisTurn",
+    "GetCultureCost",
+    "GetCultureYield",
+    "GetNumPolicySlots",
+    "GetPolicyToUnlock",
+    "GetProgressingCivic",
+    "GetSlotPolicy",
+    "GetTurnsLeftOnCurrentCivic",
+    "HasBoostBeenTriggered",
+    "HasCivic",
+    "IsDominantOver",
+    "IsGovernmentUnlocked",
+    "IsPolicyActive",
+    "IsPolicyObsolete",
+    "IsPolicyUnlocked",
+    "Reset",
+    "ReverseBoost",
+    "SetCivic",
+    "SetCivicCompletedThisTurn",
+    "SetCulturalProgress",
+    "SetCurrentGovernment",
+    "SetProgressingCivic",
+    "TriggerBoost",
+    "UnlockGovernment",
+    "UnlockPolicy"
+   ],
+   "PlayerTreasury": [
+    "ChangeGoldBalance",
+    "ChangeGoldBalanceByPercentage",
+    "GetBuildingMaintenance",
+    "GetDistrictMaintenance",
+    "GetGoldBalance",
+    "GetGoldYield",
+    "GetTotalMaintenance",
+    "GetUnitMaintenance",
+    "GetWMDMaintenance",
+    "SetGoldBalance"
+   ],
+   "PlayerDiplomacy": [
+    "CalcFavorPerTurnFromAlliances",
+    "CanDeclareWarOn",
+    "CanMakePeaceWith",
+    "ChangeFavor",
+    "DeclareWarOn",
+    "GetFavor",
+    "GetFavorPerTurn",
+    "GetMetTurn",
+    "GetVisibilityOn",
+    "HasAllied",
+    "HasDeclaredFriendship",
+    "HasDelegationAt",
+    "HasEmbassyAt",
+    "HasMet",
+    "IsAtWarWith",
+    "IsAtWarWithHumans",
+    "IsVisibilitySourceActive",
+    "MakePeaceWith",
+    "NeverMakePeaceWith",
+    "RecheckVisibilityOn",
+    "RecheckVisibilityOnAll",
+    "SendKudoTo",
+    "SendWarningTo",
+    "SetHasAllied",
+    "SetHasDeclaredFriendship",
+    "SetHasDelegationAt",
+    "SetHasEmbassyAt",
+    "SetHasMet",
+    "SetPermanentAlliance",
+    "SetVisibilityOn"
+   ],
+   "PlayerReligion": [
+    "CanCreatePantheon",
+    "ChangeFaithBalance",
+    "ChangeNumBeliefsEarned",
+    "GetFaithBalance",
+    "GetFaithYield",
+    "GetPantheon",
+    "GetReligionInMajorityOfCities",
+    "GetReligionTypeCreated",
+    "HasLaunchedInquisition",
+    "SetFaithBalance",
+    "SetHolyCity"
+   ],
+   "PlayerResources": [
+    "ChangeResourceAmount",
+    "GetResourceAmount",
+    "HasResource"
+   ],
+   "PlayerStats": [
+    "ChangeScienceVictoryPoints",
+    "GetNumBeliefsInReligion",
+    "GetNumCitiesFollowingReligion",
+    "GetNumCitiesFollowingReligionWithWonder",
+    "GetNumDistrictsFollowingReligion",
+    "GetNumFollowers",
+    "GetNumForeignCitiesFollowingReligion",
+    "GetNumForeignFollowers",
+    "GetNumMyCitiesFollowingSpecificReligion",
+    "UpdateMaxBombardStrengthTrained",
+    "UpdateMaxMeleeStrengthTrained",
+    "UpdateMaxRangedStrengthTrained"
+   ],
+   "PlayerInfluence": [
+    "CanGiveInfluence",
+    "CanReceiveInfluence",
+    "ChangeTokensToGive",
+    "GetMostTokensReceived",
+    "GetPointsEarned",
+    "GetPointsPerTurn",
+    "GetPointsThreshold",
+    "GetSuzerain",
+    "GetTokensPerThreshold",
+    "GetTokensReceived",
+    "GetTokensToGive",
+    "GiveFreeTokenToPlayer"
+   ],
+   "PlayerGovernors": [
+    "ChangeGovernorPoints",
+    "GetGovernorPoints",
+    "GetGovernorPointsSpent"
+   ],
+   "PlayerEras": [
+    "GetEra",
+    "SetEra",
+    "SetStartingEra"
+   ],
+   "PlayerTrade": [
+    "CalcFavorPerTurnFromTradePartners",
+    "CountOutgoingRoutes",
+    "GetOutgoingRouteCapacity"
+   ],
+   "PlayerAi": [
+    "AddUnitToScriptedOperation",
+    "AllowUnitConstruction",
+    "CanConstructUnits",
+    "HasOperationAgainst",
+    "PrepareForWarWith",
+    "ScriptForceUpdateTargets",
+    "SetRival",
+    "SetScriptedOperationReady",
+    "SetScriptedTargetAndRally",
+    "StartScriptedOperation",
+    "StartScriptedOperationWithTargetAndRally"
+   ],
+   "PlayerConfiguration": [
+    "GetCivilizationDescription",
+    "GetCivilizationLevelTypeID",
+    "GetCivilizationLevelTypeName",
+    "GetCivilizationShortDescription",
+    "GetCivilizationTypeID",
+    "GetCivilizationTypeName",
+    "GetColor",
+    "GetHandicapTypeID",
+    "GetLeaderName",
+    "GetLeaderTypeID",
+    "GetLeaderTypeName",
+    "GetNickName",
+    "GetPlayerName",
+    "GetSlotName",
+    "GetSlotStatus",
+    "GetStartingPosition"
+   ],
+   "PlayerVisibility": [
+    "AddOutgoingVisibility",
+    "ChangeVisibilityCount",
+    "GetNumRevealedHexes",
+    "GetState",
+    "GetVisibilityCount",
+    "IsRevealed",
+    "IsVisible",
+    "RemoveOutgoingVisibility",
+    "RevealAllPlots"
+   ],
+   "City": [
+    "AttachModifierByID",
+    "ChangeLoyalty",
+    "ChangePopulation",
+    "GetBuildQueue",
+    "GetBuildingFaithPurchaseEnabled",
+    "GetBuildings",
+    "GetCitizens",
+    "GetDistricts",
+    "GetGrowth",
+    "GetID",
+    "GetLocation",
+    "GetName",
+    "GetOriginalOwner",
+    "GetOwnedPlots",
+    "GetOwner",
+    "GetPlot",
+    "GetPopulation",
+    "GetProperties",
+    "GetProperty",
+    "GetReligion",
+    "GetUnitFaithPurchaseEnabled",
+    "GetX",
+    "GetY",
+    "GetYield",
+    "SetBuildingFaithPurchaseEnabled",
+    "SetName",
+    "SetProperty",
+    "SetUnitFaithPurchaseEnabled"
+   ],
+   "CityBuildQueue": [
+    "AddProgress",
+    "CanProduce",
+    "CheckActiveProduction",
+    "CreateBuilding",
+    "CreateDistrict",
+    "CreateIncompleteBuilding",
+    "CreateIncompleteDistrict",
+    "CurrentlyBuilding",
+    "FinishProgress",
+    "GetAvailableProductionTypes",
+    "GetTurnsLeft",
+    "HasBeenPlaced",
+    "HasBuildingBeenPlaced",
+    "HasBuildingProductionProgress",
+    "HasDistrictBeenPlaced",
+    "HasDistrictProductionProgress",
+    "HasProductionProgress",
+    "RemoveBuilding",
+    "RemoveDistrict"
+   ],
+   "CityBuildings": [
+    "GetBuildingLocation",
+    "GetBuildingMaintenance",
+    "GetBuildingNameOverride",
+    "GetCity",
+    "HasBuilding",
+    "IsPillaged",
+    "RemoveBuilding",
+    "SetBuildingLocation",
+    "SetPillaged"
+   ],
+   "CityDistricts": [
+    "GetDistrict",
+    "GetDistrictAtLocation",
+    "GetDistrictByID",
+    "GetDistrictByIndex",
+    "GetDistrictByType",
+    "GetDistrictLocation",
+    "GetNumDistricts",
+    "GetNumDistrictsOfType",
+    "GetPrereqDistrictPlotID",
+    "HasDistrict",
+    "RemoveDistrict",
+    "SetDistrictPillaged"
+   ],
+   "CityGrowth": [
+    "GetAmenities",
+    "GetAmenitiesFromCivics",
+    "GetAmenitiesFromEntertainment",
+    "GetAmenitiesFromLuxuries",
+    "GetFoodSurplus",
+    "GetHappiness",
+    "GetHousing",
+    "GetHousingFromBuildings",
+    "GetHousingFromCivics",
+    "GetHousingFromDistricts",
+    "GetHousingFromImprovements",
+    "GetHousingFromWater",
+    "GetTurnsUntilGrowth"
+   ],
+   "CityCitizens": [
+    "IsYieldDisfavored",
+    "IsYieldFavored",
+    "SetDisfavoredYield",
+    "SetFavoredYield"
+   ],
+   "CityCulture": [
+    "(unavailable)"
+   ],
+   "CityReligion": [
+    "AddOneFollower",
+    "AddReligiousPressure",
+    "GetActivePantheon",
+    "GetMajorityReligion",
+    "GetNumFollowers",
+    "RemoveOtherReligions",
+    "RemovePressureOneReligion",
+    "SetAllCityToReligion"
+   ],
+   "CityTrade": [
+    "(unavailable)"
+   ],
+   "CityGold": [
+    "(unavailable)"
+   ],
+   "Unit": [
+    "ChangeActionCharges",
+    "ChangeDamage",
+    "ChangeExtraMoves",
+    "ChangeMovesRemaining",
+    "GetAbility",
+    "GetActionCharges",
+    "GetAntiAirCombat",
+    "GetAttacksRemaining",
+    "GetBombardCombat",
+    "GetBuildCharges",
+    "GetChildIDs",
+    "GetCombat",
+    "GetComponentID",
+    "GetDamage",
+    "GetDisasterCharges",
+    "GetDomain",
+    "GetExperience",
+    "GetExtraMoves",
+    "GetFormationClass",
+    "GetFormationID",
+    "GetFormationMaxMoves",
+    "GetFormationMovesRemaining",
+    "GetFormationUnitCount",
+    "GetFormationUnitIDs",
+    "GetFormationUnits",
+    "GetFortifyTurns",
+    "GetGreatPerson",
+    "GetHeroClassType",
+    "GetID",
+    "GetLocation",
+    "GetMaxDamage",
+    "GetMaxMoves",
+    "GetMilitaryFormation",
+    "GetMovementMovesRemaining",
+    "GetMovesRemaining",
+    "GetName",
+    "GetOperationParameter",
+    "GetOperationType",
+    "GetOriginalOwner",
+    "GetOwner",
+    "GetParentID",
+    "GetParkCharges",
+    "GetProperties",
+    "GetProperty",
+    "GetRange",
+    "GetRangedCombat",
+    "GetReligion",
+    "GetType",
+    "GetTypeHash",
+    "GetUpgradeCost",
+    "GetX",
+    "GetY",
+    "HasHiddenVisibility",
+    "HasMovedIntoZOC",
+    "HasPendingOperations",
+    "IgnoresZOC",
+    "IsDead",
+    "IsDelayedDeath",
+    "IsEmbarked",
+    "IsGreatPerson",
+    "IsHero",
+    "IsHuman",
+    "IsReadyToAutomate",
+    "IsReadyToMove",
+    "IsReadyToSelect",
+    "SetActionCharges",
+    "SetDamage",
+    "SetFortifyTurns",
+    "SetMilitaryFormation",
+    "SetProperty"
+   ],
+   "UnitExperience": [
+    "CanPromote",
+    "ChangeExperience",
+    "ChangeStoredPromotions",
+    "GetExperienceForNextLevel",
+    "GetExperiencePoints",
+    "GetVeteranName",
+    "HasPromotion",
+    "SetExperienceLocked",
+    "SetPromotion",
+    "SetVeteranName"
+   ],
+   "UnitAbility": [
+    "AddAbilityCount",
+    "CanHaveAbility",
+    "ChangeAbilityCount",
+    "GetAbilities",
+    "GetAbilityCount",
+    "HasAbility",
+    "RemoveAbilityCount"
+   ],
+   "Plot": [
+    "CanHaveDistrict",
+    "CanHaveWonder",
+    "GetAdjacencyBonusTooltip",
+    "GetAdjacencyBonusType",
+    "GetAdjacencyYield",
+    "GetAirUnits",
+    "GetAppeal",
+    "GetArea",
+    "GetAreaID",
+    "GetComponentID",
+    "GetContinentType",
+    "GetDefenseModifier",
+    "GetDistrictID",
+    "GetDistrictType",
+    "GetFeature",
+    "GetFeatureType",
+    "GetImprovementOwner",
+    "GetImprovementType",
+    "GetIndex",
+    "GetMovementCost",
+    "GetNationalParkName",
+    "GetNearestLandArea",
+    "GetNearestLandPlot",
+    "GetOwner",
+    "GetProperty",
+    "GetResourceCount",
+    "GetResourceType",
+    "GetResourceTypeHash",
+    "GetRiverCrossingCount",
+    "GetRiverEFlowDirection",
+    "GetRiverSEFlowDirection",
+    "GetRiverSWFlowDirection",
+    "GetRouteType",
+    "GetTerrainClassType",
+    "GetTerrainType",
+    "GetUnitCount",
+    "GetWonderType",
+    "GetWorkerCount",
+    "GetX",
+    "GetY",
+    "GetYield",
+    "HasFeatureBeenAdded",
+    "IsAdjacentOwned",
+    "IsAdjacentPlayer",
+    "IsAdjacentToArea",
+    "IsAdjacentToLand",
+    "IsAdjacentToShallowWater",
+    "IsAt",
+    "IsCanyon",
+    "IsChokepoint",
+    "IsCity",
+    "IsCoastalLand",
+    "IsFlatlands",
+    "IsFreshWater",
+    "IsHills",
+    "IsImpassable",
+    "IsImprovementPillaged",
+    "IsInternalOnlyDistrict",
+    "IsLake",
+    "IsMountain",
+    "IsNEOfCliff",
+    "IsNEOfRiver",
+    "IsNWOfCliff",
+    "IsNWOfRiver",
+    "IsNationalPark",
+    "IsNaturalWonder",
+    "IsNone",
+    "IsOpenGround",
+    "IsOwned",
+    "IsRiver",
+    "IsRiverAdjacent",
+    "IsRiverConnection",
+    "IsRiverCrossing",
+    "IsRiverCrossingFlowClockwise",
+    "IsRiverCrossingToPlot",
+    "IsRiverSide",
+    "IsRoughGround",
+    "IsRoute",
+    "IsRoutePillaged",
+    "IsShallowWater",
+    "IsStartingPlot",
+    "IsUnit",
+    "IsValidFoundLocation",
+    "IsWOfCliff",
+    "IsWOfRiver",
+    "IsWater",
+    "IsWonderComplete",
+    "SetOwner",
+    "SetProperty",
+    "SharesAdjacentArea"
+   ],
+   "District": [
+    "(unavailable)"
+   ]
+  }
+ }
+}

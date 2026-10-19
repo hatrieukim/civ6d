@@ -1,0 +1,238 @@
+{
+ "install": [
+  "installed"
+ ],
+ "idle_2s_msgs": 1,
+ "idle_2s_sample": [
+  ""
+ ],
+ "pub_count_after_idle": 230,
+ "units": [
+  [
+   "65536",
+   "UNIT_SETTLER",
+   "42",
+   "17",
+   "2"
+  ],
+  [
+   "131073",
+   "UNIT_WARRIOR",
+   "41",
+   "17",
+   "2"
+  ]
+ ],
+ "move_request": [
+  "target,42,18",
+  "same_chunk_pos,41,17,pub=236"
+ ],
+ "move": {
+  "gamecore_pos_updated_ms": 33.8,
+  "ingame_pos_updated_ms": 52.1,
+  "polls": 1,
+  "pub_delta": 345,
+  "push_UnitMoveComplete_ms": null,
+  "pushes": [
+   [
+    42.2,
+    "@@EV|UnitMoved|0|131073|42|18|pub=237"
+   ],
+   [
+    42.3,
+    "@@EV|UnitMoveComplete|0|131073|42|18|pub=237"
+   ],
+   [
+    1779.3,
+    "@@EV|NotificationAdded|0|2|pub=432"
+   ]
+  ]
+ },
+ "batch_request": [
+  "can_found=true cities_same_chunk=0 pub=583"
+ ],
+ "batch": {
+  "city_readable_ms": 33.9,
+  "polls": 1,
+  "pub_delta": 7,
+  "push_CityAddedToMap_ms": 70.7
+ },
+ "setup": [
+  "city=LOC_CITY_NAME_BABYLON_STK tech=TECH_POTTERY civic=CIVIC_CODE_OF_LAWS"
+ ],
+ "blockers": [
+  "canEnd=true blocking=0"
+ ],
+ "endturn_request": [
+  "requested turn=1"
+ ],
+ "endturn": {
+  "push_LocalPlayerTurnBegin_s": 1.47,
+  "n_pushes": 169,
+  "timeline": [
+   [
+    0.05,
+    "@@EV|LocalPlayerTurnEnd|pub=623"
+   ],
+   [
+    0.05,
+    "@@EV|PlayerTurnDeactivated|0|pub=623"
+   ],
+   [
+    0.12,
+    "@@EV|ResearchChanged|1|0|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|ResearchChanged|1|-1|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|PlayerTurnActivated|1|true|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|CityAddedToMap|1|65536|27|23|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|UnitRemovedFromMap|1|65536|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|UnitMoved|1|131073|26|22|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|UnitMoveComplete|1|131073|26|22|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|CityProductionChanged|1|65536|0|20|pub=626"
+   ],
+   [
+    0.12,
+    "@@EV|PlayerTurnDeactivated|1|pub=626"
+   ],
+   [
+    0.17,
+    "@@EV|ResearchChanged|2|0|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|ResearchChanged|2|-1|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|PlayerTurnActivated|2|true|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|CityAddedToMap|2|65536|64|45|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|ResearchChanged|2|3|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|UnitRemovedFromMap|2|65536|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|UnitMoved|2|131073|62|45|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|UnitMoved|2|131073|61|45|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|UnitMoveComplete|2|131073|61|45|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|CityProductionChanged|2|65536|0|20|pub=629"
+   ],
+   [
+    0.17,
+    "@@EV|PlayerTurnDeactivated|2|pub=629"
+   ],
+   [
+    0.21,
+    "@@EV|ResearchChanged|3|0|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|ResearchChanged|3|-1|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|PlayerTurnActivated|3|true|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|UnitMoved|3|65536|37|30|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|UnitMoveComplete|3|65536|37|30|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|UnitMoved|3|131073|35|31|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|UnitMoved|3|131073|34|31|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|UnitMoveComplete|3|131073|34|31|pub=632"
+   ],
+   [
+    0.21,
+    "@@EV|PlayerTurnDeactivated|3|pub=632"
+   ],
+   [
+    0.27,
+    "@@EV|ResearchChanged|4|0|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|ResearchChanged|4|-1|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|PlayerTurnActivated|4|true|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|CityAddedToMap|4|65536|47|41|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|UnitRemovedFromMap|4|65536|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|UnitMoved|4|131073|46|40|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|UnitMoved|4|131073|45|39|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|UnitMoveComplete|4|131073|45|39|pub=635"
+   ],
+   [
+    0.27,
+    "@@EV|CityProductionChanged|4|65536|0|20|pub=635"
+   ]
+  ],
+  "turn_now": [
+   "2"
+  ]
+ }
+}

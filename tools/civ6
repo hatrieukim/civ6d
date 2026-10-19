@@ -1,0 +1,68 @@
+#!/bin/bash
+# CLI cho daemon civ6d (127.0.0.1:7790).
+#   civ6 status | brief | ops | saves | help      GET  /v1/<word>
+#   civ6 get events since=12
+#   civ6 post advance turns=5
+#   civ6 post call op=move_unit unit_id=131073 target_x=42 target_y=18
+#   civ6 post batch 'ops=[{"op":"skip_unit","unit_id":131073}]'   (value starting with [ or { = JSON)
+#   civ6 get unit/actions unit_id=131073      |  civ6 post unit/act unit_id=131073 action=UNITOPERATION_PILLAGE
+#   civ6 rules "SELECT UnitType, Cost FROM Units WHERE Domain='DOMAIN_LAND' LIMIT 5"
+#   civ6 start | stop | log                        manage the daemon
+set -euo pipefail
+D="$(cd "$(dirname "$0")/.." && pwd)"
+BASE="${CIV6D_URL:-http://127.0.0.1:7790}/v1"
+cmd="${1:-status}"; shift || true
+case "$cmd" in
+  start)
+    if curl -s -m 1 "$BASE/help" >/dev/null 2>&1; then echo "civ6d already running"; exit 0; fi
+    mkdir -p "$D/logs"
+    (cd "$D" && nohup uv run --quiet --project civ6-mcp python -m civ6d >>"$D/logs/civ6d.out" 2>&1 &)
+    for i in $(seq 1 60); do curl -s -m 1 "$BASE/help" >/dev/null 2>&1 && { echo "civ6d up"; exit 0; }; sleep 0.5; done
+    echo "civ6d failed to start; see $D/logs/civ6d.out"; exit 1 ;;
+  stop)
+    pkill -f "python -m civ6d" || { echo "not running"; exit 0; }
+    for i in $(seq 1 40); do pgrep -f "python -m civ6d" >/dev/null || break; sleep 0.25; done
+    echo stopped ;;
+  log) tail -n "${1:-40}" "$D/logs/civ6d.log" ;;
+  rules)  # civ6 rules "SELECT ..." [limit]
+    curl -sS -G "$BASE/rules" --data-urlencode "sql=$1" --data-urlencode "limit=${2:-200}" | python3 -c '
+import json,sys; r=json.load(sys.stdin)
+if not r.get("ok"): print(json.dumps(r, ensure_ascii=False)); sys.exit(1)
+r=r["result"]; print("\t".join(r["columns"]))
+for row in r["rows"]: print("\t".join("" if v is None else str(v) for v in row))
+if r["truncated"]: print("... (truncated)")' ;;
+  adv)  # civ6 adv N [stop=kinds] — advance, printed compactly
+    n="${1:-1}"; shift || true
+    stop=""; [ $# -gt 0 ] && stop=",\"stop\":\"${1#stop=}\""
+    curl -sS -X POST -H 'Content-Type: application/json' --data "{\"turns\":$n$stop}" "$BASE/advance" | python3 -c '
+import json,sys; r=json.load(sys.stdin)
+if not r.get("ok"): print(json.dumps(r, ensure_ascii=False)); sys.exit(1)
+r=r["result"]; print("advanced", r["turns_advanced"], "|", r["stopped_because"], "| secs", [t.get("seconds") for t in r["per_turn"] if "seconds" in t])
+for p in r.get("popups_dismissed", []): print("  popup closed T%s: %s" % (p["turn"], p["result"]))
+for d in r.get("diplomacy_acknowledged", []): print("  diplomacy acknowledged: %s: %s" % (d["from"], d["text"][:120]))
+for e in r["events"]:
+    if e["kind"] in ("my_turn", "turn_end"): continue
+    rest = " ".join(f"{k}={v}" for k, v in e.items() if k not in ("t", "lseq", "seq", "turn", "kind"))
+    print(("  T%s %s %s" % (e["turn"], e["kind"], rest))[:200])' ;;
+  brief)
+    curl -sS "$BASE/brief?full=${1:-0}" | python3 -c 'import json,sys; r=json.load(sys.stdin); print(r["result"] if r.get("ok") else json.dumps(r, ensure_ascii=False, indent=1))' ;;
+  post)
+    path="$1"; shift
+    body=$(python3 - "$@" <<'PY'
+import json, sys
+out = {}
+for kv in sys.argv[1:]:
+    k, _, v = kv.partition("=")
+    if v[:1] in "[{": out[k] = json.loads(v)
+    elif v.lstrip("-").isdigit(): out[k] = int(v)
+    elif v in ("true", "false"): out[k] = v == "true"
+    else: out[k] = v
+print(json.dumps(out))
+PY
+)
+    exec curl -sS -X POST -H 'Content-Type: application/json' --data "$body" "$BASE/$path" ;;
+  get|*)
+    if [ "$cmd" = "get" ]; then path="$1"; shift; else path="$cmd"; fi
+    q=""; for kv in "$@"; do q="$q&$kv"; done
+    exec curl -sS "$BASE/$path?${q#&}" ;;
+esac

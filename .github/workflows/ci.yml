@@ -1,0 +1,20 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: astral-sh/setup-uv@v5
+      - name: Apply civ6-mcp patch
+        run: git -C civ6-mcp apply ../patches/civ6-mcp-scenario-rulesets.patch
+      - name: Install
+        run: uv sync --project civ6-mcp
+      - name: Compile
+        run: uv run --project civ6-mcp python -m compileall -q civ6d tools
+      - name: Shell syntax
+        run: for f in tools/civ6 tools/civ6-launch tools/setup tools/lua; do bash -n "$f"; done
+      - name: Tests
+        run: uv run --project civ6-mcp pytest -q tests

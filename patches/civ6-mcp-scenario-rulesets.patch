@@ -1,0 +1,64 @@
+civ6-mcp: tolerate rulesets without loyalty, Gathering Storm favor or eras
+(scenarios such as Conquests of Alexander), so `brief` and city capture work there.
+Applied by tools/setup on top of the pinned submodule commit.
+
+diff --git a/src/civ_mcp/lua/cities.py b/src/civ_mcp/lua/cities.py
+index ba3830b..b28e86e 100644
+--- a/src/civ_mcp/lua/cities.py
++++ b/src/civ_mcp/lua/cities.py
+@@ -128,7 +128,7 @@ for i, c in Players[me]:GetCities():Members() do
+     end end
+     table.insert(cityCoords, {name=nm, x=c:GetX(), y=c:GetY()})
+     local loy, loyMax, loyPT, loyFlip = 100, 100, 0, 0
+-    local cult = c:GetCulturalIdentity()
++    local cult = c.GetCulturalIdentity and c:GetCulturalIdentity()  -- nil without loyalty rules (scenarios)
+     if cult then
+         loy = cult:GetLoyalty()
+         loyMax = cult:GetMaxLoyalty()
+@@ -259,7 +259,8 @@ def build_resolve_city_capture(action: str) -> str:
+     return f"""
+ local me = Game.GetLocalPlayer()
+ local player = Players[me]
+-local city = player:GetCities():GetNextRebelledCity()
++local pc = player:GetCities()
++local city = pc.GetNextRebelledCity and pc:GetNextRebelledCity()  -- nil without loyalty rules (scenarios)
+ local source = "rebelled"
+ if city == nil then
+     city = player:GetCities():GetNextCapturedCity()
+diff --git a/src/civ_mcp/lua/overview.py b/src/civ_mcp/lua/overview.py
+index 5bf06b0..fbea861 100644
+--- a/src/civ_mcp/lua/overview.py
++++ b/src/civ_mcp/lua/overview.py
+@@ -45,7 +45,7 @@ for i, u in p:GetUnits():Members() do
+     end
+ end
+ local myScore = p:GetScore()
+-local favor = p:GetFavor()
++local favor = p.GetFavor and p:GetFavor() or 0  -- nil without Gathering Storm rules (scenarios)
+ local favorPerTurn = 0
+ local pDiplo = p:GetDiplomacy()
+ -- 1. Government tier bonus (govRow.Tier is a string like "GOVERNMENT_TIER_1")
+@@ -122,13 +122,16 @@ for i = 0, 62 do
+ end
+ local maxRel = math.floor(nMajors / 2) + 1
+ print("RELSLOTS|" .. nReligions .. "|" .. maxRel)
+-local eraManager = Game.GetEras()
+-local eraIdx = eraManager:GetCurrentEra()
+-local eraEntry = GameInfo.Eras[eraIdx]
+-local eraName = eraEntry and Locale.Lookup(eraEntry.Name) or "Unknown"
+-local eraScore = eraManager:GetPlayerCurrentScore(id)
+-local darkThresh = eraManager:GetPlayerDarkAgeThreshold(id)
+-local goldenThresh = eraManager:GetPlayerGoldenAgeThreshold(id)
++-- Era manager methods are missing in rulesets without eras (scenarios)
++local eraName, eraScore, darkThresh, goldenThresh = "Unknown", 0, 0, 0
++pcall(function()
++    local eraManager = Game.GetEras()
++    local eraEntry = GameInfo.Eras[eraManager:GetCurrentEra()]
++    eraName = eraEntry and Locale.Lookup(eraEntry.Name) or "Unknown"
++    eraScore = eraManager:GetPlayerCurrentScore(id)
++    darkThresh = eraManager:GetPlayerDarkAgeThreshold(id)
++    goldenThresh = eraManager:GetPlayerGoldenAgeThreshold(id)
++end)
+ print("ERA|" .. eraName .. "|" .. eraScore .. "|" .. darkThresh .. "|" .. goldenThresh)
+ local maxTurns = GameConfiguration.GetValue("GAME_MAX_TURNS") or 0
+ print("MAXTURNS|" .. maxTurns)

@@ -1,0 +1,3 @@
+[submodule "civ6-mcp"]
+	path = civ6-mcp
+	url = https://github.com/lmwilki/civ6-mcp.git

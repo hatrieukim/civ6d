@@ -1,0 +1,139 @@
+===== get_game_overview
+Turn 1 | Babylon (Hammurabi) | Score: 0 | Prince
+Gold: 6 (+0/turn) | Science: 0.0 | Culture: 0.0 | Faith: 0 | Favor: 0 (+0/turn)
+Research: None | Civic: Code of Laws
+Cities: 0 | Population: 0 | Units: 2 — 1 Settler, 1 Warrior
+Explored: 1% of land (24/1776 tiles)
+Religion: none yet (5/5 slots remaining — Great Prophet needed)
+Era: Ancient Era | Score: 0 (Dark: 9, Golden: 22) !! 9 short of avoiding Dark Age
+
+===== get_units
+2 units:
+  Settler (UNIT_SETTLER) at (42,17) — moves 2/2 [id:65536, idx:0]
+  Warrior (UNIT_WARRIOR) at (41,17) — CS:20 moves 2/2 [id:131073, idx:1]
+
+===== get_cities
+No cities.
+
+===== get_tech_civics
+No technology being researched!
+Civic: Code of Laws (-1 turns)
+
+Available techs:
+  Pottery (TECH_POTTERY) [ANCIENT] — 0%, -1 turns -> Granary, Great Bath, Mekewap !! GRAB THIS
+  Animal Husbandry (TECH_ANIMAL_HUSBANDRY) [ANCIENT] — 0%, -1 turns -> Pasture, Camp, Kurgan, Reveals Horses !! GRAB THIS
+  Mining (TECH_MINING) [ANCIENT] — 0%, -1 turns -> Mine, Quarry !! GRAB THIS
+  Sailing (TECH_SAILING) [ANCIENT] — 0%, -1 turns [Boost: Found a city on the Coast.] -> Galley, Viking Longship, Bireme, Fishing Boats, Fishery !! GRAB THIS
+  Astrology (TECH_ASTROLOGY) [ANCIENT] — 0%, -1 turns [Boost: Find a natural wonder.] -> Shrine, Stonehenge, Holy Site, Lavra !! GRAB THIS
+
+Available civics:
+  Code of Laws (CIVIC_CODE_OF_LAWS) [ANCIENT] — 0%, -1 turns !! GRAB THIS
+
+Locked techs (prerequisites missing):
+  -- ANCIENT --
+  Irrigation (TECH_IRRIGATION) — needs: Pottery [Boost: Farm a resource.]
+  Archery (TECH_ARCHERY) — needs: Animal Husbandry [Boost: Kill a unit with a Slinger.]
+  Writing (TECH_WRITING) — needs: Pottery [Boost: Meet another civilization.]
+  Masonry (TECH_MASONRY) — needs: Mining [Boost: Build a Quarry.]
+  Bronze Working (TECH_BRONZE_WORKING) — needs: Mining [Boost: Kill 3 Barbarians.]
+  Wheel (TECH_THE_WHEEL) — needs: Mining [Boost: Mine a resource.]
+  -- CLASSICAL --
+  Celestial Navigation (TECH_CELESTIAL_NAVIGATION) — needs: Sailing, Astrology [Boost: Improve 2 sea resources.]
+  Currency (TECH_CURRENCY) — needs: Writing [Boost: Make a [ICON_TradeRoute] Trade Route.]
+  
+
+===== get_diplomacy
+7 civilizations:
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+  Unmet Civilization (Unknown Leader) — not met
+
+===== get_strategic_map
+=== STRATEGIC MAP ===
+
+FOG BOUNDARIES (distance to unexplored, -1 = fully explored):
+
+UNCLAIMED RESOURCES (revealed, unowned):
+  MERCURY+ at (44,14) — luxury
+  CITRUS+ at (39,17) — luxury
+  MERCURY+ at (41,17) — luxury
+  SPICES+ at (41,19) — luxury
+
+===== get_victory_progress
+=== VICTORY PROGRESS ===
+
+Enabled: Science, Domination, Culture, Religious, Diplomatic
+
+SCIENCE VICTORY (launch 4 space projects = 50 VP)
+  Babylon: 0/33 VP | 0 techs | 0 spaceport(s) [0/33.5] <--
+
+  YOUR SPACE PROJECT CHAIN:
+    [LOCKED] Launch Earth Satellite -- requires Rocketry (NEED)
+    [LOCKED] Launch Moon Landing -- requires Satellites (NEED)
+    [LOCKED] Launch Exoplanet Expedition -- requires Offworld Mission (NEED)
+
+DOMINATION (own all original capitals)
+  Babylon: CAPITAL LOST | military 20 <--
+
+CULTURE (your tourists > every civ's domestic tourists)
+  Our domestic tourists: 0
+
+RELIGION (your religion majority in all civs — slots: 0/5)
+  Babylon: majority=none | 0 cities converted <--
+
+DIPLOMATIC (20 VP from World Congress)
+  Babylon: 0/20 VP <--
+
+SCORE (highest at turn 500)
+  Babylon: 0 <--
+
+RIVAL INTELLIGENCE (met civilizations)
+  Babylon: 0 cities | Sci 0 Cul 0 Gold +0 | Mil 20 <--
+
+DEMOGRAPHICS (all civilizations)
+  Population   Rank 7 | Ours: 0 | Best: 0 | Avg: 0.0 | Worst: 0
+  Soldiers     Rank 1 | Ours: 20 | Best: 20 | Avg: 2.5 | Worst: 0
+  Crop Yield   Rank 7 | Ours: 0 | Best: 0 | Avg: 0.0 | Worst: 0
+  GNP          Rank 7 | Ours: 0 | Best: 0 | Avg: 0.0 | Worst: 0
+  Land         Rank 7 | Ours: 0 | Best: 0 | Avg: 0.0 | Worst: 0
+  Goods        Rank 7 | Ours: 0 | Best: 0 | Avg: 0.0 | Worst: 0
+
+VICTORY ASSESSMENT
+  Science      [######----] 60% — Near tech lead (0 behind best known: Babylon (0)) ** RECOMMENDED **
+  Score        [##--------] 25% — Rank #7 by pop
+
+===== get_notifications
+== Notifications (2) ==
+  - New Continent Discovered at (42,17)
+  - Command Units  -> Units have moves remaining — move them or use skip_remaining_units()
+
+===== get_map_area_r4(+overview+units)
+24 tiles:
+  (41,14): PLAINS FLOODPLAINS_PLAINS River {F:1 P:1}
+  (44,14): PLAINS [MERCURY+] River {F:1 P:1 S:1}
+  (40,15): PLAINS_HILLS Hills {F:1 P:2} [mv:2]
+  (41,15): PLAINS River {F:1 P:1}
+  (42,15): PLAINS_HILLS Hills [SHEEP] River {F:2 P:2} [mv:2]
+  (43,15): PLAINS River {F:1 P:1}
+  (44,15): PLAINS {F:1 P:1}
+  (40,16): PLAINS {F:1 P:1}
+  (41,16): PLAINS River {F:1 P:1}
+  (42,16): PLAINS River {F:1 P:1}
+  (43,16): PLAINS River {F:1 P:1}
+  (44,16): PLAINS FOREST {F:1 P:2} [mv:2]
+  (39,17): PLAINS [CITRUS+] {F:3 P:1}
+  (40,17): PLAINS {F:1 P:1}
+  (41,17): PLAINS [MERCURY+] River {F:1 P:1 S:1} [my: WARRIOR]
+  (42,17): PLAINS River {F:1 P:1} [my: SETTLER]
+  (43,17): PLAINS_HILLS Hills FOREST River {F:1 P:3} [mv:3]
+  (40,18): PLAINS_HILLS Hills FOREST River {F:1 P:3} [mv:3]
+  (41,18): PLAINS River {F:1 P:1}
+  (42,18): PLAINS River {F:1 P:1}
+  (43,18): PLAINS FOREST River {F:1 P:2} [mv:2]
+  (40,19): DESERT_HILLS Hills River {F:0 P:1} [mv:2]
+  (41,19): PLAINS FOREST [SPICES+] River {F:3 P:2} [mv:2]
+  (42,19): PLAINS {F:1 P:1}

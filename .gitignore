@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# runtime output
+logs/
+
+# personal play files (see CLAUDE.md)
+CLAUDE.local.md
+strategy.md
+journal/
+backup/

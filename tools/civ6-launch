@@ -1,0 +1,18 @@
+#!/bin/bash
+# Start Civ VI without the Aspyr launcher (runs Civ6_Exe_Child directly; Steam must be running)
+# and wait until the tuner listens on 127.0.0.1:4318. Does nothing if the game already runs.
+# CIV6_APP overrides the game bundle path (see civ6d/paths.py).
+DEFAULT_APP="$HOME/Library/Application Support/Steam/steamapps/common/Sid Meier's Civilization VI/Civ6.app"
+CIV6_APP="${CIV6_APP:-$DEFAULT_APP}"
+APP="$CIV6_APP/Contents/MacOS"
+LOG="${TMPDIR:-/tmp}/civ6-child.log"
+if ! pgrep -f Civ6_Exe_Child >/dev/null; then
+  [ -x "$APP/Civ6_Exe_Child" ] || { echo "Civ6_Exe_Child not found in $APP (set CIV6_APP)"; exit 1; }
+  pgrep -x steam_osx >/dev/null || { open -g -a Steam; sleep 10; }
+  (cd "$APP" && SteamAppId=289070 SteamGameId=289070 nohup ./Civ6_Exe_Child >"$LOG" 2>&1 &)
+fi
+for i in $(seq 1 120); do
+  lsof -nP -iTCP:4318 -sTCP:LISTEN >/dev/null 2>&1 && { echo "tuner ready (${i}s)"; exit 0; }
+  sleep 1
+done
+echo "tuner not ready after 120s (log: $LOG)"; exit 1

@@ -1,0 +1,54 @@
+#!/bin/bash
+# One-time setup: fetch civ6-mcp, apply our patch, install Python deps, enable FireTuner.
+# Safe to run again. CIV6_USER_DIR overrides the user data folder (see civ6d/paths.py).
+set -euo pipefail
+D="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$D"
+
+[ "$(uname)" = Darwin ] || echo "warning: only macOS (Steam/Aspyr) is tested; set CIV6_APP and CIV6_USER_DIR for other layouts"
+command -v uv >/dev/null || { echo "uv is required: https://docs.astral.sh/uv/"; exit 1; }
+
+# 1. civ6-mcp (git submodule pinned to a tested commit) + our patch
+[ -f civ6-mcp/pyproject.toml ] || git submodule update --init civ6-mcp
+PATCH="$D/patches/civ6-mcp-scenario-rulesets.patch"
+if git -C civ6-mcp apply --check -R "$PATCH" 2>/dev/null; then
+  echo "civ6-mcp patch: already applied"
+else
+  git -C civ6-mcp apply "$PATCH" && echo "civ6-mcp patch: applied"
+fi
+
+# 2. Python environment (civ6d runs inside civ6-mcp's project environment)
+uv sync --quiet --inexact --project civ6-mcp
+echo "python deps: ok"
+
+# 3. FireTuner: EnableTuner 1 in AppOptions.txt (the tuner only listens on 127.0.0.1)
+DEFAULT_USER_DIR="$HOME/Library/Application Support/Sid Meier's Civilization VI"
+OPTS="${CIV6_USER_DIR:-$DEFAULT_USER_DIR}/Firaxis Games/Sid Meier's Civilization VI/AppOptions.txt"
+if [ ! -f "$OPTS" ]; then
+  echo "AppOptions.txt not found at: $OPTS"
+  echo "Start the game once so it creates the file, then run tools/setup again."
+  exit 1
+fi
+if grep -q '^EnableTuner 1' "$OPTS"; then
+  echo "FireTuner: already enabled"
+else
+  if pgrep -f Civ6_Exe_Child >/dev/null; then
+    echo "Quit Civilization VI first (it rewrites AppOptions.txt on exit), then run tools/setup again."; exit 1
+  fi
+  [ -f "$OPTS.before-civ6d" ] || cp "$OPTS" "$OPTS.before-civ6d"
+  if grep -q '^EnableTuner' "$OPTS"; then
+    sed -i '' 's/^EnableTuner .*/EnableTuner 1/' "$OPTS"
+  else
+    printf '\nEnableTuner 1\n' >> "$OPTS"
+  fi
+  echo "FireTuner: enabled (backup: AppOptions.txt.before-civ6d)"
+fi
+
+cat <<'EOF'
+
+Done. Next:
+  tools/civ6-launch     # start the game (Steam must be logged in)
+  tools/civ6 start      # start the daemon
+  tools/civ6 status
+Then open Claude Code in this folder and ask it to load a save and play.
+EOF

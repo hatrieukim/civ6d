@@ -1,0 +1,62 @@
+{
+ "raw_GameCore_Tuner": {
+  "n": 20,
+  "median_ms": 17.7,
+  "max_ms": 25.2
+ },
+ "raw_InGame": {
+  "n": 20,
+  "median_ms": 18.0,
+  "max_ms": 26.9
+ },
+ "civ6mcp_execute_read_trivial": {
+  "n": 10,
+  "median_ms": 320.0,
+  "max_ms": 335.1
+ },
+ "get_game_overview": {
+  "ms": 1273,
+  "chars": 408,
+  "approx_tokens": 102
+ },
+ "get_units": {
+  "ms": 961,
+  "chars": 147,
+  "approx_tokens": 36
+ },
+ "get_cities": {
+  "ms": 315,
+  "chars": 10,
+  "approx_tokens": 2
+ },
+ "get_tech_civics": {
+  "ms": 325,
+  "chars": 5058,
+  "approx_tokens": 1264
+ },
+ "get_diplomacy": {
+  "ms": 314,
+  "chars": 352,
+  "approx_tokens": 88
+ },
+ "get_strategic_map": {
+  "ms": 317,
+  "chars": 248,
+  "approx_tokens": 62
+ },
+ "get_victory_progress": {
+  "ms": 323,
+  "chars": 1772,
+  "approx_tokens": 443
+ },
+ "get_notifications": {
+  "ms": 319,
+  "chars": 154,
+  "approx_tokens": 38
+ },
+ "get_map_area_r4(+overview+units)": {
+  "ms": 957,
+  "chars": 1039,
+  "approx_tokens": 259
+ }
+}
